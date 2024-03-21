@@ -7,4 +7,5 @@
   align-items: center;
   background-color: #f5f6fa;
   background-image: url("../assets/dot.svg");
+  background-attachment: fixed;
 }
