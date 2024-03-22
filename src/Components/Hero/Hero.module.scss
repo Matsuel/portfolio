@@ -1,7 +1,53 @@
 .Hero_container {
     margin-top: 7%;
     width: 80%;
-    height: 100vh;
-    background-color: #fff;
+    height: 60vh;
+    // background-color: #fff;
     border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+    .Hero_content {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .Hero_title {
+            padding: 1rem;
+            background-color: #fff;
+            font-family: 'Monsterrat', sans-serif;
+            font-size: 6rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: transparent;
+            -webkit-text-stroke: 1px #000;
+        }
+
+        .Hero_subtitle {
+            width: 80%;
+            font-family: 'Monsterrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .Hero_image {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }

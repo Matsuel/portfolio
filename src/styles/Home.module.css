@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: #f5f6fa;
   background-image: url("../assets/dot.svg");
   background-attachment: fixed;

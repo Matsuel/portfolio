@@ -8,6 +8,8 @@
     justify-content: space-between;
     align-items: center;
     color: #000;
+    font-weight: 500;
+    font-family: 'Monsterrat', sans-serif;
 
     .Navbar_title {
         width: 15%;
@@ -20,8 +22,8 @@
         gap: 20px;
         outline: none;
         border-radius: 12px;
-        font-size: 1.3rem;
-        font-weight: 500;
+        font-size: 1.5rem;
+
 
         img {
             width: auto;
@@ -39,7 +41,7 @@
         justify-content: space-around;
         align-items: center;
         border-radius: 12px;
-        
+
         .Navbar_link {
             text-decoration: none;
             outline: none;
