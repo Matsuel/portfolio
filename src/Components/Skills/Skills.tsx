@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './Skills.module.scss';
+import Title from '../Title/Title';
 
 interface SkillsProps {
 
@@ -8,9 +9,10 @@ interface SkillsProps {
 
 const Skills = ({ }: SkillsProps) => {
     return (
-        <div className={styles.Skills_container}>
+        <section id='skills' className={styles.Skills_container}>
+            <Title content="Skills" />
             
-        </div>
+        </section>
     );
 };
 

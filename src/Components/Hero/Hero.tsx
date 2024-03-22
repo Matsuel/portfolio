@@ -9,6 +9,7 @@ import { faAt } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Achievements from './Achievements/Achievements';
+import Title from '../Title/Title';
 
 interface HeroProps {
 
@@ -45,9 +46,7 @@ const Hero = ({ }: HeroProps) => {
             <div className={styles.Hero}>
                 <div className={styles.Hero_content}>
                     <div className={styles.Hero_top}>
-                        <h1 className={styles.Hero_title}>
-                            Matheo Lang
-                        </h1>
+                        <Title content="Matheo Lang" />
                         <Emoji unified='1f468-200d-1f4bb' size={70} />
                     </div>
                     <h2 className={styles.Hero_subtitle}>
