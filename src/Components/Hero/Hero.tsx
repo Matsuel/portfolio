@@ -8,6 +8,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faAt } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Achievements from './Achievements/Achievements';
 
 interface HeroProps {
 
@@ -41,34 +42,36 @@ const Hero = ({ }: HeroProps) => {
 
     return (
         <div className={styles.Hero_container}>
-            <div className={styles.Hero_content}>
-                <div className={styles.Hero_top}>
-                    <h1 className={styles.Hero_title}>
-                        Matheo Lang
-                    </h1>
-                    <Emoji unified='1f468-200d-1f4bb' size={70} />
+            <div className={styles.Hero}>
+                <div className={styles.Hero_content}>
+                    <div className={styles.Hero_top}>
+                        <h1 className={styles.Hero_title}>
+                            Matheo Lang
+                        </h1>
+                        <Emoji unified='1f468-200d-1f4bb' size={70} />
+                    </div>
+                    <h2 className={styles.Hero_subtitle}>
+                        I am a full stack web and mobile developer based in France. I love back-end development and I'm always looking for new challenges like doing css.
+                    </h2>
+                    <div className={styles.Hero_socials}>
+                        {Socials.map((social, index) => (
+                            <Link key={index} href={social.href} className={styles.Hero_social} target={social.href.includes('mailto') ? "" : "_blank"}>
+                                <div className={styles.Hero_social_top}>
+                                    <FontAwesomeIcon icon={social.icon} className={styles.Hero_social_icon} />
+                                    <span className={styles.Hero_social_name}>{social.name}</span>
+                                </div>
+                                <div className={styles.Hero_social_line}></div>
+                            </Link>
+                        ))}
+                    </div>
+
                 </div>
-                <h2 className={styles.Hero_subtitle}>
-                    I am a full stack web and mobile developer based in France. I love back-end development and I'm always looking for new challenges like doing css.
-                </h2>
-                <div className={styles.Hero_socials}>
-                    {Socials.map((social, index) => (
-                        <Link key={index} href={social.href} className={styles.Hero_social} target={social.href.includes('mailto') ? "" : "_blank"}>
-                            <div className={styles.Hero_social_top}>
-                                <FontAwesomeIcon icon={social.icon} className={styles.Hero_social_icon} />
-                                <span className={styles.Hero_social_name}>{social.name}</span>
-                            </div>
-                            <div className={styles.Hero_social_line}></div>
-                        </Link>
-                    ))}
+                <div className={styles.Hero_image}>
+                    <Image src={Logo} alt="Logo" />
                 </div>
 
             </div>
-            <div className={styles.Hero_image}>
-                <Image src={Logo} alt="Logo" />
-
-            </div>
-
+            <Achievements />
         </div>
     );
 };
