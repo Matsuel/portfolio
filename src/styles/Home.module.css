@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: #f5f6fa;
+  background-color: #fff;
   background-image: url("../assets/dot.svg");
   background-attachment: fixed;
 }

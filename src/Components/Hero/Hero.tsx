@@ -30,7 +30,7 @@ const Socials: Social[] = [
         name: 'Linkedin',
     },
     {
-        href: 'mailto:matheolang@ynovcom',
+        href: 'mailto:matheolang@ynov.com',
         icon: faAt,
         name: 'Email',
     },
@@ -61,7 +61,7 @@ const Hero = ({ }: HeroProps) => {
                 </h2>
                 <div className={styles.Hero_socials}>
                     {Socials.map((social, index) => (
-                        <Link key={index} href={social.href} className={styles.Hero_social} target='_blank' onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(index)}>
+                        <Link key={index} href={social.href} className={styles.Hero_social} target={social.href.includes('mailto') ? "" :"_blank"} onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(index)}>
                             <div className={styles.Hero_social_top}>
                                 <FontAwesomeIcon icon={social.icon} className={styles.Hero_social_icon} />
                                 <span className={styles.Hero_social_name}>{social.name}</span>
