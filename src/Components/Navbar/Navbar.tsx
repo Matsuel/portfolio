@@ -61,8 +61,6 @@ const Navbar = ({ }: NavbarProps) => {
                 ))}
             </div>
 
-            <div className={styles.Navbar_empty}></div>
-
 
         </div>
     );
