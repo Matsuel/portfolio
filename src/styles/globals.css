@@ -111,3 +111,14 @@ a {
     color-scheme: dark;
   }
 }
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent; /* Chrome/Safari/Webkit */
+}

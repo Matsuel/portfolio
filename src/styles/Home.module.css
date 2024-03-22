@@ -3,8 +3,9 @@
   height: auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: #fff;
   background-image: url("../assets/dot.svg");
   background-attachment: fixed;
