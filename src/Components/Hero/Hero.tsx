@@ -38,15 +38,6 @@ const Socials: Social[] = [
 
 const Hero = ({ }: HeroProps) => {
 
-    const [hovered, setHovered] = useState<boolean[]>(new Array(Socials.length).fill(false));
-    
-    
-    const handleHover = (index: number) => {
-        const newHovered = [...hovered];
-        newHovered[index] = !newHovered[index];
-        setHovered(newHovered);
-    }
-
     return (
         <div className={styles.Hero_container}>
             <div className={styles.Hero_content}>
@@ -61,12 +52,12 @@ const Hero = ({ }: HeroProps) => {
                 </h2>
                 <div className={styles.Hero_socials}>
                     {Socials.map((social, index) => (
-                        <Link key={index} href={social.href} className={styles.Hero_social} target={social.href.includes('mailto') ? "" :"_blank"} onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(index)}>
+                        <Link key={index} href={social.href} className={styles.Hero_social} target={social.href.includes('mailto') ? "" :"_blank"}>
                             <div className={styles.Hero_social_top}>
                                 <FontAwesomeIcon icon={social.icon} className={styles.Hero_social_icon} />
                                 <span className={styles.Hero_social_name}>{social.name}</span>
                             </div>
-                            <div className={!hovered[index] ? styles.Hero_social_line : styles.Hero_social_line_hovered}></div>
+                            <div className={styles.Hero_social_line}></div>
                         </Link>
                     ))}
                 </div>
