@@ -21,7 +21,7 @@
         align-items: center;
         gap: 20px;
         outline: none;
-        border-radius: 12px;
+        border-bottom-right-radius: 12px;
         font-size: 1.5rem;
 
 
@@ -40,7 +40,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        border-radius: 12px;
+        border-bottom-left-radius: 12px;
 
         .Navbar_link {
             text-decoration: none;

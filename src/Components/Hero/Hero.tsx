@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Hero.module.scss';
-import Logo from '@/assets/logo-high.png';
+import LogoHigh from '@/assets/logo-high.png';
+import Logo from '@/assets/logo.png';
 import Image from 'next/image';
 import { Emoji } from 'emoji-picker-react';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -52,7 +53,7 @@ const Hero = ({ }: HeroProps) => {
                 </h2>
                 <div className={styles.Hero_socials}>
                     {Socials.map((social, index) => (
-                        <Link key={index} href={social.href} className={styles.Hero_social} target={social.href.includes('mailto') ? "" :"_blank"}>
+                        <Link key={index} href={social.href} className={styles.Hero_social} target={social.href.includes('mailto') ? "" : "_blank"}>
                             <div className={styles.Hero_social_top}>
                                 <FontAwesomeIcon icon={social.icon} className={styles.Hero_social_icon} />
                                 <span className={styles.Hero_social_name}>{social.name}</span>
@@ -65,6 +66,7 @@ const Hero = ({ }: HeroProps) => {
             </div>
             <div className={styles.Hero_image}>
                 <Image src={Logo} alt="Logo" />
+
             </div>
 
         </div>

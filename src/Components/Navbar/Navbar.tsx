@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 import styles from './Navbar.module.scss';
 import Image from 'next/image';
-import Logo from '@/assets/logo-high.png';
+import LogoHigh from '@/assets/logo-high.png';
+import Logo from '@/assets/logo.png';
 import Link from 'next/link';
 
 interface NavbarProps {
