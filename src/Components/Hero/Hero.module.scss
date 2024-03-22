@@ -70,6 +70,7 @@
                 color: #808080;
                 background-color: #fff;
                 border-radius: 12px;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 
                 .Hero_social_top {
                     margin-top: 3%;
@@ -116,6 +117,7 @@
                 &:hover {
                     color: #fff;
                     background-color: #000;
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
                     transition: all 0.3s ease-in-out;
                 }
             }
