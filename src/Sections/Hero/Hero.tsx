@@ -9,7 +9,7 @@ import { faAt } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Achievements from './Achievements/Achievements';
-import Title from '../Title/Title';
+import Title from '../../Components/Title/Title';
 
 interface HeroProps {
 
