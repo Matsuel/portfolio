@@ -27,13 +27,17 @@
         height: auto;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        overflow: auto;
+        // white-space: nowrap;
+        scrollbar-width: none;
+        // flex-wrap: wrap;
         color: #000;
-        gap: 35px;
+        gap: 40px;
 
         .Projects_card {
             padding: 1.5rem;
             width: 30%;
+            flex: 0 0 auto;
             height: auto;
             display: flex;
             flex-direction: column;

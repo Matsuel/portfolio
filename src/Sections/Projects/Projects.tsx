@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import styles from './Projects.module.scss';
 import Title from '../../Components/Title/Title';
 import { Emoji } from 'emoji-picker-react';
-import Link from 'next/link';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '@/Components/Button/Button';
 import Portfolio from '@/assets/projects/portfolio.png';
 import Image from 'next/image';
@@ -62,13 +60,7 @@ const ProjectsList: ProjectProps[] = [
 
 const Projects = ({ }: ProjectsProps) => {
 
-    const [showImages, setShowImages] = useState<boolean[]>(new Array(ProjectsList.length).fill(false));
-
-    const showImage = (index: number) => {
-        const newShowImages = [...showImages];
-        newShowImages[index] = true;
-        setShowImages(newShowImages);
-    }
+    //scroll horizontal quand on voit etirer la section
 
     return (
         <section id='projects' className={styles.Projects_container}>
@@ -79,7 +71,7 @@ const Projects = ({ }: ProjectsProps) => {
 
             <div className={styles.Projects_list}>
                 {ProjectsList.map((project, index) => (
-                    <div key={index} className={styles.Projects_card} onClick={() => showImage(index)}>
+                    <div key={index} className={styles.Projects_card}>
                         { project.image !== "" && <Image src={project.image} alt={project.title} />}
                         <h2 className={styles.Projects_title}>
                             {project.title}
