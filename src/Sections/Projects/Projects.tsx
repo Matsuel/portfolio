@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '@/Components/Button/Button';
+import Portfolio from '@/assets/projects/portfolio.png';
+import Image from 'next/image';
 
 interface ProjectsProps {
 
@@ -15,19 +17,12 @@ interface ProjectsProps {
 interface ProjectProps {
     title: string;
     description: string;
-    image: string;
+    image: any;
     link: string;
     public: boolean;
 }
 
 const ProjectsList: ProjectProps[] = [
-    {
-        title: "Chatroom",
-        description: "Chatrrom CLI application using python. It is a simple chatroom application where multiple users can connect to the server and chat with each other. You can also send images which is converted to ASCII art.",
-        image: "",
-        link: "https://github.com/Matsuel/b2-reseau-2023/tree/main/Tp6/Chat",
-        public: true
-    },
     {
         title: "WhatsappHappen",
         description: "WhatsappHappen is a web application, clone of Whatsapp. It is a chat application where users can chat with each other. They can send messages, images, videos and documents, react to messages with react-emoji-picker and also see the online status of the users. It is built using Next.js (React), Css and Express.js.",
@@ -43,20 +38,26 @@ const ProjectsList: ProjectProps[] = [
         public: true
     },
     {
+        title: "Projet dev B2",
+        description: "This project involved developing a website for rating driving school instructors. Three user paths are available: driving schools can register new students, view reviews. Students can search for a driving school using our search tool, rate their instructor, and respond to questions from future students. We also implemented a pseudo-ranking system.",
+        image: "",
+        link: "https://github.com/Matsuel/Projet_DevB2",
+        public: true
+    },
+    {
         title: "Portfolio",
         description: "Portfolio website to showcase my projects and skills. It is built using Next.js (React), Css",
-        image: "",
+        image: Portfolio,
         link: "https://github.com/Matsuel/Portfolio",
         public: true
     },
     {
-        title: "Projet dev B2",
-        description: "This project consisted of developing a website allowing you to rate your driving school instructors, 3 user paths are available, driving schools can register new students, consult reviews. Students can search for a driving school via our search tool, they can also rate their instructor, and just like people looking for a driving school, they can receive and answer questions from future students. We also developed a pseudo-ranking system.",
+        title: "Chatroom",
+        description: "Chatrrom CLI application using python. It is a simple chatroom application where multiple users can connect to the server and chat with each other. You can also send images which is converted to ASCII art.",
         image: "",
-        link: "https://github.com/Matsuel/Projet_DevB2",
+        link: "https://github.com/Matsuel/b2-reseau-2023/tree/main/Tp6/Chat",
         public: true
-    }
-
+    },
 ]
 
 const Projects = ({ }: ProjectsProps) => {
@@ -79,10 +80,17 @@ const Projects = ({ }: ProjectsProps) => {
             <div className={styles.Projects_list}>
                 {ProjectsList.map((project, index) => (
                     <div key={index} className={styles.Projects_card} onClick={() => showImage(index)}>
-                        <h2>{project.title}</h2>
-                        <p>{project.description}</p>
+                        { project.image !== "" && <Image src={project.image} alt={project.title} />}
+                        <h2 className={styles.Projects_title}>
+                            {project.title}
+                        </h2>
+                        <p className={styles.Projects_description}>
+                            {project.description}
+                        </p>
                         {project.public &&
-                            <Button href={project.link} icon={faGithub} name="Github" index={index} />
+                            <div className={styles.Projects_button}>
+                                <Button href={project.link} icon={faGithub} name="Github" index={index} />
+                            </div>
                         }
                     </div>
                 ))}
