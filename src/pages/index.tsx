@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import Navbar from "@/Components/Navbar/Navbar";
 import Hero from "@/Components/Hero/Hero";
 import Skills from "@/Components/Skills/Skills";
+import Project from "@/Components/Projects/Projects";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Skills />
+        <Project />
       </div>
     </>
   );

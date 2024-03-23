@@ -1,0 +1,22 @@
+.Projects_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    .Projects_top {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 12px;        
+    }
+}
