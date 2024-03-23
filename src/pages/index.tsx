@@ -1,9 +1,9 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/Components/Navbar/Navbar";
-import Hero from "@/Components/Hero/Hero";
-import Skills from "@/Components/Skills/Skills";
-import Project from "@/Components/Projects/Projects";
+import Hero from "@/Sections/Hero/Hero";
+import Skills from "@/Sections/Skills/Skills";
+import Project from "@/Sections/Projects/Projects";
 
 export default function Home() {
   return (

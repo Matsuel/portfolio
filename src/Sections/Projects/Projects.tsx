@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './Projects.module.scss';
-import Title from '../Title/Title';
+import Title from '../../Components/Title/Title';
 import { Emoji } from 'emoji-picker-react';
 
 interface ProjectsProps {
