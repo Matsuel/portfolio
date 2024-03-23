@@ -19,4 +19,13 @@
         padding: 1rem;
         border-radius: 12px;        
     }
+
+    .Projects_list {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: #000;
+    }
 }

@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Achievements from './Achievements/Achievements';
 import Title from '../../Components/Title/Title';
+import Button from '@/Components/Button/Button';
 
 interface HeroProps {
 
@@ -55,13 +56,7 @@ const Hero = ({ }: HeroProps) => {
                     </h2>
                     <div className={styles.Hero_socials}>
                         {Socials.map((social, index) => (
-                            <Link key={index} href={social.href} className={styles.Hero_social} target={social.href.includes('mailto') ? "" : "_blank"}>
-                                <div className={styles.Hero_social_top}>
-                                    <FontAwesomeIcon icon={social.icon} className={styles.Hero_social_icon} />
-                                    <span className={styles.Hero_social_name}>{social.name}</span>
-                                </div>
-                                <div className={styles.Hero_social_line}></div>
-                            </Link>
+                            <Button key={index} href={social.href} icon={social.icon} name={social.name} index={index} />
                         ))}
                     </div>
 
