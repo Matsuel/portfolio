@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styles from './Skills.module.scss';
 import Title from '../Title/Title';
@@ -14,6 +14,20 @@ const Skills = ({ }: SkillsProps) => {
     const images = require.context('../../assets/skills', true);
     const imagesKeys = images.keys();
 
+    const [isMooseDown, setIsMooseDown] = useState<boolean[]>(new Array(imagesKeys.length).fill(false));
+
+    const handleMouseDown = (index: number) => {
+        const newMouseDown = [...isMooseDown];
+        newMouseDown[index] = !newMouseDown[index]
+        setIsMooseDown(newMouseDown);
+    }
+
+    const handleMouseLeave = (index: number) => {
+        const newMouseDown = [...isMooseDown];
+        newMouseDown[index] = false;
+        setIsMooseDown(newMouseDown);
+    }
+
 
     return (
         <section id='skills' className={styles.Skills_container}>
@@ -24,7 +38,13 @@ const Skills = ({ }: SkillsProps) => {
             <div className={styles.Skills}>
                 {imagesKeys.map((key, index) => {
                     return (
-                        <div key={index} className={styles.Skills_item}>
+                        <div
+                            key={index}
+                            className={styles.Skills_item + " " + (isMooseDown[index] ? styles.Skills_item_active : '')}
+                            onMouseDown={() => handleMouseDown(index)}
+                            onMouseUp={() => handleMouseDown(index)}
+                            onMouseLeave={() => handleMouseLeave(index)}
+                        >
                             <Image src={images(key).default} alt={key} />
                         </div>
                     );
