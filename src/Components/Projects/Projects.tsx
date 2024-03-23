@@ -10,13 +10,13 @@ interface ProjectsProps {
 
 const Projects = ({ }: ProjectsProps) => {
     return (
-        <div className={styles.Projects_container}>
+        <section id='projects' className={styles.Projects_container}>
             <div className={styles.Projects_top}>
                 <Title content="Projects" />
                 <Emoji unified="1f680" size={70} />
             </div>
             
-        </div>
+        </section>
     );
 };
 
