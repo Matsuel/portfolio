@@ -1,12 +1,14 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import styles from './Projects.module.scss';
 import Title from '../../Components/Title/Title';
 import { Emoji } from 'emoji-picker-react';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faCircleChevronLeft, faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Button from '@/Components/Button/Button';
 import Portfolio from '@/assets/projects/portfolio.png';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface ProjectsProps {
 
@@ -61,6 +63,15 @@ const ProjectsList: ProjectProps[] = [
 const Projects = ({ }: ProjectsProps) => {
 
     //scroll horizontal quand on voit etirer la section
+    const navRef = useRef<HTMLDivElement>(null);
+
+    const handleNav = (direction:string) => {
+        if (direction === 'left') {
+            navRef.current ? (navRef.current.scrollBy({left: -200, behavior: 'smooth'})) : null;
+        } else {
+            navRef.current ? (navRef.current.scrollBy({left: 200, behavior: 'smooth'})) : null;
+        }
+    }
 
     return (
         <section id='projects' className={styles.Projects_container}>
@@ -69,10 +80,10 @@ const Projects = ({ }: ProjectsProps) => {
                 <Emoji unified="1f680" size={70} />
             </div>
 
-            <div className={styles.Projects_list}>
+            <div className={styles.Projects_list} ref={navRef}>
                 {ProjectsList.map((project, index) => (
                     <div key={index} className={styles.Projects_card}>
-                        { project.image !== "" && <Image src={project.image} alt={project.title} />}
+                        {project.image !== "" && <Image src={project.image} alt={project.title} />}
                         <h2 className={styles.Projects_title}>
                             {project.title}
                         </h2>
@@ -86,6 +97,15 @@ const Projects = ({ }: ProjectsProps) => {
                         }
                     </div>
                 ))}
+            </div>
+
+            <div className={styles.Projects_scroll}>
+                <button onClick={() => handleNav('left')} className={styles.Projects_scroll_button}>
+                    <FontAwesomeIcon icon={faCircleChevronLeft} width={50} color='black' />
+                </button>
+                <button onClick={() => handleNav('right')} className={styles.Projects_scroll_button}>
+                    <FontAwesomeIcon icon={faCircleChevronRight} width={50} color='black' />
+                </button>
             </div>
         </section>
     );

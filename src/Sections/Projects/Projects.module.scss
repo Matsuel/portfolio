@@ -46,6 +46,8 @@
             border-radius: 12px;
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
             background-color: #fff;
+            margin-bottom: 20px;
+            margin-top: 20px;
             gap: 15px;
 
             img {
@@ -73,6 +75,21 @@
                 align-items: center;
             }
 
+        }
+    }
+
+    .Projects_scroll {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .Projects_scroll_button {
+            all: unset;
+            cursor: pointer;
         }
     }
 }
