@@ -90,6 +90,13 @@
         .Projects_scroll_button {
             all: unset;
             cursor: pointer;
+            color: #000;
         }
+
+        .Projects_scroll_button:hover {
+            color: #808080;
+        }
+
+        
     }
 }

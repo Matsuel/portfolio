@@ -65,11 +65,11 @@ const Projects = ({ }: ProjectsProps) => {
     //scroll horizontal quand on voit etirer la section
     const navRef = useRef<HTMLDivElement>(null);
 
-    const handleNav = (direction:string) => {
+    const handleNav = (direction: string) => {
         if (direction === 'left') {
-            navRef.current ? (navRef.current.scrollBy({left: -200, behavior: 'smooth'})) : null;
+            navRef.current ? (navRef.current.scrollBy({ left: -200, behavior: 'smooth' })) : null;
         } else {
-            navRef.current ? (navRef.current.scrollBy({left: 200, behavior: 'smooth'})) : null;
+            navRef.current ? (navRef.current.scrollBy({ left: 200, behavior: 'smooth' })) : null;
         }
     }
 
@@ -100,12 +100,8 @@ const Projects = ({ }: ProjectsProps) => {
             </div>
 
             <div className={styles.Projects_scroll}>
-                <button onClick={() => handleNav('left')} className={styles.Projects_scroll_button}>
-                    <FontAwesomeIcon icon={faCircleChevronLeft} width={50} color='black' />
-                </button>
-                <button onClick={() => handleNav('right')} className={styles.Projects_scroll_button}>
-                    <FontAwesomeIcon icon={faCircleChevronRight} width={50} color='black' />
-                </button>
+                <FontAwesomeIcon icon={faCircleChevronLeft} width={50} color='black' onClick={() => handleNav('left')} className={styles.Projects_scroll_button} />
+                <FontAwesomeIcon icon={faCircleChevronRight} width={50} color='black' onClick={() => handleNav('right')} className={styles.Projects_scroll_button} />
             </div>
         </section>
     );
