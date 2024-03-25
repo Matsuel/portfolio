@@ -1,5 +1,4 @@
 .Hero_container {
-    // margin-top: 5%;
     width: 80%;
     height: auto;
     min-height: 100vh;
@@ -83,6 +82,7 @@
 @media screen and (max-width: 1024px) {
     .Hero_container {
         width: 90%;
+        margin-top: 12%;
 
         .Hero {
             gap: 20px;
@@ -110,7 +110,6 @@
 
 @media screen and (max-width: 768px) {
     .Hero_container {
-        margin-top: 8%;
         .Hero {
             flex-direction: column;
             gap: 20px;
