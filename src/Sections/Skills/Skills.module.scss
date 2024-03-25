@@ -25,11 +25,11 @@
     .Skills {
         width: 80%;
         height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-gap: 50px;
+        justify-items: center;
+        align-items: center;
 
         .Skills_item {
             margin: 30px;
@@ -72,4 +72,13 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .Skills_container {
+        .Skills {
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            grid-gap: 40px;
+        }
+    }   
 }
