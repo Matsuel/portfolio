@@ -2,9 +2,14 @@
     width: 80%;
     height: auto;
     min-height: 12%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-around;
+    // align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
     align-items: center;
     
     
@@ -37,5 +42,51 @@
         .Achievement_title {
             font-size: 1.2rem;
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Achievements_container {
+        grid-template-columns: repeat(3, 1fr);
+
+        .Achievement {
+            width: 30%;
+
+            .Achievement_value {
+                font-size: 2rem;
+            }
+
+            .Achievement_title {
+                font-size: 1rem;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .Achievements_container {
+        grid-template-columns: repeat(2, 1fr);
+
+        .Achievement {
+            width: 40%;
+
+            .Achievement_value {
+                font-size: 1.5rem;
+            }
+
+            .Achievement_title {
+                font-size: 0.8rem;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 480px) {
+    .Achievement_title {
+        font-size: 0.6rem;
+    }
+
+    .Achievement_value {
+        font-size: 1rem;
     }
 }
