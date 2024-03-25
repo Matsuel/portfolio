@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { createRef, useState } from 'react';
 
 import styles from './Navbar.module.scss';
 import Image from 'next/image';
@@ -45,9 +45,22 @@ const Links = [
 const Navbar = ({ }: NavbarProps) => {
 
     const [activeLink, setActiveLink] = useState<number>(-1);
+    const navRef = createRef<HTMLDivElement>();
+
+    window.onwheel = (e) => {
+        if (e.deltaY > 0) {
+            if (navRef.current) {
+                navRef.current.style.top = "-100px";
+            }
+        } else if (e.deltaY < 0) {
+            if (navRef.current) {
+                navRef.current.style.top = "0";
+            }
+        }
+    }
 
     return (
-        <div className={styles.Navbar_container}>
+        <div className={styles.Navbar_container} ref={navRef}>
             <Link className={styles.Navbar_title} href="/">
                 <Image src={Logo} alt="Logo" />
                 Matheo Lang
