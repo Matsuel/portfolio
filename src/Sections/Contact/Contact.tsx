@@ -27,7 +27,7 @@ const Contact = ({ }: ContactProps) => {
     }
 
     return (
-        <div className={styles.Contact_container}>
+        <section id="contact" className={styles.Contact_container}>
             <div className={styles.Contact_top}>
                 <Title content="Contact" />
                 <Emoji unified="1f4f1" size={70} />
@@ -88,7 +88,7 @@ const Contact = ({ }: ContactProps) => {
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
     );
 };
 
