@@ -1,0 +1,113 @@
+.Contact_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5%;
+
+    .Contact_top {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    .Contact {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+
+        .Contact_title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: transparent;
+            -webkit-text-stroke: 1.5px #000;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Contact_form {
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            background-color: #f2f4f7;
+            padding: 2rem;
+            border-radius: 12px;
+
+            .Contact_info {
+                width: 80%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .Contact_input {
+                background-color: #fff;
+                width: 80%;
+                height: 50px;
+                padding: 1rem;
+                font-size: 1rem;
+                border: none;
+                border-radius: 12px;    
+                outline: none;
+                color: #000;
+            }
+
+            .Contact_area {
+                background-color: #fff;
+                width: 80%;
+                height: 150px;
+                padding: 1rem;
+                font-size: 1rem;
+                border: none;
+                outline: none;
+                color: #000;
+                resize: none;
+            }
+
+            .Contact_button {
+                width: 30%;
+                height: 50px;
+                background-color: #fff;
+                color: #808080;
+                font-size: 1rem;
+                font-weight: 700;
+                border: none;
+                border-radius: 12px;
+                cursor: pointer;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
+}
