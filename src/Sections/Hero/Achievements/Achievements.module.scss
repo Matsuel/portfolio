@@ -71,7 +71,7 @@
             width: 40%;
 
             .Achievement_value {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
 
             .Achievement_title {
@@ -82,11 +82,20 @@
 }
 
 @media screen and (max-width: 480px) {
-    .Achievement_title {
-        font-size: 0.6rem;
-    }
+    .Achievements_container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
 
-    .Achievement_value {
-        font-size: 1rem;
+        .Achievement {
+            width: 80%;
+
+            .Achievement_value {
+                font-size: 0.9rem;
+            }
+
+            .Achievement_title {
+                font-size: 0.6rem;
+            }
+        }
     }
 }
