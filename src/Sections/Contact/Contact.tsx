@@ -21,6 +21,11 @@ const Contact = ({ }: ContactProps) => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
 
+    const inputsEmpty = () => {
+        const inputs = watch();
+        return Object.values(inputs).every(value => value === '');
+    }
+
     return (
         <div className={styles.Contact_container}>
             <div className={styles.Contact_top}>
@@ -65,19 +70,21 @@ const Contact = ({ }: ContactProps) => {
                         {...register("message", { required: true })}
                     ></textarea>
                     <div className={styles.Contact_buttons}>
-                    <button
-                        type='submit'
-                        className={styles.Contact_button}
-                    >
-                        Send
-                    </button>
-
-                    <button
-                        type='reset'
-                        className={styles.Contact_button}
-                    >
-                        Reset
-                    </button>
+                        <button
+                            type='submit'
+                            className={styles.Contact_button}
+                        >
+                            Send
+                        </button>
+                        
+                        {!inputsEmpty() &&
+                            <button
+                                type='reset'
+                                className={styles.Contact_button}
+                            >
+                                Reset
+                            </button>
+                        }
                     </div>
                 </form>
             </div>
