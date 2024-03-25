@@ -12,6 +12,6 @@ What I really liked about this site was the simplicity of the design which I fin
 ## Todo
 
 1. Finish navbar responsive
-2. Scroll horizontal using onwheel using GSAP
+2. Scroll horizontal using onwheel with GSAP
 3. Create other mode with details on pictures and full text
 4. Send email on submit in form
