@@ -46,6 +46,7 @@ const Achievements = ({ }: AchievementsProps) => {
                 return (
                     <div key={index} className={styles.Achievement}>
                         <h3 className={styles.Achievement_value}>
+                            {typeof window !== 'undefined' && window.innerWidth > 768 ? (
                             <AnimatedNumbers
                                 animateToNumber={parseInt(achievement.value)}
                                 locale='en'
@@ -54,6 +55,9 @@ const Achievements = ({ }: AchievementsProps) => {
                                     duration: index + 0.3,
                                   })}
                             />
+                            ) : (
+                                parseInt(achievement.value)
+                            )}
                             {achievement.postfix}
                         </h3>
                         <h3 className={styles.Achievement_title}>{achievement.title}</h3>
