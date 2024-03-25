@@ -121,3 +121,40 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px){
+    .Contact_container {
+        .Contact {
+            .Contact_form {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Contact_container {
+        .Contact {
+            .Contact_form {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .Contact_container {
+        .Contact {
+            width: 90%;
+            .Contact_form {
+                width: 100%;
+
+                .Contact_info {
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
