@@ -14,7 +14,7 @@ interface ProjectsProps {
 
 }
 
-interface ProjectProps {
+type ProjectProps = {
     title: string;
     description: string;
     image: any;

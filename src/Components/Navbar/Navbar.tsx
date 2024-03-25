@@ -10,7 +10,13 @@ interface NavbarProps {
 
 }
 
-const Links = [
+type Link = {
+    href: string;
+    label: string;
+    icon: JSX.Element;
+}
+
+const Links: Link[] = [
     {
         href: '/',
         label: 'Home',

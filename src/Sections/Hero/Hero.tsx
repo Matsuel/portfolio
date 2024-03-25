@@ -16,7 +16,7 @@ interface HeroProps {
 
 }
 
-interface Social {
+type Social = {
     href: string;
     icon: any;
     name: string;

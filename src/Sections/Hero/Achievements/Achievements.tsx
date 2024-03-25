@@ -14,7 +14,13 @@ interface AchievementsProps {
 
 }
 
-const AchievementsData = [
+type Achievement = {
+    title: string;
+    value: string;
+    postfix: string;
+}
+
+const AchievementsData: Achievement[] = [
     {
         title: 'Commits',
         value: "4000",
