@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       
       <div className={styles.container}>
-        {/* <Navbar /> */}
+        <Navbar />
         <Hero />
         <Skills />
         <Project />
