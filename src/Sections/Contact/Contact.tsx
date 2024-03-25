@@ -82,7 +82,7 @@ const Contact = ({ }: ContactProps) => {
                                 type='reset'
                                 className={styles.Contact_button}
                             >
-                                Reset
+                                Clear all fields
                             </button>
                         }
                     </div>
