@@ -2,14 +2,25 @@ import React from 'react';
 
 import styles from './Contact.module.scss';
 import Title from '@/Components/Title/Title';
-import EmojiPicker, { Emoji } from 'emoji-picker-react';
-import Button from '@/Components/Button/Button';
+import { Emoji } from 'emoji-picker-react';
+import { useForm, SubmitHandler } from "react-hook-form"
+
+type Inputs = {
+    name: string;
+    firstName: string;
+    email: string;
+    message: string;
+};
 
 interface ContactProps {
 
 }
 
 const Contact = ({ }: ContactProps) => {
+
+    const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
+    const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
+
     return (
         <div className={styles.Contact_container}>
             <div className={styles.Contact_top}>
@@ -18,7 +29,7 @@ const Contact = ({ }: ContactProps) => {
             </div>
 
             <div className={styles.Contact}>
-                <form className={styles.Contact_form}>
+                <form className={styles.Contact_form} onSubmit={handleSubmit(onSubmit)}>
                     <h2 className={styles.Contact_title}>
                         Say Hello
                         <Emoji
@@ -31,11 +42,13 @@ const Contact = ({ }: ContactProps) => {
                             type="text"
                             placeholder="Name"
                             className={styles.Contact_input}
+                            {...register("name", { required: false })}
                         />
                         <input
                             type="text"
                             placeholder="First Name"
                             className={styles.Contact_input}
+                            {...register("firstName", { required: false })}
                         />
                     </div>
                     <input
@@ -43,11 +56,13 @@ const Contact = ({ }: ContactProps) => {
                         placeholder="Email"
                         required
                         className={styles.Contact_input}
+                        {...register("email", { required: true })}
                     />
                     <textarea
                         placeholder="Message"
                         required
                         className={styles.Contact_input + " " + styles.Contact_area}
+                        {...register("message", { required: true })}
                     ></textarea>
                     <button
                         type='submit'
