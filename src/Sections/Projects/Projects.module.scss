@@ -81,24 +81,37 @@
     }
 
     .Projects_scroll {
-        width: 80%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-
-        .Projects_scroll_button {
-            all: unset;
-            cursor: pointer;
-            color: #000;
-        }
-
-        .Projects_scroll_button:hover {
-            color: #808080;
-        }
+        display: none;
 
         
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Projects_container {
+        .Projects_list {
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+
+            .Projects_card {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Projects_container {
+        .Projects_list {
+            width: 100%;
+            .Projects_card {
+                width: 90%;
+
+                .Projects_title {
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }

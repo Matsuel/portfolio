@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 
 import styles from './Projects.module.scss';
 import Title from '../../Components/Title/Title';
