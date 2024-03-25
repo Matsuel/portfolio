@@ -53,6 +53,7 @@
             box-shadow: 0 0 20px #808080;
             cursor: pointer;
             transition: all 0.3s ease-in-out;
+            animation: pulse 0.8s infinite;
         }
 
         .Skills_item_active {
