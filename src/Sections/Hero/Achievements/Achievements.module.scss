@@ -6,13 +6,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    // display: grid;
-    // grid-template-columns: repeat(4, 1fr);
-    // grid-gap: 10px;
-    // justify-items: center;
-    // align-items: center;
-    
+    flex-wrap: wrap;    
     
     background-color: #fff;
     color: #000;
@@ -48,7 +42,6 @@
 
 @media screen and (max-width: 1024px) {
     .Achievements_container {
-        grid-template-columns: repeat(3, 1fr);
 
         .Achievement {
             width: 30%;
@@ -66,7 +59,6 @@
 
 @media screen and (max-width: 768px) {
     .Achievements_container {
-        grid-template-columns: repeat(2, 1fr);
 
         .Achievement {
             width: 40%;
@@ -84,12 +76,7 @@
 
 @media screen and (max-width: 480px) {
     .Achievements_container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5px;
-
         .Achievement {
-            // width: 80%;
-
             .Achievement_value {
                 font-size: 0.9rem;
             }
