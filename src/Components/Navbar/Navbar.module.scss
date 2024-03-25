@@ -10,6 +10,7 @@
     color: #000;
     font-weight: 500;
     font-family: 'Monsterrat', sans-serif;
+    background-color: #fff; 
 
     .Navbar_title {
         width: 15%;
@@ -87,7 +88,6 @@
 
 @media screen and (max-width: 1280px){
     .Navbar_container {
-        margin-top: 2%;
         justify-content: center;
         flex-direction: column;
     }
