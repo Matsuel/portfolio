@@ -21,7 +21,8 @@
     "react-animated-numbers": "^0.18.0",
     "react-dom": "^18",
     "react-hook-form": "^7.51.1",
-    "sass": "^1.72.0"
+    "sass": "^1.72.0",
+    "sharp": "^0.33.3"
   },
   "devDependencies": {
     "@types/node": "^20",

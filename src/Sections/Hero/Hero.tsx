@@ -51,8 +51,8 @@ const Hero = ({ }: HeroProps) => {
                         <Emoji unified='1f468-200d-1f4bb' size={70} />
                     </div>
                     <h2 className={styles.Hero_subtitle}>
-                        I'm a passionate full-stack web and mobile developer based in France. While my expertise primarily lies in back-end development, I'm also open to challenges, including diving into CSS design.
-                        Explore my portfolio to discover my work, and let's bring your projects to life together!
+                        I&apos;m a passionate full-stack web and mobile developer based in France. While my expertise primarily lies in back-end development, I&apos;m also open to challenges, including diving into CSS design.
+                        Explore my portfolio to discover my work, and let&apos;s bring your projects to life together!
                     </h2>
                     <div className={styles.Hero_socials}>
                         {Socials.map((social, index) => (
