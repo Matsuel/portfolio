@@ -89,23 +89,33 @@
                 resize: none;
             }
 
-            .Contact_button {
-                width: 30%;
-                height: 50px;
-                background-color: #fff;
-                color: #808080;
-                font-size: 1rem;
-                font-weight: 700;
-                border: none;
-                border-radius: 12px;
-                cursor: pointer;
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-                transition: all 0.3s ease-in-out;
+            .Contact_buttons {
+                width: 80%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
 
-                &:hover {
-                    background-color: #000;
-                    color: #fff;
-                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                .Contact_button {
+                    width: 30%;
+                    height: 50px;
+                    background-color: #fff;
+                    color: #808080;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    border: none;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                    transition: all 0.3s ease-in-out;
+    
+                    &:hover {
+                        background-color: #000;
+                        color: #fff;
+                        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                    }
                 }
             }
         }

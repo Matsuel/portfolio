@@ -64,12 +64,21 @@ const Contact = ({ }: ContactProps) => {
                         className={styles.Contact_input + " " + styles.Contact_area}
                         {...register("message", { required: true })}
                     ></textarea>
+                    <div className={styles.Contact_buttons}>
                     <button
                         type='submit'
                         className={styles.Contact_button}
                     >
                         Send
                     </button>
+
+                    <button
+                        type='reset'
+                        className={styles.Contact_button}
+                    >
+                        Reset
+                    </button>
+                    </div>
                 </form>
             </div>
         </div>
