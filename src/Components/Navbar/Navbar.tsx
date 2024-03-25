@@ -47,14 +47,16 @@ const Navbar = ({ }: NavbarProps) => {
     const [activeLink, setActiveLink] = useState<number>(-1);
     const navRef = createRef<HTMLDivElement>();
 
-    window.onwheel = (e) => {
-        if (e.deltaY > 0) {
-            if (navRef.current) {
-                navRef.current.style.top = "-100px";
-            }
-        } else if (e.deltaY < 0) {
-            if (navRef.current) {
-                navRef.current.style.top = "0";
+    if (typeof window !== 'undefined') {
+        window.onwheel = (e) => {
+            if (e.deltaY > 0) {
+                if (navRef.current) {
+                    navRef.current.style.top = "-100px";
+                }
+            } else if (e.deltaY < 0) {
+                if (navRef.current) {
+                    navRef.current.style.top = "0";
+                }
             }
         }
     }
