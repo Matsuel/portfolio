@@ -1,40 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio using NextJS and SCSS
 
-## Getting Started
+Website [Link](https://matsuel.netlify.app) here check it now
 
-First, run the development server:
+## Look of this amazing simplist template
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Overview](./src/assets/overview.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Here is the 4th version of my portfolio creating using NextJS and SCSS, the previous versions were no longer to my tastes and were a little outdated in terms of design. On this version I focused on simplicity in order to create a template that would suit me better. This template was created by me while taking up the idea of ​​an "eco-friendly" site based on the site of [Niji](https://www.niji.fr/fr/).
+What I really liked about this site was the simplicity of the design which I find super clean.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Todo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Finish navbar responsive
+2. Scroll horizontal using onwheel using GSAP
+3. Create other mode with details on pictures and full text
+4. Send email on submit in form
