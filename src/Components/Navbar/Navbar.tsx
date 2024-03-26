@@ -5,18 +5,15 @@ import Image from 'next/image';
 import Logo from '@/assets/logo.png';
 import Link from 'next/link';
 import MenuSvg from '@/assets/menu.svg';
+import { LinkType } from '@/types/Navbar';
 
 interface NavbarProps {
 
 }
 
-type Link = {
-    href: string;
-    label: string;
-    icon: JSX.Element;
-}
 
-const Links: Link[] = [
+
+const Links: LinkType[] = [
     {
         href: '/',
         label: 'Home',
@@ -94,12 +91,18 @@ export default Navbar;
 interface ModalProps {
     isOpen: boolean;
     onClose: () => void;
-    links: Link[];
+    links: LinkType[];
     activeLink: number;
     setActiveLink: (index: number) => void;
 }
 
-const Modal = ({ isOpen, onClose, links, activeLink, setActiveLink }: ModalProps) => {
+const Modal = ({ 
+    isOpen, 
+    onClose, 
+    links, 
+    activeLink, 
+    setActiveLink 
+}: ModalProps) => {
     return (
         <>
             {isOpen && (

@@ -9,20 +9,13 @@ import Button from '@/Components/Button/Button';
 import Portfolio from '@/assets/projects/portfolio.png';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Project } from '@/types/Project';
 
 interface ProjectsProps {
 
 }
 
-type ProjectProps = {
-    title: string;
-    description: string;
-    image: any;
-    link: string;
-    public: boolean;
-}
-
-const ProjectsList: ProjectProps[] = [
+const ProjectsList: Project[] = [
     {
         title: "WhatsappHappen",
         description: "WhatsappHappen is a web application, clone of Whatsapp. It is a chat application where users can chat with each other. They can send messages, images, videos and documents, react to messages with react-emoji-picker and also see the online status of the users. It is built using Next.js (React), Css and Express.js.",

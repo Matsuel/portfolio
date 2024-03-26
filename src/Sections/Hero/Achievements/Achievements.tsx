@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from './Achievements.module.scss';
 import dynamic from 'next/dynamic';
+import { Achievement } from '@/types/Achievement';
 
 const AnimatedNumbers = dynamic(
     () => {
@@ -14,11 +15,7 @@ interface AchievementsProps {
 
 }
 
-type Achievement = {
-    title: string;
-    value: string;
-    postfix: string;
-}
+
 
 const AchievementsData: Achievement[] = [
     {

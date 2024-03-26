@@ -4,13 +4,9 @@ import styles from './Contact.module.scss';
 import Title from '@/Components/Title/Title';
 import { Emoji } from 'emoji-picker-react';
 import { useForm, SubmitHandler } from "react-hook-form"
+import { Inputs } from '@/types/Contact';
 
-type Inputs = {
-    name: string;
-    firstName: string;
-    email: string;
-    message: string;
-};
+
 
 interface ContactProps {
 

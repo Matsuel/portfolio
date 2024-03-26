@@ -8,16 +8,13 @@ import { faAt } from '@fortawesome/free-solid-svg-icons';
 import Achievements from './Achievements/Achievements';
 import Title from '../../Components/Title/Title';
 import Button from '@/Components/Button/Button';
+import { Social } from '@/types/Hero';
 
 interface HeroProps {
 
 }
 
-type Social = {
-    href: string;
-    icon: any;
-    name: string;
-}
+
 
 const Socials: Social[] = [
     {

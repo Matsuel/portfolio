@@ -6,7 +6,9 @@ interface TitleProps {
     content: string;
 }
 
-const Title = ({ content }: TitleProps) => {
+const Title = ({
+    content
+}: TitleProps) => {
     return (
         <>
             <h1 className={styles.Title}>

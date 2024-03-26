@@ -11,7 +11,12 @@ interface ButtonProps {
     name: string;
 }
 
-const Button = ({ index, href, icon, name }: ButtonProps) => {
+const Button = ({
+    index,
+    href,
+    icon,
+    name
+}: ButtonProps) => {
 
     return (
         <div className={styles.Button_container}>
