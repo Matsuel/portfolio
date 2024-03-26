@@ -78,6 +78,11 @@
             border: 1px solid var(--border);
             transition: color 0.3s ease-in-out;
         }
+
+    }
+
+    .Navbar_menu {
+        display: none;
     }
 }
 
@@ -120,8 +125,33 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom-right-radius: var(--radius);;
+        border-bottom-right-radius: var(--radius);
+
+        .Navbar_links {
+            display: none;
+        }
+    
+        .Navbar_title {
+            display: none;
+        }
+
+        .Navbar_menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: var(--text);
+            transition: color 0.3s ease-in-out;
+
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
     }   
+
+    
 
     .Modal_container {
         position: fixed;
