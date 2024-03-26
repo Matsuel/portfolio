@@ -1,10 +1,11 @@
-import React, { createRef, useState } from 'react';
+import React, { createRef, useEffect, useState } from 'react';
 
 import styles from './Navbar.module.scss';
 import Image from 'next/image';
 import LogoHigh from '@/assets/logo-high.png';
 import Logo from '@/assets/logo.png';
 import Link from 'next/link';
+import MenuSvg from '@/assets/menu.svg';
 
 interface NavbarProps {
 
@@ -51,6 +52,8 @@ const Links: Link[] = [
 const Navbar = ({ }: NavbarProps) => {
 
     const [activeLink, setActiveLink] = useState<number>(-1);
+    const [isDesktop, setIsDesktop] = useState<boolean>(false);
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
     const navRef = createRef<HTMLDivElement>();
 
     if (typeof window !== 'undefined') {
@@ -67,25 +70,73 @@ const Navbar = ({ }: NavbarProps) => {
         }
     }
 
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            if (window.innerWidth > 768) {
+                setIsDesktop(true);
+            } else {
+                setIsDesktop(false);
+            }
+        }
+    }, []);
+
     return (
+        <>
         <div className={styles.Navbar_container} ref={navRef}>
-            <Link className={styles.Navbar_title} href="/">
-                <Image src={Logo} alt="Logo" />
-                Matheo Lang
-            </Link>
-
-            <div className={styles.Navbar_links}>
-                {Links.map((link, index) => (
-                    <Link key={index} href={link.href} className={styles.Navbar_link + " " + (activeLink === index ? styles.Navbar_linkActive : "")} onClick={() => setActiveLink(index)} >
-                        {link.icon}
-                        {link.label}
+            {isDesktop ? (
+                <>
+                    <Link className={styles.Navbar_title} href="/">
+                        <Image src={Logo} alt="Logo" />
+                        Matheo Lang
                     </Link>
-                ))}
-            </div>
 
+                    <div className={styles.Navbar_links}>
+                        {Links.map((link, index) => (
+                            <Link key={index} href={link.href} className={styles.Navbar_link + " " + (activeLink === index ? styles.Navbar_linkActive : "")} onClick={() => setActiveLink(index)} >
+                                {link.icon}
+                                {link.label}
+                            </Link>
+                        ))}
+                    </div>
+                </>
+            ) : (
+                <>
+                    <Image src={MenuSvg} alt="Menu" className={styles.Navbar_menu} onClick={() => setIsModalOpen(!isModalOpen)} />
+                    <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} links={Links} activeLink={activeLink} setActiveLink={setActiveLink} />
+                </>
 
+            )}
         </div>
+        </>
     );
 };
 
 export default Navbar;
+
+interface ModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+    links: Link[];
+    activeLink: number;
+    setActiveLink: (index: number) => void;
+}
+
+const Modal = ({ isOpen, onClose, links, activeLink, setActiveLink }: ModalProps) => {
+    return (
+        <>
+            {isOpen && (
+                <div className={styles.Modal_container}>
+                    {
+                        links.map((link, index) => (
+                            <Link key={index} href={link.href} className={styles.Modal_link+ " " + (activeLink === index ? styles.Modal_linkActive : "")} onClick={() => { setActiveLink(index); onClose(); }}>
+                                {link.icon}
+                                {link.label}
+                            </Link>
+                        ))
+                    }
+                </div>
+            )}
+
+        </>
+    );
+}
