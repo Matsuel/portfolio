@@ -11,7 +11,7 @@
     font-weight: 500;
     font-family: 'Monsterrat', sans-serif;
     background-color: var(--background); 
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition);
 
     .Navbar_title {
         width: 15%;
@@ -68,6 +68,7 @@
         }
 
         .Navbar_link:hover {
+            color: var(--default-text);
             border-radius: var(--radius);;
             border: 1px solid var(--border);
         }
