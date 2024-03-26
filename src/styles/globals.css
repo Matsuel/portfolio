@@ -3,6 +3,17 @@
   src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 }
 
+:root{
+  --background: #fff;
+  --background-hover: #000;
+  --default-text: #000;
+  --text: #808080;
+  --text-effect : transparent;
+  --border: #b2b2b3;
+  --shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

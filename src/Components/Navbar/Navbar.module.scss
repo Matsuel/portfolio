@@ -7,16 +7,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #000;
+    color: var(--default-text);
     font-weight: 500;
     font-family: 'Monsterrat', sans-serif;
-    background-color: #fff; 
+    background-color: var(--background); 
     transition: all 0.3s ease-in-out;
 
     .Navbar_title {
         width: 15%;
         height: 100%;
-        background-color: #fff;
+        background-color: var(--background);
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -37,7 +37,7 @@
     .Navbar_links {
         width: 30%;
         height: 100%;
-        background-color: #fff;
+        background-color: var(--background);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -48,7 +48,7 @@
             text-decoration: none;
             outline: none;
             border: none;
-            color: #808080;
+            color: var(--text);
             font-size: 1.3rem;
             font-weight: 500;
             cursor: pointer;
@@ -69,13 +69,13 @@
 
         .Navbar_link:hover {
             border-radius: 12px;
-            border: 1px solid #b2b2b3;
+            border: 1px solid var(--border);
         }
 
         .Navbar_linkActive {
-            color: #000;
+            color: var(--default-text);
             border-radius: 12px;
-            border: 1px solid #b2b2b3;
+            border: 1px solid var(--border);
             transition: color 0.3s ease-in-out;
         }
     }
@@ -129,7 +129,7 @@
         left: 0;
         width: auto;
         height: auto;
-        background-color: #fff;
+        background-color: var(--background);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -139,7 +139,7 @@
             text-decoration: none;
             outline: none;
             border: none;
-            color: #808080;
+            color: var(--text);
             font-size: 1.3rem;
             font-weight: 500;
             cursor: pointer;
@@ -160,13 +160,13 @@
 
         .Modal_link:hover {
             border-radius: 12px;
-            border: 1px solid #b2b2b3;
+            border: 1px solid var(--border);
         }
 
         .Modal_linkActive {
-            color: #000;
+            color: var(--default-text);
             border-radius: 12px;
-            border: 1px solid #b2b2b3;
+            border: 1px solid var(--border);
             transition: color 0.3s ease-in-out;
         }
     }

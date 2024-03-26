@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--background);;
   background-image: url("../assets/dot.svg");
   background-attachment: fixed;
 }

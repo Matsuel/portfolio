@@ -17,7 +17,7 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
-        background-color: #fff;
+        background-color: var(--background);;
         padding: 1rem;
         border-radius: 12px;        
     }
@@ -38,8 +38,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #fff;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            background-color: var(--background);;
+            box-shadow: var(--shadow);;
             border-radius: 12px;
             transition: all 0.3s ease-in-out;
 
@@ -50,7 +50,7 @@
         }
 
         .Skills_item:hover {
-            box-shadow: 0 0 20px #808080;
+            box-shadow: 0 0 20px var(--text);;
             cursor: pointer;
             transition: all 0.3s ease-in-out;
             animation: pulse 0.8s infinite;
