@@ -1,13 +1,10 @@
 import React from 'react';
 import styles from './Hero.module.scss';
-import LogoHigh from '@/assets/logo-high.png';
 import Logo from '@/assets/logo.png';
 import Image from 'next/image';
 import { Emoji } from 'emoji-picker-react';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faAt } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Achievements from './Achievements/Achievements';
 import Title from '../../Components/Title/Title';
 import Button from '@/Components/Button/Button';

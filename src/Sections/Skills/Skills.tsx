@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styles from './Skills.module.scss';
 import Title from '../../Components/Title/Title';
 import Image from 'next/image';
-import EmojiPicker, { Emoji } from 'emoji-picker-react';
+import { Emoji } from 'emoji-picker-react';
 
 interface SkillsProps {
 
