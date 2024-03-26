@@ -109,7 +109,7 @@
                     border-radius: var(--radius);;
                     cursor: pointer;
                     box-shadow: var(--shadow);;
-                    transition: all 0.3s ease-in-out;
+                    transition: var(--transition);
     
                     &:hover {
                         background-color: var(--background-hover);;

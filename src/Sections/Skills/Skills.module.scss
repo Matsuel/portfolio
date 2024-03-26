@@ -41,7 +41,7 @@
             background-color: var(--background);;
             box-shadow: var(--shadow);;
             border-radius: var(--radius);;
-            transition: all 0.3s ease-in-out;
+            transition: var(--transition);
 
             img {
                 width: 60%;
@@ -52,7 +52,7 @@
         .Skills_item:hover {
             box-shadow: 0 0 20px var(--text);;
             cursor: pointer;
-            transition: all 0.3s ease-in-out;
+            transition: var(--transition);
             animation: pulse 0.8s infinite;
         }
 
