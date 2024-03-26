@@ -81,9 +81,17 @@
     }
 
     .Projects_scroll {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 
-        
+    .Projects_scroll_button:hover {
+        cursor: pointer;
+        color: var(--text);
+        transition: var(--transition);
     }
 }
 
@@ -98,6 +106,10 @@
                 width: 80%;
             }
         }
+
+        .Projects_scroll {
+            display: none;   
+        } 
     }
 }
 
@@ -112,6 +124,6 @@
                     font-size: 2rem;
                 }
             }
-        }
+        }       
     }
 }

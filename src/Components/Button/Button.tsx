@@ -12,6 +12,7 @@ interface ButtonProps {
 }
 
 const Button = ({ index, href, icon, name }: ButtonProps) => {
+
     return (
         <div className={styles.Button_container}>
             <Link key={index} href={href} className={styles.Button_social} target={href.includes('mailto') ? "" : "_blank"}>
