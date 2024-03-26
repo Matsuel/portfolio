@@ -12,6 +12,7 @@
   --border: #b2b2b3;
   --shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.3);
+  --radius: 12px;
 }
 
 * {

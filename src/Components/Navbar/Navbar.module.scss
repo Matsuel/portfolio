@@ -23,7 +23,7 @@
         align-items: center;
         gap: 20px;
         outline: none;
-        border-bottom-right-radius: 12px;
+        border-bottom-right-radius: var(--radius);;
         font-size: 1.5rem;
 
 
@@ -42,7 +42,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        border-bottom-left-radius: 12px;
+        border-bottom-left-radius: var(--radius);;
 
         .Navbar_link {
             text-decoration: none;
@@ -68,13 +68,13 @@
         }
 
         .Navbar_link:hover {
-            border-radius: 12px;
+            border-radius: var(--radius);;
             border: 1px solid var(--border);
         }
 
         .Navbar_linkActive {
             color: var(--default-text);
-            border-radius: 12px;
+            border-radius: var(--radius);;
             border: 1px solid var(--border);
             transition: color 0.3s ease-in-out;
         }
@@ -120,7 +120,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom-right-radius: 12px;
+        border-bottom-right-radius: var(--radius);;
     }   
 
     .Modal_container {
@@ -159,13 +159,13 @@
         }
 
         .Modal_link:hover {
-            border-radius: 12px;
+            border-radius: var(--radius);;
             border: 1px solid var(--border);
         }
 
         .Modal_linkActive {
             color: var(--default-text);
-            border-radius: 12px;
+            border-radius: var(--radius);;
             border: 1px solid var(--border);
             transition: color 0.3s ease-in-out;
         }

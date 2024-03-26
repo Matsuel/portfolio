@@ -2,7 +2,7 @@
     width: 80%;
     height: auto;
     min-height: 100vh;
-    border-radius: 12px;
+    border-radius: var(--radius);;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@
                 align-items: center;
                 gap: 20px;
                 background-color: var(--background);;
-                border-radius: 12px;
+                border-radius: var(--radius);;
             }
 
             .Hero_subtitle {
