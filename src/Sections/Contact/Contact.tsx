@@ -36,7 +36,7 @@ const Contact = ({ }: ContactProps) => {
             <div className={styles.Contact}>
                 <form className={styles.Contact_form} onSubmit={handleSubmit(onSubmit)}>
                     <h2 className={styles.Contact_title}>
-                        Say Hello
+                        Say Hello (not yet functional)
                         <Emoji
                             unified="1f44b"
                             size={30}
