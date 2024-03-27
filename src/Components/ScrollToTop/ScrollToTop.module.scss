@@ -61,3 +61,14 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .ScrollToTop_link {
+        display: none;
+    }
+
+    .ScrollToTop_fadeOut {
+        display: none;
+    }
+    
+}
