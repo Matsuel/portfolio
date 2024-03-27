@@ -4,4 +4,5 @@ export type Project = {
     image: any;
     link: string;
     public: boolean;
+    emoji?: string;
 }
