@@ -28,10 +28,17 @@ const ScrollToTop = ({ }: ScrollToTopProps) => {
         };
     }, []);
 
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     return (
-        <Link href="/" className={styles.ScrollToTop_link + (isFadingOut ? ' ' + styles.ScrollToTop_fadeOut : '')}>
+        <div className={styles.ScrollToTop_link + (isFadingOut ? ' ' + styles.ScrollToTop_fadeOut : '')} onClick={goToTop}>
             <FontAwesomeIcon icon={faArrowUp} className={styles.ScrollToTop_icon} />
-        </Link>
+        </div>
     );
 };
 

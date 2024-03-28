@@ -37,7 +37,7 @@ const Socials: Social[] = [
 const Hero = ({ }: HeroProps) => {
 
     return (
-        <div className={styles.Hero_container}>
+        <section id='hero' className={styles.Hero_container}>
             <div className={styles.Hero}>
                 <div className={styles.Hero_content}>
                     <div className={styles.Hero_top}>
@@ -61,7 +61,7 @@ const Hero = ({ }: HeroProps) => {
 
             </div>
             <Achievements />
-        </div>
+        </section>
     );
 };
 
