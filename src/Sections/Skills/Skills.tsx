@@ -41,6 +41,7 @@ const Skills = () => {
                             onMouseUp={() => handleMouseDown(index)}
                             onMouseLeave={() => handleMouseLeave(index)}
                             role='button'
+                            tabIndex={0}
                         >
                             <Image src={images(key).default} alt={key} />
                         </div>
