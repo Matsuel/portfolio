@@ -5,6 +5,7 @@ import Hero from "@/Sections/Hero/Hero";
 import Skills from "@/Sections/Skills/Skills";
 import Project from "@/Sections/Projects/Projects";
 import ScrollToTop from "@/Components/ScrollToTop/ScrollToTop";
+import Work from "@/Sections/Work/Work";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <Skills />
         <Project />
+        <Work />
         <ScrollToTop />
       </div>
     </>

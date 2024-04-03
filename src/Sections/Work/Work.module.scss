@@ -1,0 +1,47 @@
+.Work_container {
+    padding-top: 5%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 5%;
+
+    .Work_top {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: var(--background);;
+        padding: 1rem;
+        border-radius: var(--radius);;  
+    }
+
+    .Works {
+        width: 80%;
+        height: auto;
+        display: flex;  
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        
+
+        .Work {
+            width: 45%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border : 1px solid var(--text);
+            border-radius: var(--radius);
+        }
+    }
+}
