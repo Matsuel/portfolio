@@ -96,3 +96,36 @@
         }
     }
 }
+
+@media screen and (max-width: 1500px) {
+    .Work_container {
+        .Works {
+            .Work {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Work_container {
+        .Works {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            .Work {
+                width: 80%;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .Work_container {
+        .Works {
+            .Work {
+                width: 100%;
+            }
+        }
+    }
+}
