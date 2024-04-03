@@ -1,11 +1,11 @@
 .Title {
-    color: var(--text-effect);;
-    -webkit-text-stroke: 3px var(--default-text);;
+    color: var(--text-effect);
+    -webkit-text-stroke: 3px var(--default-text);
     font-family: 'Monsterrat', sans-serif;
     font-size: 6rem;
     font-weight: 700;
-    background-color: var(--background);;
-    border-radius: var(--radius);;
+    background-color: var(--background);
+    border-radius: var(--radius);
 }
 
 @media screen and (max-width: 1024px){
@@ -23,6 +23,6 @@
 @media screen and (max-width: 480px){
     .Title {
         font-size: 3rem;
-        -webkit-text-stroke: 2px var(--default-text);;
+        -webkit-text-stroke: 2px var(--default-text);
     }    
 }

@@ -2,7 +2,7 @@
     width: 80%;
     height: auto;
     min-height: 100vh;
-    border-radius: var(--radius);;
+    border-radius: var(--radius);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,8 +34,8 @@
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
-                background-color: var(--background);;
-                border-radius: var(--radius);;
+                background-color: var(--background);
+                border-radius: var(--radius);
             }
 
             .Hero_subtitle {
@@ -43,7 +43,7 @@
                 font-family: 'Monsterrat', sans-serif;
                 font-size: 1.4rem;
                 font-weight: 500;
-                color: var(--text);;
+                color: var(--text);
                 margin-bottom: 1rem;
                 text-align: center;
             }
