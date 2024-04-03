@@ -34,17 +34,15 @@ const Skills = () => {
             <div className={styles.Skills}>
                 {imagesKeys.map((key, index) => {
                     return (
-                        <div
+                        <button
                             key={key}
                             className={styles.Skills_item + " " + (isMooseDown[index] ? styles.Skills_item_active : '')}
                             onMouseDown={() => handleMouseDown(index)}
                             onMouseUp={() => handleMouseDown(index)}
                             onMouseLeave={() => handleMouseLeave(index)}
-                            role='button'
-                            tabIndex={0}
                         >
                             <Image src={images(key).default} alt={key} />
-                        </div>
+                        </button>
                     );
                 })}
             </div>

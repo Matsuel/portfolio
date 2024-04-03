@@ -31,9 +31,9 @@ const ScrollToTop = () => {
     };
 
     return (
-        <div className={styles.ScrollToTop_link + (isFadingOut ? ' ' + styles.ScrollToTop_fadeOut : '')} onClick={goToTop} role='button' tabIndex={0}>
+        <button className={styles.ScrollToTop_link + (isFadingOut ? ' ' + styles.ScrollToTop_fadeOut : '')} onClick={goToTop}>
             <FontAwesomeIcon icon={faArrowUp} className={styles.ScrollToTop_icon} />
-        </div>
+        </button>
     );
 };
 
