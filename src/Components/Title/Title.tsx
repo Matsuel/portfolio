@@ -10,11 +10,9 @@ const Title = ({
     content
 }: TitleProps) => {
     return (
-        <>
-            <h1 className={styles.Title}>
-                {content}
-            </h1>
-        </>
+        <h1 className={styles.Title}>
+            {content}
+        </h1>
     );
 };
 

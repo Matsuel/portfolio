@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useState } from 'react';
+import React, { createRef, useState } from 'react';
 
 import styles from './Navbar.module.scss';
 import Image from 'next/image';

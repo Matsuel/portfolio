@@ -26,7 +26,7 @@ type Work = {
 
 const Work = () => {
 
-    const [Works, setWorks] = useState<Work[]>([]);
+    const [Works, setWorks] = useState<Work[]>(new Array<Work>());
 
     const { data, error } = useSWR('https://api.github.com/users/Matsuel/repos', fetcher);
     useEffect(() => {
