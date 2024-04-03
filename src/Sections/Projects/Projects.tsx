@@ -59,10 +59,10 @@ const Projects = () => {
     const navRef = useRef<HTMLDivElement>(null);
 
     const handleNav = (direction: string) => {
-        if (direction === 'left') {
-            navRef.current ? (navRef.current.scrollBy({ left: -200, behavior: 'smooth' })) : null;
-        } else {
-            navRef.current ? (navRef.current.scrollBy({ left: 200, behavior: 'smooth' })) : null;
+        if (direction === 'left' && navRef.current) {
+            navRef.current.scrollBy({ left: -200, behavior: 'smooth' })
+        } else if (direction === 'right' && navRef.current) {
+            navRef.current.scrollBy({ left: 200, behavior: 'smooth' })
         }
     }
 
