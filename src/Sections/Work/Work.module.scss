@@ -18,21 +18,23 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
-        background-color: var(--background);;
+        background-color: var(--background);
+        ;
         padding: 1rem;
-        border-radius: var(--radius);;  
+        border-radius: var(--radius);
+        ;
     }
 
     .Works {
         width: 80%;
         height: auto;
-        display: flex;  
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
         gap: 5%;
-        
+
 
         .Work {
             width: 30%;
@@ -43,8 +45,8 @@
             border-radius: var(--radius);
             background-color: var(--background);
             box-shadow: var(--shadow);
-            padding: 0;
-            padding-top: 1rem;
+            padding: .5rem;
+            transition: var(--transition);
 
             &:hover {
                 transition: var(--transition);
@@ -56,62 +58,40 @@
                 height: 20%;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: flex-start;
                 align-items: center;
+                gap: 10px;
+                margin-top: 10px;
 
-                .Work_names {
-                    width: 50%;
-                    height: auto;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start;
-                    gap: 2px;
-                    margin-bottom: 5px;
-                    margin-top: 5px;
-
-                    .Work_name {
-                        font-size: 1.5rem;
-                        font-weight: 600;
-                        color: var(--title); 
-                    }
+                .Work_name {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: var(--title);
                 }
+
             }
 
             .Work_description {
                 width: 80%;
-                height: 3.5em;
+                height: auto;
                 padding: 10px 0;
-                overflow: auto;
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
 
             .Work_technologies {
                 width: 80%;
-                height: 10%;
+                height: auto;
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
                 gap: 10px;
+                margin-bottom: 10px;
 
                 .Work_technologie {
                     color: #00ACEE;
-
-                    
                 }
-            }
-
-            .Work_link {
-                width: 80%;
-                height: 5%;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;  
-                gap: 10px;  
-                color: #00ACEE;
             }
         }
     }

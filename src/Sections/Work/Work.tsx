@@ -45,16 +45,14 @@ const Work = () => {
 
             <div className={styles.Works}>
                 {Works.map((work, index) => (
-                    <div className={styles.Work} key={index}>
+                    <Link className={styles.Work} key={index} href={work.homepage} passHref target='_blank'>
                         <div className={styles.Work_top}>
-                            <div className={styles.Work_names}>
-                                <h3 className={styles.Work_name}>
-                                    {work.name}
-                                </h3>
-                                <h4 className={styles.Work_fullname}>
-                                    {work.full_name}
-                                </h4>
-                            </div>
+                            <h3 className={styles.Work_name}>
+                                {work.name.charAt(0).toUpperCase() + work.name.slice(1)}
+                            </h3>
+                            <h4 className={styles.Work_fullname}>
+                                ({work.full_name})
+                            </h4>
                         </div>
 
                         <p className={styles.Work_description}>
@@ -65,19 +63,7 @@ const Work = () => {
                                 #{work.language}
                             </span>
                         </div>
-
-                        <Link href={work.homepage}
-                            passHref
-                            target='_blank'
-                            className={styles.Work_link}
-                        >
-                            View Project
-                            <Emoji
-                                unified="1f310"
-                                size={20}
-                            />
-                        </Link>
-                    </div>
+                    </Link>
                 ))}
             </div>
 
