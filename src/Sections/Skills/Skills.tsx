@@ -40,6 +40,7 @@ const Skills = () => {
                             onMouseDown={() => handleMouseDown(index)}
                             onMouseUp={() => handleMouseDown(index)}
                             onMouseLeave={() => handleMouseLeave(index)}
+                            role='button'
                         >
                             <Image src={images(key).default} alt={key} />
                         </div>
