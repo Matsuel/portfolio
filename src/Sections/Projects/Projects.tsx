@@ -14,10 +14,6 @@ import V3 from '@/assets/projects/v3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Project } from '@/types/Project';
 
-interface ProjectsProps {
-
-}
-
 const ProjectsList: Project[] = [
     {
         title: "WhatsHappen",
@@ -57,7 +53,7 @@ const ProjectsList: Project[] = [
     },
 ]
 
-const Projects = ({ }: ProjectsProps) => {
+const Projects = () => {
 
     //scroll horizontal quand on voit etirer la section
     const navRef = useRef<HTMLDivElement>(null);

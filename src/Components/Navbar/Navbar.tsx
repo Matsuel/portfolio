@@ -7,12 +7,6 @@ import Link from 'next/link';
 import MenuSvg from '@/assets/menu.svg';
 import { LinkType } from '@/types/Navbar';
 
-interface NavbarProps {
-
-}
-
-
-
 const Links: LinkType[] = [
     {
         href: '/',
@@ -46,7 +40,7 @@ const Links: LinkType[] = [
     },
 ];
 
-const Navbar = ({ }: NavbarProps) => {
+const Navbar = () => {
 
     const [activeLink, setActiveLink] = useState<number>(-1);
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);

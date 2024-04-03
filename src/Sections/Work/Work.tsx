@@ -5,10 +5,6 @@ import Title from '@/Components/Title/Title';
 import { Emoji } from 'emoji-picker-react';
 import Link from 'next/link';
 
-interface WorkProps {
-
-}
-
 type WorkType = {
     title: string;
     description: string;
@@ -28,7 +24,7 @@ const Works : WorkType[] = [
     }
 ]
 
-const Work = ({ }: WorkProps) => {
+const Work = () => {
 
     return (
         <section className={styles.Work_container} id="work">

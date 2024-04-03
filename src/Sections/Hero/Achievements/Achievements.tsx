@@ -11,12 +11,6 @@ const AnimatedNumbers = dynamic(
     { ssr: false }
 );
 
-interface AchievementsProps {
-
-}
-
-
-
 const AchievementsData: Achievement[] = [
     {
         title: 'Commits',
@@ -40,7 +34,7 @@ const AchievementsData: Achievement[] = [
     },
 ];
 
-const Achievements = ({ }: AchievementsProps) => {
+const Achievements = () => {
 
 
     return (

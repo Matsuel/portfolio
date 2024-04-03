@@ -5,11 +5,7 @@ import Title from '../../Components/Title/Title';
 import Image from 'next/image';
 import { Emoji } from 'emoji-picker-react';
 
-interface SkillsProps {
-
-}
-
-const Skills = ({ }: SkillsProps) => {
+const Skills = () => {
 
     const images = require.context('../../assets/skills', true);
     const imagesKeys = images.keys();

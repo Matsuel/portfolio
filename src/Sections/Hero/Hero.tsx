@@ -10,12 +10,6 @@ import Title from '../../Components/Title/Title';
 import Button from '@/Components/Button/Button';
 import { Social } from '@/types/Hero';
 
-interface HeroProps {
-
-}
-
-
-
 const Socials: Social[] = [
     {
         href: 'https://github.com/Matsuel/',
@@ -34,7 +28,7 @@ const Socials: Social[] = [
     },
 ]
 
-const Hero = ({ }: HeroProps) => {
+const Hero = () => {
 
     return (
         <section id='hero' className={styles.Hero_container}>

@@ -3,13 +3,8 @@ import React, { useState, useEffect } from 'react';
 import styles from './ScrollToTop.module.scss';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
 
-interface ScrollToTopProps {
-
-}
-
-const ScrollToTop = ({ }: ScrollToTopProps) => {
+const ScrollToTop = () => {
     
     const [isFadingOut, setIsFadingOut] = useState<boolean>(true);
 
