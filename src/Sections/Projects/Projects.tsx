@@ -75,7 +75,7 @@ const Projects = () => {
 
             <div className={styles.Projects_list} ref={navRef}>
                 {ProjectsList.map((project, index) => (
-                    <div key={index} className={styles.Projects_card}>
+                    <div key={project.title} className={styles.Projects_card}>
                         {project.image !== "" ? (
                             <Image src={project.image} alt={project.title} />)
                             : (

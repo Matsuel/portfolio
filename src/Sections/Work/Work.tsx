@@ -45,7 +45,7 @@ const Work = () => {
 
             <div className={styles.Works}>
                 {Works.map((work, index) => (
-                    <Link className={styles.Work} key={index} href={work.homepage} passHref target='_blank'>
+                    <Link className={styles.Work} key={work.full_name} href={work.homepage} passHref target='_blank'>
                         <div className={styles.Work_top}>
                             <h3 className={styles.Work_name}>
                                 {work.name.charAt(0).toUpperCase() + work.name.slice(1)}

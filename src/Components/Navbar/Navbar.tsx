@@ -69,7 +69,7 @@ const Navbar = () => {
 
             <div className={styles.Navbar_links}>
                 {Links.map((link, index) => (
-                    <Link key={index} href={link.href} className={styles.Navbar_link + " " + (activeLink === index ? styles.Navbar_linkActive : "")} onClick={() => setActiveLink(index)} >
+                    <Link key={link.label} href={link.href} className={styles.Navbar_link + " " + (activeLink === index ? styles.Navbar_linkActive : "")} onClick={() => setActiveLink(index)} >
                         {link.icon}
                         {link.label}
                     </Link>
@@ -104,7 +104,7 @@ const Modal = ({
                 <div className={styles.Modal_container}>
                     {
                         links.map((link, index) => (
-                            <Link key={index} href={link.href} className={styles.Modal_link + " " + (activeLink === index ? styles.Modal_linkActive : "")} onClick={() => { setActiveLink(index); onClose(); }}>
+                            <Link key={link.label} href={link.href} className={styles.Modal_link + " " + (activeLink === index ? styles.Modal_linkActive : "")} onClick={() => { setActiveLink(index); onClose(); }}>
                                 {link.icon}
                                 {link.label}
                             </Link>

@@ -35,7 +35,7 @@ const Skills = () => {
                 {imagesKeys.map((key, index) => {
                     return (
                         <div
-                            key={index}
+                            key={key}
                             className={styles.Skills_item + " " + (isMooseDown[index] ? styles.Skills_item_active : '')}
                             onMouseDown={() => handleMouseDown(index)}
                             onMouseUp={() => handleMouseDown(index)}

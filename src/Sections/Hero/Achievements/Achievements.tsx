@@ -41,7 +41,7 @@ const Achievements = () => {
         <div className={styles.Achievements_container}>
             {AchievementsData.map((achievement, index) => {
                 return (
-                    <div key={index} className={styles.Achievement}>
+                    <div key={achievement.title} className={styles.Achievement}>
                         <h3 className={styles.Achievement_value}>
                             
                             <AnimatedNumbers

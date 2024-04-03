@@ -44,7 +44,7 @@ const Hero = () => {
                     </h2>
                     <div className={styles.Hero_socials}>
                         {Socials.map((social, index) => (
-                            <Button key={index} href={social.href} icon={social.icon} name={social.name} index={index} />
+                            <Button key={social.name} href={social.href} icon={social.icon} name={social.name} index={index} />
                         ))}
                     </div>
 
