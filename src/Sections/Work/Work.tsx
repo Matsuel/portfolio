@@ -26,7 +26,8 @@ type Work = {
 
 const Work = () => {
 
-    const [Works, setWorks] = useState<Work[]>(new Array<Work>());
+
+    const [works, setWorks] = useState<Work[]>([]);
 
     const { data, error } = useSWR('https://api.github.com/users/Matsuel/repos', fetcher);
     useEffect(() => {
@@ -44,7 +45,7 @@ const Work = () => {
             </div>
 
             <div className={styles.Works}>
-                {Works.map((work, index) => (
+                {works.map((work, index) => (
                     <Link className={styles.Work} key={work.full_name} href={work.homepage} passHref target='_blank'>
                         <div className={styles.Work_top}>
                             <h3 className={styles.Work_name}>
