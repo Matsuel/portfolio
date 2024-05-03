@@ -8,10 +8,3 @@ Website [Link](https://matsuel.netlify.app) here check it now
 
 Here is the 4th version of my portfolio creating using NextJS and SCSS, the previous versions were no longer to my tastes and were a little outdated in terms of design. On this version I focused on simplicity in order to create a template that would suit me better. This template was created by me while taking up the idea of ​​an "eco-friendly" site based on the site of [Niji](https://www.niji.fr/fr/).
 What I really liked about this site was the simplicity of the design which I find super clean.
-
-## Todo
-
-1. Finish navbar responsive
-2. Scroll horizontal using onwheel with GSAP
-3. Create other mode with details on pictures and full text
-4. Send email on submit in form
