@@ -8,7 +8,7 @@ import { faCircleChevronLeft, faCircleChevronRight } from '@fortawesome/free-sol
 import Button from '@/Components/Button/Button';
 import Chatroom from '@/assets/projects/chatroom.png';
 import Portfolio from '@/assets/projects/portfolio.png';
-import Whatsapp from '@/assets/projects/whatsapp.png';
+import iMessages from '@/assets/projects/imessages.png';
 import Image from 'next/image';
 import V3 from '@/assets/projects/v3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,11 +16,11 @@ import { Project } from '@/types/Project';
 
 const ProjectsList: Project[] = [
     {
-        title: "WhatsHappen",
-        description: "WhatsHappen is a web application, clone of Whatsapp. It is a chat application where users can chat with each other. They can send messages, images, videos and documents, react to messages with react-emoji-picker and also see the online status of the users. It is built using Next.js (React), Css and Express.js.",
-        image: Whatsapp,
-        link: "https://github.com/Matsuel/WhatsappHappen",
-        public: false
+        title: "iMessages",
+        description: "iMessages is a web application, clone of iMessage. It is a chat application where users can chat with each other. They can send messages, react to messages with react-emoji-picker and also see the online status of the users. It is built using Next.js (React), Css and Express.js.",
+        image: iMessages,
+        link: "https://github.com/Matsuel/iMessages",
+        public: true
     },
     {
         title: "Portfolio v3",
