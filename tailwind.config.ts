@@ -8,9 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        1: "1px",
+      },
+      borderColor: {
+        "custom" : "var(--border)",
+      },
+      borderRadius: {
+        "custom" : "var(--radius)",
+      },
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        text: "var(--color)",
       },
     },
   },
