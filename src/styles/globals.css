@@ -40,13 +40,27 @@
   --border-cursor: #fff;
 }
 
-* {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 body {
   color: #000;
   background: var(--background);
   font-family: 'Inter', sans-serif;
+}
+
+
+/* Couleur du selecteur de texte */
+::-moz-selection {
+  /* Code pour Firefox */
+  color: var(--color-invert);
+  background: var(--background-invert);
+}
+
+::selection {
+  color: var(--color-invert);
+  background: var(--background-invert);
+}
+
+/* Désactive du la barre de défilement */
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
