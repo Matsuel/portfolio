@@ -11,11 +11,11 @@ const ThemeButton = ({
     themeToSet
 }: ThemeButtonProps) => {
 
-    const { setTheme } = useTheme()
+    const { setTheme, theme } = useTheme()
 
     return (
         <button
-            className='w-10 h-10 rounded-full flex justify-center items-center text-text'
+            className={`w-9 h-9 rounded-full flex justify-center items-center ${theme === themeToSet ? 'bg-backgroundinverted text-colorinverted' : 'bg-background text-text'}`}
             onClick={() => setTheme(themeToSet)}
         >
             {icon}
