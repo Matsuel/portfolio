@@ -19,7 +19,9 @@ const config: Config = {
       },
       colors: {
         background: "var(--background)",
+        backgroundinverted: "var(--background-invert)",
         text: "var(--color)",
+        colorinverted: "var(--color-invert)",
       },
     },
   },
