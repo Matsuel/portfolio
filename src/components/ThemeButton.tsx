@@ -1,5 +1,5 @@
 import { useTheme } from 'next-themes'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 interface ThemeButtonProps {
     icon: React.ReactNode
@@ -12,6 +12,11 @@ const ThemeButton = ({
 }: ThemeButtonProps) => {
 
     const { setTheme, theme } = useTheme()
+    const [mounted, setMounted] = useState(false)
+
+    useEffect(() => setMounted(true), [])
+
+    if (!mounted) return null
 
     return (
         <button
