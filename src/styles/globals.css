@@ -19,6 +19,7 @@
   --color: #000;
   --color-invert: #fff;
   --border: #e4e4e7;
+  --border-cursor: #000;
 }
 
 .light {
@@ -27,6 +28,7 @@
   --color: #000;
   --color-invert: #fff;
   --border: #e4e4e7;
+  --border-cursor: #000;
 }
 
 .dark {
@@ -35,6 +37,12 @@
   --color: #fff;
   --color-invert: #000;
   --border: #27272a;
+  --border-cursor: #fff;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body {

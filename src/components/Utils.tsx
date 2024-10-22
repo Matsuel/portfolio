@@ -3,7 +3,7 @@ import Theme from './Theme'
 
 const Utils = () => {
     return (
-        <div className='w-full h-auto flex flex-row justify-between p-8 items-center bg-background fixed bottom-1'>
+        <div className='w-full h-auto flex flex-row justify-between p-8 items-center fixed bottom-1'>
             <Theme />
 
         </div>

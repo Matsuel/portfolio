@@ -13,6 +13,7 @@ const config: Config = {
       },
       borderColor: {
         "custom" : "var(--border)",
+        "cursor" : "var(--border-cursor)",
       },
       borderRadius: {
         "custom" : "var(--radius)",
