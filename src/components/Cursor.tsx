@@ -11,7 +11,7 @@ const Cursor = () => {
 
     return (
         <div
-            className="fixed z-1 w-6 h-6 rounded-full border-2 border-cursor"
+            className="fixed w-6 h-6 rounded-full border-2 border-cursor"
             style={{
                 left: x - 10,
                 top: y - 10,
