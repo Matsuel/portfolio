@@ -7,8 +7,8 @@ const Navbar = () => {
     const [isHovered, setIsHovered] = useState<boolean>(false)
 
     return (
-        <div
-            className='w-auto h-auto flex flex-row  sticky self-start p-3 gap-4 border-1 border-custom rounded-custom transition-all duration-500 ease-in-out'
+        <nav
+            className='w-auto h-auto flex flex-row  sticky top-8 self-start p-3 gap-4 border-1 border-custom rounded-custom transition-all duration-500 ease-in-out'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -21,7 +21,7 @@ const Navbar = () => {
                     <CustomLink key={key} href={value} text={key} uppercase />
                 ))}
             </div>
-        </div>
+        </nav>
     )
 }
 
