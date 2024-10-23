@@ -1,3 +1,4 @@
+import { cn } from '@/utils/cn'
 import Link from 'next/link'
 import React from 'react'
 
@@ -16,7 +17,7 @@ const CustomLink = ({
 }: CustomLinkProps) => {
     return (
         <Link href={href}>
-            <h1 className={`text-text text-base font-black ${uppercase && 'uppercase'} ${className}`}>
+            <h1 className={cn(`text-text text-base font-black ${uppercase && 'uppercase'}`, className)}>
                 {text}
             </h1>
         </Link >

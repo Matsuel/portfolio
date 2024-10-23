@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { cn } from '@/utils/cn';
 
 
 interface BlurIntProps {
@@ -31,7 +32,7 @@ const BlurIn = ({
             animate="visible"
             transition={{ duration }}
             variants={combinedVariants}
-            className={`text-center text-4xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-8xl md:leading-[5rem] text-text ${className}`}
+            className={cn(`text-center text-4xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-8xl md:leading-[5rem] text-text`, className)}
         >
             {word}
         </motion.h1>

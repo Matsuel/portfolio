@@ -21,7 +21,7 @@ export default function Home() {
 
       {!isMouseMove || isMouseLeave ? <Sleep /> : null}
       <div
-        className={`w-full flex flex-col items-center justify-start p-8 pb-20 gap-16 ${!isMouseMove || isMouseLeave ? "opacity-10" : "opacity-100"} transition-opacity duration-700 ease-in-out`}
+        className={`w-full flex flex-col items-center justify-start p-8 gap-16 ${!isMouseMove || isMouseLeave ? "opacity-10" : "opacity-100"} transition-opacity duration-700 ease-in-out`}
       >
         <Title title="Matheo Lang" />
         {/* <Cursor /> */}

@@ -12,7 +12,7 @@ const Navbar = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <CustomLink href='/' text='Matheo lang' className='!text-xl' uppercase />
+            <CustomLink href='/' text='Matheo lang' className='text-xl' uppercase />
 
             <div
                 className={`flex flex-row justify-center items-center gap-4 overflow-hidden transition-all duration-500 ease-in-out ${isHovered ? 'opacity-100 h-auto w-auto' : 'opacity-0 h-0 w-0'}`}
