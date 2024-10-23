@@ -8,5 +8,7 @@ export const skills = [
     "Java",
     "Docker",
     "CSS",
-    "Angular"
+    "Angular",
+    "Figma",
+    "PHP",
 ];
