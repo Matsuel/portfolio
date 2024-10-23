@@ -5,31 +5,37 @@ import Utils from "@/components/Utils";
 import useMouseMove from "@/hooks/useMouseMove";
 import useMouseLeave from "@/hooks/useMouveLeave";
 import Skills from "@/components/Skills";
+import Sleep from "@/components/Sleep";
 
 export default function Home() {
 
-  // const { handleMouseEnter, handleMouseLeave, isMouseLeave } = useMouseLeave();
+  const { handleMouseEnter, handleMouseLeave, isMouseLeave } = useMouseLeave();
 
   const { isMouseMove } = useMouseMove()
 
   return (
-    <div
-      className={`flex flex-col items-center justify-start min-h-screen p-8 pb-20 gap-16 bg-background relative ${!isMouseMove ? "opacity-10" : "opacity-100"} transition-opacity duration-700 ease-in-out`}
-      // onMouseEnter={handleMouseEnter}
-      // onMouseLeave={handleMouseLeave}
+    <div className="w-full bg-background flex min-h-screen p-8 pb-20 relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
-      <Title title="Matheo Lang" />
-      {/* <Cursor /> */}
-      <Navbar />
 
-      <BlurIn word="Matheo Lang" />
+      {!isMouseMove || isMouseLeave ? <Sleep /> : null}
+      <div
+        className={`w-full flex flex-col items-center justify-start p-8 pb-20 gap-16 ${!isMouseMove || isMouseLeave ? "opacity-10" : "opacity-100"} transition-opacity duration-700 ease-in-out`}
+      >
+        <Title title="Matheo Lang" />
+        {/* <Cursor /> */}
+        <Navbar />
+
+        <BlurIn word="Matheo Lang" />
 
 
-      <Skills />
+        <Skills />
 
 
-      <Utils />
+        <Utils />
 
+      </div>
     </div>
   );
 }

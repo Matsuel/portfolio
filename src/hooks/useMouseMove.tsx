@@ -1,31 +1,33 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 const useMouseMove = () => {
     const [isMouseMove, setIsMouseMove] = useState<boolean>(true);
-    let timeoutId: NodeJS.Timeout;
+    const timeoutId = useRef<NodeJS.Timeout | null>(null);
 
     useEffect(() => {
         const handleMouseMove = () => {
             setIsMouseMove(true);
-            if (timeoutId) {
-                clearTimeout(timeoutId);
+
+            if (timeoutId.current) {
+                clearTimeout(timeoutId.current);
             }
-            timeoutId = setTimeout(() => {
+
+            timeoutId.current = setTimeout(() => {
                 setIsMouseMove(false);
-            }, 15000); // 15 seconds
+            }, 15000); // 15 secondes d'inactivité
         };
 
         window.addEventListener('mousemove', handleMouseMove);
 
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
-            if (timeoutId) {
-                clearTimeout(timeoutId);
+            if (timeoutId.current) {
+                clearTimeout(timeoutId.current);
             }
         };
     }, []);
 
-    return {isMouseMove};
+    return { isMouseMove };
 };
 
 export default useMouseMove;

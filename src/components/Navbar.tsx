@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className='w-auto h-auto flex flex-row  sticky top-8 self-start p-3 gap-4 border-1 border-custom rounded-custom transition-all duration-500 ease-in-out'
+            className='w-auto h-auto flex flex-row fixed top-8 self-start p-3 gap-4 border-1 border-custom rounded-custom transition-all duration-500 ease-in-out'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
