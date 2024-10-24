@@ -1,5 +1,5 @@
 export enum NavbarLinks {
-    Accueil = '/',
+    Education = '#education',
     Projets = '#projects',
     Competences = '#skills',
     Contact = '#contact'
