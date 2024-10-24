@@ -27,7 +27,7 @@ const useMouseMove = () => {
         };
     }, []);
 
-    return { isMouseMove };
+    return { isMouseMove: true };
 };
 
 export default useMouseMove;

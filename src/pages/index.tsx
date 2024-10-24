@@ -6,6 +6,7 @@ import useMouseMove from "@/hooks/useMouseMove";
 import useMouseLeave from "@/hooks/useMouveLeave";
 import Skills from "@/components/Skills";
 import Sleep from "@/components/Sleep";
+import Education from "@/components/Education";
 
 export default function Home() {
 
@@ -15,8 +16,8 @@ export default function Home() {
 
   return (
     <div className="w-full bg-background flex min-h-screen p-8 pb-20 relative"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      // onMouseEnter={handleMouseEnter}
+      // onMouseLeave={handleMouseLeave}
     >
 
       {!isMouseMove || isMouseLeave ? <Sleep /> : null}
@@ -28,7 +29,7 @@ export default function Home() {
         <Navbar />
 
         <BlurIn word="Matheo Lang" />
-
+        <Education />
 
         {/* <Skills /> */}
 
