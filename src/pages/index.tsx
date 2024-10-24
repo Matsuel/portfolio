@@ -21,7 +21,7 @@ export default function Home() {
 
       {!isMouseMove || isMouseLeave ? <Sleep /> : null}
       <div
-        className={`w-full flex flex-col items-center justify-start p-8 gap-16 ${!isMouseMove || isMouseLeave ? "opacity-10" : "opacity-100"} transition-opacity duration-700 ease-in-out`}
+        className={`w-full flex flex-col items-center justify-start p-8 pt-24 gap-16 transition-opacity duration-700 ease-in-out ${!isMouseMove || isMouseLeave ? "opacity-10" : "opacity-100"}`}
       >
         <Title title="Matheo Lang" />
         {/* <Cursor /> */}
@@ -30,7 +30,7 @@ export default function Home() {
         <BlurIn word="Matheo Lang" />
 
 
-        <Skills />
+        {/* <Skills /> */}
 
 
         <Utils />

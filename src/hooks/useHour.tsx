@@ -8,7 +8,7 @@ const useHour = () => {
             const date = new Date();
             const formattedHour = date.getHours() + ":" + date.getMinutes().toString().padStart(2, '0');
             setHour(formattedHour);
-        }, 1000);
+        }, 500);
 
         return () => clearInterval(intervalId);
     }, [])
