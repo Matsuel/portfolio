@@ -7,6 +7,7 @@ import useMouseLeave from "@/hooks/useMouveLeave";
 import Skills from "@/components/Skills";
 import Sleep from "@/components/Sleep";
 import Education from "@/components/Education";
+import TextRevealByWord from "@/components/TextReveal";
 
 export default function Home() {
 
@@ -29,9 +30,11 @@ export default function Home() {
         <Navbar />
 
         <BlurIn word="Matheo Lang" />
-        <Education />
+        {/* <Education /> */}
 
         {/* <Skills /> */}
+
+        <TextRevealByWord text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
 
 
         <Utils />
