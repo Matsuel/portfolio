@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Sleep from "@/components/Sleep";
 import Education from "@/components/Education";
 import About from "@/components/About";
+import Building from "@/components/Building";
 
 export default function Home() {
 
@@ -29,6 +30,8 @@ export default function Home() {
         {/* <Cursor /> */}
         <Navbar />
         <About />
+
+        <Building />
         {/* <Education /> */}
 
         {/* <Skills /> */}
