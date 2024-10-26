@@ -1,34 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
-  font-family: 'Montserrat';
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
 }
 
-:root{
-  --background: #fff;
-  --background-hover: #000;
-  --default-text: #000;
-  --text: #808080;
-  --text-effect : transparent;
-  --border: #b2b2b3;
-  --shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.3);
+@font-face {
+  font-family: 'Inter-Italic';
+  src: url('../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+:root {
   --radius: 12px;
-  --transition : all 0.3s ease-in-out;
+  --background: #fff;
+  --background-invert: #000;
+  --color: #000;
+  --color-invert: #fff;
+  --border: #e4e4e7;
+  --border-cursor: #000;
 }
 
+.light {
+  --background: #fff;
+  --background-invert: #000;
+  --color: #000;
+  --color-invert: #fff;
+  --border: #e4e4e7;
+  --border-cursor: #000;
+}
+
+.dark {
+  --background: #000;
+  --background-invert: #fff;
+  --color: #fff;
+  --color-invert: #000;
+  --border: #27272a;
+  --border-cursor: #fff;
+}
+
+body {
+  color: #000;
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* Couleur du selecteur de texte */
+::-moz-selection {
+  /* Code pour Firefox */
+  color: var(--color-invert);
+  background: var(--background-invert);
+}
+
+::selection {
+  color: var(--color-invert);
+  background: var(--background-invert);
+}
+
+/* Désactive du la barre de défilement */
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-html {
-  scrollbar-width: none;
   -ms-overflow-style: none;
+  scrollbar-width: none;
 }
