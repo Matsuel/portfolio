@@ -1,13 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
-interface ArrowProps {
-    size: number
-}
+import { IconProps } from '@/types'
 
 const Arrow = ({
     size
-}: ArrowProps) => {
+}: IconProps) => {
     return (
         <motion.svg
             initial={{ opacity: 0, x: -5 }}
