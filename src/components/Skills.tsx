@@ -1,14 +1,15 @@
 import { skills } from '@/constantes/skills'
 import React from 'react'
 import Skill from './Skill'
-import Subtitle from './Subtitle'
+import SectionTitle from './SectionTitle'
 
 const Skills = () => {
+    
     return (
-        <section id='skills' className='w-[40%] flex flex-col gap-5'>
-            <Subtitle>
+        <section id='skills' className='w-[83%] flex flex-col gap-8'>
+            <SectionTitle>
                 Skills
-            </Subtitle>
+            </SectionTitle>
 
             <div className='w-full flex flex-row flex-wrap gap-2'>
                 {skills.map((skill) => (

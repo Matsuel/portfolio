@@ -25,7 +25,7 @@ export default function Home() {
 
       {!isMouseMove || isMouseLeave ? <Sleep /> : null}
       <div
-        className={`w-full flex flex-col items-center justify-start p-8 pt-24 gap-7 transition-opacity duration-700 ease-in-out ${!isMouseMove || isMouseLeave ? "opacity-10" : "opacity-100"}`}
+        className={`w-full flex flex-col items-center justify-start p-8 pt-24 gap-20 transition-opacity duration-700 ease-in-out ${!isMouseMove || isMouseLeave ? "opacity-10" : "opacity-100"}`}
       >
         <Title title={siteName} />
 
@@ -34,13 +34,12 @@ export default function Home() {
         <BlurIn word={siteName} />
         <TextRevealByWord
           text={aboutParagraph}
-          className="mb-20"
         />
 
         {/* <Building /> */}
         <Education />
 
-        {/* <Skills /> */}
+        <Skills />
 
 
 

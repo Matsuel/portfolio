@@ -40,6 +40,10 @@
   --border-cursor: #fff;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #000;
   background: var(--background);
