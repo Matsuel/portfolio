@@ -42,23 +42,23 @@ const Input = ({
             <motion.div
                 style={{
                     background: useMotionTemplate`
-                radial-gradient(
-                  ${visible ? radius + "px" : "0px"} circle at ${mouseX}px ${mouseY}px,
-                  ${theme === 'dark' ? 'var(--white)' : 'var(--black)'} 20%,
-                  transparent 80%
-                )
-                `,
+                    radial-gradient(
+                      ${visible ? radius + "px" : "0px"} circle at ${mouseX}px ${mouseY}px,
+                      ${theme === 'dark' ? 'var(--white)' : 'var(--blue-500)'},
+                      transparent 80%
+                    )
+                    `,
                 }}
                 onMouseMove={handleMouseMove}
                 onMouseEnter={() => setVisible(true)}
                 onMouseLeave={() => setVisible(false)}
-                className="p-[2px] rounded-lg transition duration-300 group/input"
+                className="p-[2px] rounded-lg transition duration-300"
             >
                 {area ? (
                     <textarea
-                        className='w-full h-40 px-4 py-2 rounded-lg focus:outline-text bg-input border border-border focus:border-primary text-text placeholder-text resize-none'
+                        className='w-full h-40 px-4 py-2 !mb-[-5px] rounded-lg focus:outline-text bg-input border border-border focus:border-primary text-text placeholder-text resize-none'
                         {...(props as React.TextareaHTMLAttributes<HTMLTextAreaElement>)}
-                    />
+                    ></textarea>
                 ) : (
 
                     <input

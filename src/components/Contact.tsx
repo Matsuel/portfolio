@@ -22,9 +22,11 @@ const Contact = () => {
                     <Input placeholder='Prénom' />
                 </div>
 
+                <Input placeholder='Objet' />
+
                 <Input placeholder='Email' />
 
-                <Input placeholder='Objet' area />
+                <Input placeholder='Message' area />
 
                 <Button>
                     Envoyer le message
