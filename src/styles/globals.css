@@ -20,6 +20,7 @@
   --color-invert: #fff;
   --border: #e4e4e7;
   --border-cursor: #000;
+  --input-background: #f9fafb;
 }
 
 .light {
@@ -29,6 +30,7 @@
   --color-invert: #fff;
   --border: #e4e4e7;
   --border-cursor: #000;
+  --input-background: #f9fafb;
 }
 
 .dark {
@@ -38,6 +40,7 @@
   --color-invert: #000;
   --border: #27272a;
   --border-cursor: #fff;
+  --input-background: #121212;
 }
 
 * {

@@ -10,6 +10,7 @@ import Building from "@/components/Building";
 import BlurIn from "@/components/BlurIn";
 import TextRevealByWord from "@/components/TextReveal";
 import { aboutParagraph, siteName } from "@/constantes/texts";
+import Contact from "@/components/Contact";
 
 export default function Home() {
 
@@ -40,6 +41,8 @@ export default function Home() {
         <Education />
 
         <Skills />
+
+        <Contact />
 
 
 

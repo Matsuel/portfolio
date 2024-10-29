@@ -8,7 +8,7 @@ const SectionTitle = ({
     children
 }: SectionTitleProps) => {
     return (
-        <h3 className='text-7xl text-text font-bold'>
+        <h3 className='text-8xl text-text font-bold'>
             {children}
         </h3>
     )
