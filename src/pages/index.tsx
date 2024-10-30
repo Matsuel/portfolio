@@ -11,12 +11,14 @@ import TextRevealByWord from "@/components/TextReveal";
 import { aboutParagraph, siteName } from "@/constantes/texts";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
+import { useEffect } from "react";
 
 export default function Home() {
 
   const { handleMouseEnter, handleMouseLeave, isMouseLeave } = useMouseLeave();
 
   const { isMouseMove } = useMouseMove()
+
 
   return (
     <div className="w-full bg-background flex min-h-screen p-8 pb-20 relative"
