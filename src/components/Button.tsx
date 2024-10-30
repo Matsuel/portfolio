@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { AnimationEventHandler } from 'react'
+import { motion } from 'framer-motion'
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends  React.ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: 'primary' | 'secondary'
 }
 
@@ -16,9 +17,13 @@ const Button = ({
     }
 
     return (
-        <button className={`px-4 py-2 rounded-md ${variants[variant]}`} {...props}>
+        <motion.button
+            whileTap={{ scale: 0.95 }}
+            className={`px-4 py-2 rounded-md ${variants[variant]}`}
+            {...props as AnimationEventHandler<HTMLButtonElement>}
+        >
             {children}
-        </button>
+        </motion.button>
     )
 }
 

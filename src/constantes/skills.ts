@@ -11,4 +11,7 @@ export const skills = [
     "Angular",
     "Figma",
     "PHP",
+    "MySQL",
+    "MongoDB",
+    "Flask",
 ];
