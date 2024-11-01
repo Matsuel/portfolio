@@ -1,5 +1,7 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
+import { projects } from '@/constantes/Projects'
+import Project from './Project'
 
 const Projects = () => {
   return (
@@ -8,6 +10,22 @@ const Projects = () => {
         Projets
       </SectionTitle>
 
+      <div className='w-full h-auto flex flex-row flex-wrap justify-around gap-10'>
+
+        {projects.map((project) => (
+          <Project
+            title={project.title}
+            description={project.description}
+            link={project.link}
+            github={project.github}
+            technologies={project.technologies}
+            image={project.image}
+            noPreview={project.noPreview}
+            key={project.title}
+          />
+        ))}
+
+      </div>
     </section>
   )
 }
