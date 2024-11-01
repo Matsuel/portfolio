@@ -32,6 +32,7 @@ const config: Config = {
         colorinverted: "var(--color-invert)",
         input: "var(--input-background)",
         border: "var(--border)",
+        "tech": "var(--tech)",
       },
     },
   },

@@ -5,13 +5,11 @@ import useMouseMove from "@/hooks/useMouseMove";
 import useMouseLeave from "@/hooks/useMouveLeave";
 import Sleep from "@/components/Sleep";
 import Education from "@/components/Education";
-import Building from "@/components/Building";
 import BlurIn from "@/components/BlurIn";
 import TextRevealByWord from "@/components/TextReveal";
 import { aboutParagraph, siteName } from "@/constantes/texts";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
-import { useEffect } from "react";
 
 export default function Home() {
 
@@ -38,19 +36,10 @@ export default function Home() {
         <TextRevealByWord
           text={aboutParagraph}
         />
-
-        <Projects />
-
-        {/* <Building /> */}
         <Education />
-
-
+        <Projects />
         <Contact />
-
-
-
         <Utils />
-
       </div>
     </div>
   );

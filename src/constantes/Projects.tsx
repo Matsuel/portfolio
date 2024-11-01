@@ -35,5 +35,13 @@ export const projects = [
         github: "https://github.com/Bank-HHPI",
         technologies: ["Next.js", "React Native", "TypeScript", "Express", "MongoDB", "Figma", "TailwindCSS", "Trello"],
         noPreview: <NoPreview />
+    },
+    {
+        title: "ONU",
+        description: "Projet Next.js réalisé en 3ème année chez Ynov Bordeaux, avec une équipe de 3 personnes. Ce jeu est un clone du jeu UNO, mais en version en ligne.",
+        link: "",
+        github: "https://github.com/Matsuel/ONU",
+        technologies: ["Next.js", "TypeScript", "Socket.io", "TailwindCSS"],
+        noPreview: <NoPreview />
     }
 ]
