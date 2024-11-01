@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Title from "@/components/Title";
-import Utils from "@/components/Utils";
 import useMouseMove from "@/hooks/useMouseMove";
 import useMouseLeave from "@/hooks/useMouveLeave";
 import Sleep from "@/components/Sleep";
@@ -10,6 +9,9 @@ import TextRevealByWord from "@/components/TextReveal";
 import { aboutParagraph, siteName } from "@/constantes/texts";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
+import Theme from "@/components/Theme";
+import Linkedin from "@/assets/Linkedin";
+import Links from "@/components/Links";
 
 export default function Home() {
 
@@ -32,6 +34,7 @@ export default function Home() {
 
         {/* <Cursor /> */}
         <Navbar />
+        <Links />
         <BlurIn word={siteName} />
         <TextRevealByWord
           text={aboutParagraph}
@@ -39,7 +42,7 @@ export default function Home() {
         <Education />
         <Projects />
         <Contact />
-        <Utils />
+        <Theme />
       </div>
     </div>
   );
