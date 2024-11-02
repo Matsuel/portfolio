@@ -1,5 +1,5 @@
 import { FC, ReactNode, useEffect, useRef, useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 
 import { cn } from "@/utils/cn";
 import { useTheme } from "next-themes";
@@ -57,7 +57,7 @@ export default TextRevealByWord;
 
 interface WordProps {
     children: ReactNode;
-    progress: any;
+    progress: MotionValue<number>;
     range: [number, number];
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SectionTitle from './SectionTitle';
 import Input from './Input';
 import Button from './Button';
@@ -49,7 +49,7 @@ const Contact = () => {
                 <h4 className='text-text text-3xl font-bold'>Contactez-moi</h4>
 
                 <p className='text-text'>
-                    Vous avez une question ou vous souhaitez me contacter pour un projet ? N'hésitez pas à m'envoyer un message !
+                    Vous avez une question ou vous souhaitez me contacter pour un projet ? N&apos;hésitez pas à m&apos;envoyer un message !
                 </p>
 
                 <div className='w-full h-auto flex flex-row gap-10'>
