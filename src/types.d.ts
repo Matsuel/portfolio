@@ -2,6 +2,14 @@ export interface IconProps {
     size?: number;
 }
 
+export interface IFormValues {
+    "firstname": string
+    "name": string
+    "email": string
+    "object": string
+    "message": string
+}
+
 export interface Repo {
     id:                          number;
     node_id:                     string;

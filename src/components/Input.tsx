@@ -2,13 +2,21 @@ import { useMotionTemplate, useMotionValue } from 'framer-motion';
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes';
+import { Path, UseFormRegister } from 'react-hook-form';
+import { IFormValues } from '@/types';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     area?: boolean
+    label: Path<IFormValues>
+    register: UseFormRegister<IFormValues>
+    required?: boolean
 }
 
 const Input = ({
     area = false,
+    label,
+    register,
+    required = true,
     ...props
 }: InputProps) => {
 
@@ -57,12 +65,14 @@ const Input = ({
                 {area ? (
                     <textarea
                         className='w-full h-40 px-4 py-2 !mb-[-5px] rounded-lg focus:outline-text bg-input border border-border focus:border-primary text-text placeholder-text resize-none'
+                        {...register(label, { required })}
                         {...(props as React.TextareaHTMLAttributes<HTMLTextAreaElement>)}
                     ></textarea>
                 ) : (
 
                     <input
                         className='w-full h-10 px-4 py-2 rounded-lg focus:outline-text bg-input border border-border focus:border-primary text-text placeholder-text'
+                        {...register(label, { required })}
                         {...(props as React.InputHTMLAttributes<HTMLInputElement>)}
                     />
                 )}
