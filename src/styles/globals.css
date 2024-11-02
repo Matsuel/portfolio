@@ -20,6 +20,8 @@
   --color-invert: #fff;
   --border: #e4e4e7;
   --border-cursor: #000;
+  --input-background: #f9fafb;
+  --tech: #f7f7f7;
 }
 
 .light {
@@ -29,6 +31,8 @@
   --color-invert: #fff;
   --border: #e4e4e7;
   --border-cursor: #000;
+  --input-background: #f9fafb;
+  --tech: #f7f7f7;
 }
 
 .dark {
@@ -38,6 +42,12 @@
   --color-invert: #000;
   --border: #27272a;
   --border-cursor: #fff;
+  --input-background: #121212;
+  --tech: #202020;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 body {
