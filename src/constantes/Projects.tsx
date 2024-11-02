@@ -1,6 +1,6 @@
-import ATPE from "@/assets/projects/ATPE.png";
-import CACBO from "@/assets/projects/CACBO.png";
-import Blog from "@/assets/projects/Blog.png";
+import ATPE from "@/assets/projects/atpe.png";
+import CACBO from "@/assets/projects/cacbo.png";
+import Blog from "@/assets/projects/blog.png";
 import NoPreview from "@/components/NoPreview";
 
 export const projects = [
