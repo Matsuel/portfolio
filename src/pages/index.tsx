@@ -10,7 +10,6 @@ import { aboutParagraph, siteName } from "@/constantes/texts";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import Theme from "@/components/Theme";
-import Linkedin from "@/assets/Linkedin";
 import Links from "@/components/Links";
 
 export default function Home() {
@@ -22,8 +21,8 @@ export default function Home() {
 
   return (
     <div className="w-full bg-background flex min-h-screen p-8 pb-20 relative"
-    // onMouseEnter={handleMouseEnter}
-    // onMouseLeave={handleMouseLeave}
+    onMouseEnter={handleMouseEnter}
+    onMouseLeave={handleMouseLeave}
     >
 
       {!isMouseMove || isMouseLeave ? <Sleep /> : null}
