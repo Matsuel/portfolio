@@ -2,7 +2,6 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     const { firstName, name, email, object, message } = req.body;
-    console.log(req.body);
 
     const response = await fetch(process.env.DISCORD_WEBHOOK as string, {
         method: 'POST',
