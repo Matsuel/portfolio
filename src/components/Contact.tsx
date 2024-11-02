@@ -4,10 +4,10 @@ import Input from './Input';
 import Button from './Button';
 import { useForm, SubmitHandler } from "react-hook-form"
 import { IFormValues } from '@/types';
+import { toast } from 'sonner';
 
 const Contact = () => {
 
-    const [sent, setSent] = useState<boolean | null>(null)
 
     const { register, handleSubmit, reset } = useForm<IFormValues>()
     const sendEmail: SubmitHandler<IFormValues> = async (data) => {
@@ -22,12 +22,18 @@ const Contact = () => {
 
         const response = await res.json()
 
+        console.log(response)
+
         if (response.sent) {
-            setSent(true)
+            toast.success('Votre message a bien été envoyé !', {
+                className: 'bg-background text-text border-border'
+            })
             reset()
         } else {
-            setSent(false)
-        }       
+            toast.error('Une erreur est survenue lors de l\'envoi du message', {
+                className: 'bg-background text-red-700 border-border'
+            })
+        }
 
     }
 
