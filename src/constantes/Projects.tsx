@@ -5,20 +5,20 @@ import NoPreview from "@/components/NoPreview";
 
 export const projects = [
     {
-        title: "ATPEscrime",
-        description: "Ce site internet a été réalisé dans le but de montrer les actions de l'association à travers la pratique de l'escrime pour dénoncer les différents types de violences dans notre société.",
-        link: "https://atpescrime.com",
-        github: "https://github.com/Matsuel/ATPE",
-        technologies: ["Next.js", "SCSS", "TypeScript"],
-        image: ATPE
-    },
-    {
         title: "CACBO-Badminton",
         description: "Site web pour le club de badminton Carbon-Blanais, basé à Carbon-Blanc. Ce site permet de présenter le club, les horaires, les tarifs, et même de s'inscrire en ligne.",
         link: "https://cacbo-badminton.vercel.app/",
         github: "https://github.com/Matsuel/CACBO-Badminton",
         technologies: ["Next.js", "TailwindCSS", "TypeScript", "Figma"],
         image: CACBO
+    },
+    {
+        title: "ATPEscrime",
+        description: "Ce site internet a été réalisé dans le but de montrer les actions de l'association à travers la pratique de l'escrime pour dénoncer les différents types de violences dans notre société.",
+        link: "https://atpescrime.com",
+        github: "https://github.com/Matsuel/ATPE",
+        technologies: ["Next.js", "SCSS", "TypeScript"],
+        image: ATPE
     },
     {
         title: "Blog stage 2024",
