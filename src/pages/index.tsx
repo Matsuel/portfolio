@@ -11,9 +11,7 @@ import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import Theme from "@/components/Theme";
 import Links from "@/components/Links";
-import useScrollPercentage from "@/hooks/usePercentage";
 import Percentage from "@/components/Percentage";
-import Cursor from "@/components/Cursor";
 
 export default function Home() {
 
@@ -33,7 +31,6 @@ export default function Home() {
       >
         <Title title={siteName} />
 
-        {/* <Cursor /> */}
         <Navbar />
         <Links />
         <BlurIn word={siteName} />
