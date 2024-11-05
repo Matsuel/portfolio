@@ -11,6 +11,9 @@ import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import Theme from "@/components/Theme";
 import Links from "@/components/Links";
+import useScrollPercentage from "@/hooks/usePercentage";
+import Percentage from "@/components/Percentage";
+import Cursor from "@/components/Cursor";
 
 export default function Home() {
 
@@ -18,11 +21,10 @@ export default function Home() {
 
   const { isMouseMove } = useMouseMove()
 
-
   return (
     <div className="w-full bg-background flex min-h-screen p-8 pb-20 relative"
-    onMouseEnter={handleMouseEnter}
-    onMouseLeave={handleMouseLeave}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
 
       {!isMouseMove || isMouseLeave ? <Sleep /> : null}
@@ -42,6 +44,7 @@ export default function Home() {
         <Projects />
         <Contact />
         <Theme />
+        <Percentage />
       </div>
     </div>
   );
