@@ -11,6 +11,8 @@ export const useScrollPercentage = () => {
             setScrollPercentage(scrolled);
         };
 
+        handleScroll();
+
         window.addEventListener('scroll', handleScroll);
 
         return () => {
