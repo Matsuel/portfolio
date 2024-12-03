@@ -2,6 +2,7 @@ import ATPE from "@/assets/projects/atpe.png";
 import CACBO from "@/assets/projects/cacbo.png";
 import Blog from "@/assets/projects/blog.png";
 import NoPreview from "@/components/NoPreview";
+import ONU from "@/assets/projects/onu.png";
 
 export const projects = [
     {
@@ -42,6 +43,6 @@ export const projects = [
         link: "",
         github: "https://github.com/Matsuel/ONU",
         technologies: ["Next.js", "TypeScript", "Socket.io", "TailwindCSS"],
-        noPreview: <NoPreview />
+        image: ONU
     }
 ]
