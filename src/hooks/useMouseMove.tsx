@@ -14,7 +14,7 @@ const useMouseMove = () => {
 
             timeoutId.current = setTimeout(() => {
                 setIsMouseMove(false);
-            }, 15000); // 15 secondes d'inactivité
+            }, 30000);
         };
 
         window.addEventListener('mousemove', handleMouseMove);

@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Title from "@/components/Title";
 import useMouseMove from "@/hooks/useMouseMove";
 import useMouseLeave from "@/hooks/useMouveLeave";
@@ -12,6 +11,7 @@ import Projects from "@/components/Projects";
 import Theme from "@/components/Theme";
 import Links from "@/components/Links";
 import Percentage from "@/components/Percentage";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
 
@@ -31,7 +31,7 @@ export default function Home() {
       >
         <Title title={siteName} />
 
-        <Navbar />
+        <Sidebar />
         <Links />
         <BlurIn word={siteName} />
         <TextRevealByWord
