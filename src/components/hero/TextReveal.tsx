@@ -31,12 +31,12 @@ const TextRevealByWord: FC<TextRevealByWordProps> = ({
         <div ref={targetRef} className={cn("relative z-0 h-auto pt-32", className)}>
             <div
                 className={
-                    "sticky top-0 mx-auto flex h-auto w-[90%] items-center bg-transparent px-[1rem] py-[1rem]"
+                    "sticky top-0 mx-auto flex h-auto w-[100%] items-center bg-transparent px-[1rem] py-[1rem]"
                 }
             >
                 <p
                     ref={targetRef}
-                    className={`flex flex-wrap p-5 text-2xl font-bold ${theme === 'dark' ? "text-white/20" : ""} md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-8xl`}
+                    className={`flex flex-wrap text-2xl font-bold ${theme === 'dark' ? "text-white/20" : ""} md:text-3xl lg:text-4xl xl:text-8xl`}
                 >
                     {words.map((word, i) => {
                         const start = i / words.length;
