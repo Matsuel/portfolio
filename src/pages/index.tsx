@@ -4,13 +4,13 @@ import useMouseLeave from "@/hooks/useMouveLeave";
 import Sleep from "@/components/home/Sleep";
 import Education from "@/components/Education";
 import { siteName } from "@/constantes/texts";
-import Contact from "@/sections/Contact";
-import Projects from "@/sections/Projects";
+import Contact from "@/components/sections/Contact";
+import Projects from "@/components/sections/Projects";
 import Theme from "@/components/home/Theme";
 import Links from "@/components/ui/Links";
 import Percentage from "@/components/ui/Percentage";
 import Sidebar from "@/components/home/Sidebar";
-import Hero from "@/sections/Hero";
+import Hero from "@/components/sections/Hero";
 import MinimalistBar from "@/components/home/MinimalistBar";
 
 export default function Home() {

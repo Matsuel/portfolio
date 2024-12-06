@@ -1,7 +1,7 @@
 import React from 'react'
-import SectionTitle from '../components/ui/SectionTitle'
+import SectionTitle from '../ui/SectionTitle'
 import { projects } from '@/constantes/Projects'
-import Project from '../components/Project'
+import Project from '../Project'
 
 const Projects = () => {
   return (
