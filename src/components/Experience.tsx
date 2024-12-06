@@ -1,6 +1,6 @@
 import React from 'react'
-import ExperienceItem from './ExperienceItem'
-import Subtitle from './Subtitle'
+import ExperienceItem from './ui/ExperienceItem'
+import Subtitle from './ui/Subtitle'
 import { StaticImageData } from 'next/image'
 
 interface ExperienceItemProps {

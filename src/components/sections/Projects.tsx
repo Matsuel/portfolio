@@ -1,11 +1,11 @@
 import React from 'react'
-import SectionTitle from './SectionTitle'
+import SectionTitle from '../ui/SectionTitle'
 import { projects } from '@/constantes/Projects'
-import Project from './Project'
+import Project from '../Project'
 
 const Projects = () => {
   return (
-    <section id='projects' className='w-[83%] h-auto flex flex-col gap-20'>
+    <section id='projets' className='w-[83%] h-auto flex flex-col gap-20'>
       <SectionTitle>
         Projets
       </SectionTitle>
