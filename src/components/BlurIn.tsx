@@ -26,16 +26,29 @@ const BlurIn = ({
     };
     const combinedVariants = variant || defaultVariants;
 
+    const splitWord = word.split(' ')
+
     return (
-        <motion.h1
-            initial="hidden"
-            animate="visible"
-            transition={{ duration }}
-            variants={combinedVariants}
-            className={cn(`text-center text-4xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-8xl md:leading-[5rem] text-text`, className)}
-        >
-            {word}
-        </motion.h1>
+        <div className='w-[80%] h-[420px] flex flex-col justify-between items-center'>
+            <motion.h1
+                initial="hidden"
+                animate="visible"
+                transition={{ duration }}
+                variants={combinedVariants}
+                className={cn(`text-center text-4xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-[256px] md:leading-[5rem] text-text self-start mt-12 ml-12`, className)}
+            >
+                {splitWord[0]}
+            </motion.h1>
+            <motion.h1
+                initial="hidden"
+                animate="visible"
+                transition={{ duration }}
+                variants={combinedVariants}
+                className={cn(`text-center text-4xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-[256px] md:leading-[5rem] text-text self-end mr-12 mb-12`, className)}
+            >
+                {splitWord[1]}
+            </motion.h1>
+        </div>
     )
 }
 
