@@ -1,7 +1,7 @@
 import { jobs } from '@/constantes/jobs'
 import { schools } from '@/constantes/school'
 import React from 'react'
-import SectionTitle from './SectionTitle'
+import SectionTitle from './ui/SectionTitle'
 import Experience from './Experience'
 
 const Education = () => {

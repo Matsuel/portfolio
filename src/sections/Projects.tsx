@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionTitle from '../components/SectionTitle'
+import SectionTitle from '../components/ui/SectionTitle'
 import { projects } from '@/constantes/Projects'
 import Project from '../components/Project'
 

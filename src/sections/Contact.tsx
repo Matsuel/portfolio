@@ -1,7 +1,7 @@
 import React from 'react';
-import SectionTitle from '@/components/SectionTitle';
-import Input from '@/components/Input';
-import Button from '@/components/Button';
+import SectionTitle from '@/components/ui/SectionTitle';
+import Input from '@/components/ui/Input';
+import Button from '@/components/ui/Button';
 import { useForm, SubmitHandler } from "react-hook-form"
 import { IFormValues } from '@/types';
 import { toast } from 'sonner';

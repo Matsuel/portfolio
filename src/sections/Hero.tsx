@@ -1,5 +1,5 @@
-import BlurIn from '@/components/BlurIn'
-import TextRevealByWord from '@/components/TextReveal'
+import BlurIn from '@/components/hero/BlurIn'
+import TextRevealByWord from '@/components/hero/TextReveal'
 import React from 'react'
 import { aboutParagraph, siteName } from '@/constantes/texts'
 

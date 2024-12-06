@@ -2,7 +2,7 @@ import { NavbarLinks } from '@/constantes/navbar'
 import React from 'react'
 import useSection from '@/hooks/useSection'
 import { useRouter } from 'next/router'
-import MinimalistLink from './MinimalistLink'
+import MinimalistLink from '../ui/MinimalistLink'
 
 const MinimalistBar = () => {
     const { activeSection } = useSection()

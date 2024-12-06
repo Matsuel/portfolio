@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavbarLinks } from '@/constantes/navbar'
-import CustomLink from './CustomLink'
+import CustomLink from '@/components/ui/CustomLink'
 import { useRouter } from 'next/router'
 import useSection from '@/hooks/useSection'
 import { handleClick } from '@/utils/links'
