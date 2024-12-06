@@ -1,5 +1,5 @@
 import React from 'react'
-import ThemeButton from './ThemeButton'
+import ThemeButton from '@/components/ui/ThemeButton'
 import Desktop from '@/assets/Desktop'
 import Sun from '@/assets/Sun'
 import Moon from '@/assets/Moon'

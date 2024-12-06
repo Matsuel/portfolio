@@ -1,17 +1,17 @@
-import Title from "@/components/Title";
+import Title from "@/components/ui/Title";
 import useMouseMove from "@/hooks/useMouseMove";
 import useMouseLeave from "@/hooks/useMouveLeave";
-import Sleep from "@/components/Sleep";
+import Sleep from "@/components/home/Sleep";
 import Education from "@/components/Education";
-import BlurIn from "@/components/BlurIn";
-import TextRevealByWord from "@/components/TextReveal";
-import { aboutParagraph, siteName } from "@/constantes/texts";
-import Contact from "@/components/Contact";
-import Projects from "@/components/Projects";
-import Theme from "@/components/Theme";
-import Links from "@/components/Links";
-import Percentage from "@/components/Percentage";
-import Sidebar from "@/components/Sidebar";
+import { siteName } from "@/constantes/texts";
+import Contact from "@/sections/Contact";
+import Projects from "@/sections/Projects";
+import Theme from "@/components/home/Theme";
+import Links from "@/components/ui/Links";
+import Percentage from "@/components/ui/Percentage";
+import Sidebar from "@/components/home/Sidebar";
+import Hero from "@/sections/Hero";
+import MinimalistBar from "@/components/home/MinimalistBar";
 
 export default function Home() {
 
@@ -32,11 +32,9 @@ export default function Home() {
         <Title title={siteName} />
 
         <Sidebar />
+        <MinimalistBar />
         <Links />
-        <BlurIn word={siteName} />
-        <TextRevealByWord
-          text={aboutParagraph}
-        />
+        <Hero />
         <Education />
         <Projects />
         <Contact />

@@ -1,7 +1,7 @@
 import React from 'react';
-import SectionTitle from './SectionTitle';
-import Input from './Input';
-import Button from './Button';
+import SectionTitle from '@/components/ui/SectionTitle';
+import Input from '@/components/ui/Input';
+import Button from '@/components/ui/Button';
 import { useForm, SubmitHandler } from "react-hook-form"
 import { IFormValues } from '@/types';
 import { toast } from 'sonner';
@@ -21,8 +21,6 @@ const Contact = () => {
         })
 
         const response = await res.json()
-
-        console.log(response)
 
         if (response.sent) {
             toast.success('Votre message a bien été envoyé !', {

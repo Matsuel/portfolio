@@ -28,7 +28,7 @@ const TextRevealByWord: FC<TextRevealByWordProps> = ({
     }, [resolvedTheme]);
 
     return (
-        <div ref={targetRef} className={cn("relative z-0 h-[200vh]", className)}>
+        <div ref={targetRef} className={cn("relative z-0 h-auto pt-32", className)}>
             <div
                 className={
                     "sticky top-0 mx-auto flex h-auto w-[90%] items-center bg-transparent px-[1rem] py-[1rem]"
