@@ -2,10 +2,14 @@ import React from 'react'
 import { NavbarLinks } from '@/constantes/navbar'
 import CustomLink from './CustomLink'
 import { useRouter } from 'next/router'
+import useSection from '@/hooks/useSection'
+import { handleClick } from '@/utils/links'
 
 const Sidebar = () => {
 
     const router = useRouter()
+
+    const { activeSection } = useSection()
 
     return (
         <nav
@@ -17,7 +21,8 @@ const Sidebar = () => {
                     key={text}
                     text={text}
                     index={index}
-                    onClick={() => router.push(href)}
+                    onClick={() => handleClick(href, index, router)}
+                    isActive={activeSection === href.slice(1)}
                 />
             ))}
         </nav>

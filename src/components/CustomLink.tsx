@@ -4,6 +4,7 @@ interface CustomLinkProps {
     onClick?: () => void
     text: string
     index: number
+    isActive: boolean
     className?: string
     uppercase?: boolean
 }
@@ -12,6 +13,7 @@ const CustomLink = ({
     onClick,
     text,
     index,
+    isActive
 }: CustomLinkProps) => {
 
     const [isHover, setIsHover] = useState<boolean>(false)
@@ -24,12 +26,12 @@ const CustomLink = ({
         >
             <button
                 onClick={onClick}
-                className="w-[100px] flex flex-row items-center gap-4 pl-10 border-b-[2px] border-[#a3a3a3] hover:border-white hover:w-auto transition-all duration-300 ease-in-out font-black uppercase"
+                className={`h-5 flex flex-row items-center gap-4 pl-10 border-b-[2px] transition-all duration-300 ease-in-out font-black uppercase ${isHover || isActive ? "border-white w-auto" : "border-[#a3a3a3] w-[100px]"}`}
             >
-                <span className={`${isHover ? "text-text" : "text-[#a3a3a3]"} uppercase font-black`}>
+                <span className={`${isHover || isActive ? "text-text" : "text-[#a3a3a3]"} uppercase font-black`}>
                     {(index + 1).toString().padStart(2, '0')}
                 </span>
-                <span className={`transition-all duration-300 ease-in-out text-text ${isHover ? 'opacity-100 ml-2' : 'opacity-0 ml-0'}`}>
+                <span className={`transition-all duration-300 ease-in-out text-text ${isHover || isActive ? 'opacity-100 ml-2' : 'opacity-0 ml-0'}`}>
                     {text}
                 </span>
             </button>
