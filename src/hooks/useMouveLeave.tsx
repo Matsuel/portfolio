@@ -12,7 +12,7 @@ const useMouseLeave = () => {
         setIsMouseLeave(false);
     };
 
-    return { isMouseLeave: false, handleMouseLeave, handleMouseEnter };
+    return { isMouseLeave, handleMouseLeave, handleMouseEnter };
 }
 
 export default useMouseLeave;

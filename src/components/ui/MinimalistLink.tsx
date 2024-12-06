@@ -1,4 +1,5 @@
 import { handleClick } from '@/utils/links'
+import { NextRouter } from 'next/router'
 import React from 'react'
 
 interface MinimalistLinkProps {
@@ -6,7 +7,7 @@ interface MinimalistLinkProps {
     href: string
     index: number
     activeSection: string
-    router: any
+    router: NextRouter
 }
 
 const MinimalistLink = ({
