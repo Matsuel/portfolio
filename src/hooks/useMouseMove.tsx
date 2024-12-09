@@ -14,7 +14,7 @@ const useMouseMove = () => {
 
             timeoutId.current = setTimeout(() => {
                 setIsMouseMove(false);
-            }, 30000);
+            }, 20000);
         };
 
         window.addEventListener('mousemove', handleMouseMove);
