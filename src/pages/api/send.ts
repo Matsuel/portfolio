@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-    const { firstName, name, email, object, message } = req.body;
+    const { firstname, name, email, object, message } = req.body;
 
     const response = await fetch(process.env.DISCORD_WEBHOOK as string, {
         method: 'POST',
@@ -9,7 +9,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            content: `Nouveau message de ${firstName} ${name}\nObjet: ${object}\nEmail: ${email}\nMessage: ${message}`,
+            content: `Nouveau message de ${firstname} ${name}\nObjet: ${object}\nEmail: ${email}\nMessage: ${message}`,
         }),
     });
 
