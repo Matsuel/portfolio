@@ -26,7 +26,7 @@ const CustomLink = ({
         >
             <button
                 onClick={onClick}
-                className={`h-5 flex flex-row items-center gap-4 pl-10 border-b-[2px] transition-all duration-300 ease-in-out font-black uppercase ${isHover || isActive ? "border-white w-auto" : "border-[#a3a3a3] w-[100px]"}`}
+                className={`h-5 flex flex-row items-center gap-4 pl-10 border-b-[2px] transition-all duration-300 ease-in-out font-black uppercase ${isHover || isActive ? "border-text w-auto" : "border-[#a3a3a3] w-[100px]"}`}
             >
                 <span className={`${isHover || isActive ? "text-text" : "text-[#a3a3a3]"} uppercase font-black`}>
                     {(index + 1).toString().padStart(2, '0')}
