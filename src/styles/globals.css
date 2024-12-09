@@ -18,6 +18,7 @@
   --background-invert: #000;
   --color: #000;
   --color-invert: #fff;
+  --secondary: #a3a3a3;
   --border: #e4e4e7;
   --border-cursor: #000;
   --input-background: #f9fafb;
@@ -29,6 +30,7 @@
   --background-invert: #000;
   --color: #000;
   --color-invert: #fff;
+  --secondary: #a3a3a3;
   --border: #e4e4e7;
   --border-cursor: #000;
   --input-background: #f9fafb;
@@ -40,6 +42,7 @@
   --background-invert: #fff;
   --color: #fff;
   --color-invert: #000;
+  --secondary: #a3a3a3;
   --border: #27272a;
   --border-cursor: #fff;
   --input-background: #121212;
