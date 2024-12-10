@@ -1,14 +1,15 @@
-import { useEffect, useState } from 'react'
+import SectionContext from '@/contexts/Section';
+import { useContext, useEffect } from 'react'
 
 const useSection = () => {
-    const [activeSection, setActiveSection] = useState<string>('');
+    const { setSection } = useContext(SectionContext);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        setActiveSection(entry.target.id);
+                        setSection(entry.target.id);
                     }
                 });
             },
@@ -23,8 +24,6 @@ const useSection = () => {
             sections.forEach((section) => observer.unobserve(section));
         };
     }, []);
-
-    return { activeSection };
 }
 
 export default useSection
