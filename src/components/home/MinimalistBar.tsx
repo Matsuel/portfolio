@@ -1,11 +1,9 @@
 import { NavbarLinks } from '@/constantes/navbar'
 import React from 'react'
-import useSection from '@/hooks/useSection'
 import { useRouter } from 'next/router'
 import MinimalistLink from '../ui/MinimalistLink'
 
 const MinimalistBar = () => {
-    const { activeSection } = useSection()
     const router = useRouter()
 
     return (
@@ -18,7 +16,6 @@ const MinimalistBar = () => {
                     text={text}
                     href={href}
                     index={index}
-                    activeSection={activeSection}
                     router={router}
                 />
             ))}

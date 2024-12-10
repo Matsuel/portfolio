@@ -12,12 +12,15 @@ import Percentage from "@/components/ui/Percentage";
 import Sidebar from "@/components/home/Sidebar";
 import Hero from "@/components/sections/Hero";
 import MinimalistBar from "@/components/home/MinimalistBar";
+import useSection from "@/hooks/useSection";
 
 export default function Home() {
 
   const { handleMouseEnter, handleMouseLeave, isMouseLeave } = useMouseLeave();
 
   const { isMouseMove } = useMouseMove()
+
+  useSection()
 
   return (
     <div className="w-full bg-background flex min-h-screen p-8 pb-20 relative"
