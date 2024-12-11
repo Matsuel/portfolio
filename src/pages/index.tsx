@@ -13,9 +13,11 @@ import Sidebar from "@/components/home/Sidebar";
 import Hero from "@/components/sections/Hero";
 import MinimalistBar from "@/components/home/MinimalistBar";
 import useSection from "@/hooks/useSection";
+import Loader from "@/components/Loader";
+import useLoading from "@/hooks/useLoading";
 
 export default function Home() {
-
+  const { loading } = useLoading();
   const { handleMouseEnter, handleMouseLeave, isMouseLeave } = useMouseLeave();
 
   const { isMouseMove } = useMouseMove()
@@ -27,6 +29,7 @@ export default function Home() {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+      {loading ? <Loader /> : null}
       {!isMouseMove || isMouseLeave ? <Sleep /> : null}
       <div
         className={`w-full flex flex-col items-center justify-start p-8 pt-24 gap-20 transition-opacity duration-700 ease-in-out ${!isMouseMove || isMouseLeave ? "opacity-10" : "opacity-100"}`}
