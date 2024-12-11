@@ -15,7 +15,6 @@ import MinimalistBar from "@/components/home/MinimalistBar";
 import useSection from "@/hooks/useSection";
 import Loader from "@/components/Loader";
 import useLoading from "@/hooks/useLoading";
-import Cursor from "@/components/ui/Cursor";
 
 export default function Home() {
   const { loading } = useLoading();
@@ -36,7 +35,6 @@ export default function Home() {
         className={`w-full flex flex-col items-center justify-start p-8 pt-24 gap-20 transition-opacity duration-700 ease-in-out ${!isMouseMove || isMouseLeave ? "opacity-10" : "opacity-100"}`}
       >
         <Title title={siteName} />
-        <Cursor />
         <Sidebar />
         <MinimalistBar />
         <Links />
