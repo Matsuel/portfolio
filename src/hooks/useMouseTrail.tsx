@@ -16,7 +16,7 @@ export const useMouseTrail = (x: number | null, y: number | null, count: number)
                 let nextX = x;
                 let nextY = y;
 
-                newCircles.forEach((circle, index) => {
+                newCircles.forEach((circle) => {
                     const dx = nextX - circle.x;
                     const dy = nextY - circle.y;
 
