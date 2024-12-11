@@ -30,6 +30,7 @@ const config: Config = {
         backgroundinverted: "var(--background-invert)",
         text: "var(--color)",
         colorinverted: "var(--color-invert)",
+        secondary: "var(--secondary)",
         input: "var(--input-background)",
         border: "var(--border)",
         "tech": "var(--tech)",

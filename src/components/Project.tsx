@@ -30,7 +30,7 @@ const Project = ({
             <div className='w-full h-auto p-4 flex flex-col gap-2'>
 
                 <h4 className='text-xl font-bold'>{title}</h4>
-                <p className='text-base text-[#a3a3a3]'>{description}</p>
+                <p className='text-base text-secondary'>{description}</p>
 
                 <div className='w-full h-auto flex flex-row flex-wrap gap-2'>
                     {technologies.map((technology) => (

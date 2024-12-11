@@ -33,7 +33,7 @@ const ExperienceItem = ({
             </div>
 
             <div className='w-auto h-[100%] ml-auto mr-8 flex flex-col'>
-                <p className='text-lg text-[#a3a3a3]'>{date}</p>
+                <p className='text-lg text-secondary'>{date}</p>
             </div>
         </Link>
     )
