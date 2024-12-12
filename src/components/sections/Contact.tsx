@@ -51,15 +51,48 @@ const Contact = () => {
                 </p>
 
                 <div className='w-full h-auto flex flex-row gap-10'>
-                    <Input placeholder='Nom' register={register} label='name' required />
-                    <Input placeholder='Prénom' register={register} label='firstname' required />
+                    <Input
+                        placeholder='Niel'
+                        registerName='name'
+                        register={register}
+                        label='Nom'
+                        required
+                    />
+
+                    <Input
+                        placeholder='Xavier'
+                        registerName='firstname'
+                        register={register}
+                        label='Prenom'
+                        required
+                    />
                 </div>
 
-                <Input placeholder='Objet' register={register} label='object' required />
+                <Input
+                    placeholder='Vente Free'
+                    registerName='object'
+                    register={register}
+                    label='Objet'
+                    required
+                />
 
-                <Input placeholder='Email' type='email' register={register} label='email' required />
+                <Input
+                    placeholder='xavier.niel@free.fr'
+                    registerName='email'
+                    register={register}
+                    label='Email'
+                    type='email'
+                    required
+                />
 
-                <Input placeholder='Message' area register={register} label='message' required />
+                <Input
+                    placeholder='Saissisez votre message'
+                    registerName='message'
+                    register={register}
+                    label='Message'
+                    required
+                    area
+                />
 
                 <Button type='submit'>
                     Envoyer le message

@@ -2,7 +2,7 @@ import useHour from '@/hooks/useHour'
 import useOpacity from '@/hooks/useOpacity'
 import React from 'react'
 
-const Sleep = () => {
+const Clock = () => {
 
     const { hour } = useHour()
     const { isVisible } = useOpacity()
@@ -14,4 +14,4 @@ const Sleep = () => {
     )
 }
 
-export default Sleep
+export default Clock

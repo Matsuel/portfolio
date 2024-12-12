@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
+import LoadingContext from '@/contexts/Loading'
 
 const Loader = () => {
+
+    const { loading } = useContext(LoadingContext)
+
+    if (!loading) return null
+
     return (
         <motion.div
             className="fixed z-[60] w-full h-screen bg-background left-0 top-0 flex flex-col justify-center items-center"

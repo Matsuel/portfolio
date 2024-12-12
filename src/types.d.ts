@@ -5,6 +5,18 @@ export type SectionContextType = {
     setSection: Dispatch<SetStateAction<string>>;
 };
 
+export type MouseContextType = {
+    isMouseMove: boolean;
+    setIsMouseMove: Dispatch<SetStateAction<boolean>>;
+    isMouseLeave: boolean;
+    setIsMouseLeave: Dispatch<SetStateAction<boolean>>;
+};
+
+export type LoadingContextType = {
+    loading: boolean;
+    setLoading: Dispatch<SetStateAction<boolean>>;
+};
+
 export interface ProviderProps {
     children: React.ReactNode;
 }

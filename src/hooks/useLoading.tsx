@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react'
+import LoadingContext from '@/contexts/Loading';
+import { useContext, useEffect } from 'react'
 
 const useLoading = () => {
 
-    const [loading, setLoading] = useState<boolean>(true);
+    const { setLoading } = useContext(LoadingContext)
 
     useEffect(() => {
         setTimeout(() => {
@@ -10,7 +11,6 @@ const useLoading = () => {
         }, 2000);
     }, [])
 
-    return { loading }
 }
 
 export default useLoading

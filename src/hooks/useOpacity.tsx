@@ -1,15 +1,24 @@
-import { useEffect, useState } from 'react'
+import MouseContext from '@/contexts/Mouse';
+import { useContext, useEffect, useState } from 'react'
 
 const useOpacity = () => {
+    const { isMouseLeave, isMouseMove } = useContext(MouseContext);
+
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        const timeout = setTimeout(() => {
-            setIsVisible(true);
-        }, 700);
+        if (isMouseLeave || !isMouseMove) {
 
-        return () => clearTimeout(timeout);
-    }, []);
+            const timeout = setTimeout(() => {
+                setIsVisible(true);
+            }, 700);
+
+            return () => clearTimeout(timeout);
+        } else {
+
+            setIsVisible(false);
+        }
+    }, [isMouseLeave, isMouseMove]);
 
     return { isVisible }
 }
