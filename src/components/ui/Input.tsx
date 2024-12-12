@@ -7,7 +7,8 @@ import { IFormValues } from '@/types';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     area?: boolean
-    label: Path<IFormValues>
+    label: string
+    registerName: Path<IFormValues>
     register: UseFormRegister<IFormValues>
     required?: boolean
 }
@@ -17,6 +18,7 @@ const Input = ({
     label,
     register,
     required = true,
+    registerName,
     ...props
 }: InputProps) => {
 
@@ -45,7 +47,7 @@ const Input = ({
             <label
                 className='text-text text-xl font-bold ml-1'
             >
-                {props.placeholder}
+                {label}
             </label>
             <motion.div
                 style={{
@@ -64,15 +66,15 @@ const Input = ({
             >
                 {area ? (
                     <textarea
-                        className='w-full h-40 px-4 py-2 !mb-[-5px] rounded-lg focus:outline-text bg-input border border-border focus:border-primary text-text placeholder-text resize-none'
-                        {...register(label, { required })}
+                        className='w-full h-40 px-4 py-2 !mb-[-5px] rounded-lg focus:outline-text bg-input border border-border focus:border-primary text-text placeholder-secondary resize-none'
+                        {...register(registerName, { required })}
                         {...(props as React.TextareaHTMLAttributes<HTMLTextAreaElement>)}
                     ></textarea>
                 ) : (
 
                     <input
-                        className='w-full h-10 px-4 py-2 rounded-lg focus:outline-text bg-input border border-border focus:border-primary text-text placeholder-text'
-                        {...register(label, { required })}
+                        className='w-full h-10 px-4 py-2 rounded-lg focus:outline-text bg-input border border-border focus:border-primary text-text placeholder-secondary'
+                        {...register(registerName, { required })}
                         {...(props as React.InputHTMLAttributes<HTMLInputElement>)}
                     />
                 )}
