@@ -6,7 +6,7 @@ const MouseProvider = ({
     children
 }: ProviderProps) => {
 
-    const [isMouseMove, setIsMouseMove] = useState<boolean>(false);
+    const [isMouseMove, setIsMouseMove] = useState<boolean>(true);
     const [isMouseLeave, setIsMouseLeave] = useState<boolean>(false);
 
     return (

@@ -12,6 +12,11 @@ export type MouseContextType = {
     setIsMouseLeave: Dispatch<SetStateAction<boolean>>;
 };
 
+export type LoadingContextType = {
+    loading: boolean;
+    setLoading: Dispatch<SetStateAction<boolean>>;
+};
+
 export interface ProviderProps {
     children: React.ReactNode;
 }
