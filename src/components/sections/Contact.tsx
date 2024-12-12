@@ -69,7 +69,7 @@ const Contact = () => {
                 </div>
 
                 <Input
-                    placeholder='Objet'
+                    placeholder='Vente Free'
                     registerName='object'
                     register={register}
                     label='Objet'
