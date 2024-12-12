@@ -1,7 +1,8 @@
-import { useState, useEffect, useRef } from "react";
+import MouseContext from "@/contexts/Mouse";
+import { useEffect, useRef, useContext } from "react";
 
 const useMouseLeave = () => {
-    const [isMouseLeave, setIsMouseLeave] = useState(false);
+    const { setIsMouseLeave } = useContext(MouseContext);
     const containerRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -42,7 +43,7 @@ const useMouseLeave = () => {
         };
     }, []);
 
-    return { isMouseLeave, containerRef };
+    return { containerRef };
 };
 
 export default useMouseLeave;

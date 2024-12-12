@@ -15,12 +15,17 @@ import MinimalistBar from "@/components/home/MinimalistBar";
 import useSection from "@/hooks/useSection";
 import Loader from "@/components/Loader";
 import useLoading from "@/hooks/useLoading";
+import { useContext } from "react";
+import MouseContext from "@/contexts/Mouse";
 
 export default function Home() {
-  const { loading } = useLoading();
-  const { containerRef, isMouseLeave } = useMouseLeave();
 
-  const { isMouseMove } = useMouseMove()
+  const { isMouseLeave, isMouseMove } = useContext(MouseContext);
+
+  const { loading } = useLoading();
+  const { containerRef } = useMouseLeave();
+
+  useMouseMove()
 
   useSection()
 
