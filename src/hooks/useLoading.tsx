@@ -1,5 +1,5 @@
 import LoadingContext from '@/contexts/Loading';
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect } from 'react'
 
 const useLoading = () => {
 
