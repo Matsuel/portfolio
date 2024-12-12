@@ -18,16 +18,16 @@ import useLoading from "@/hooks/useLoading";
 
 export default function Home() {
   const { loading } = useLoading();
-  const { handleMouseEnter, handleMouseLeave, isMouseLeave } = useMouseLeave();
+  const { containerRef, isMouseLeave } = useMouseLeave();
 
   const { isMouseMove } = useMouseMove()
 
   useSection()
 
   return (
-    <div className="w-full bg-background flex min-h-screen p-8 pb-20 relative"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+    <div
+      className="w-full bg-background flex min-h-screen p-8 pb-20 relative"
+      ref={containerRef}
     >
       {loading ? <Loader /> : null}
       {!isMouseMove || isMouseLeave ? <Sleep /> : null}
