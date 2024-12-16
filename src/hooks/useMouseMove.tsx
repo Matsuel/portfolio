@@ -1,7 +1,8 @@
-import { useEffect, useState, useRef } from 'react';
+import MouseContext from '@/contexts/Mouse';
+import { useEffect, useRef, useContext } from 'react';
 
 const useMouseMove = () => {
-    const [isMouseMove, setIsMouseMove] = useState<boolean>(true);
+    const { setIsMouseMove } = useContext(MouseContext);
     const timeoutId = useRef<NodeJS.Timeout | null>(null);
 
     useEffect(() => {
@@ -29,7 +30,6 @@ const useMouseMove = () => {
         };
     }, []);
 
-    return { isMouseMove };
 };
 
 export default useMouseMove;
