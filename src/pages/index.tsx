@@ -2,6 +2,7 @@
 import Content from "@/components/Content";
 import Loader from "@/components/Loader";
 import Clock from "@/components/home/Clock";
+import useKeyPress from "@/hooks/useKeyPress";
 
 import useLoading from "@/hooks/useLoading";
 import useMouseMove from "@/hooks/useMouseMove";
@@ -15,6 +16,7 @@ export default function Home() {
   useLoading();
   useMouseMove()
   useSection()
+  useKeyPress()
 
   return (
     <div

@@ -1,5 +1,10 @@
 import { Dispatch, SetStateAction } from "react";
 
+export type KeysContextType = {
+    keyPressed: string[]
+    setKeyPressed: Dispatch<SetStateAction<string[]>>
+};
+
 export type SectionContextType = {
     section: string;
     setSection: Dispatch<SetStateAction<string>>;
