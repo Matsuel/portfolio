@@ -23,7 +23,7 @@ const useKeyPress = () => {
         }
     }, [keyPressed, setKeyPressed, loading])
 
-    return {keyPressed}
+    return { keyPressed }
 }
 
 export default useKeyPress

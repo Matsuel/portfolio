@@ -24,7 +24,7 @@ const Project = ({
     noPreview
 }: ProjectProps) => {
     return (
-        <div className='w-[30%] h-auto text-text flex flex-col gap-4 border border-border rounded-xl'>
+        <div className='w-[29%] h-auto text-text flex flex-col gap-4 border border-border rounded-xl'>
             {image ? <Image src={image} alt={title} className='w-full h-[200px] rounded-t-xl' /> : noPreview}
 
             <div className='w-full h-auto p-4 flex flex-col gap-2'>

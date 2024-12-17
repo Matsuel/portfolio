@@ -30,19 +30,19 @@ export const projects = [
         image: Blog
     },
     {
-        title: "HHPI Bank",
-        description: "Banque fictive réalisée en 3ème année chez Ynov Bordeaux, avec une équipe de 8 personnes. L'objectif de cette banque est de nous permettre de comprendre le fonctionnement d'une banque, et de réaliser un projet complet.",
-        link: "",
-        github: "https://github.com/Bank-HHPI",
-        technologies: ["Next.js", "React Native", "TypeScript", "Express", "MongoDB", "Figma", "TailwindCSS", "Trello"],
-        noPreview: <NoPreview />
-    },
-    {
         title: "ONU",
         description: "Projet Next.js réalisé en 3ème année chez Ynov Bordeaux, avec une équipe de 3 personnes. Ce jeu est un clone du jeu UNO, mais en version en ligne.",
         link: "",
         github: "https://github.com/Matsuel/ONU",
         technologies: ["Next.js", "TypeScript", "Socket.io", "TailwindCSS"],
         image: ONU
+    },
+    {
+        title: "HHPI Bank",
+        description: "Banque fictive réalisée en 3ème année chez Ynov Bordeaux, avec une équipe de 8 personnes. L'objectif de cette banque est de nous permettre de comprendre le fonctionnement d'une banque, et de réaliser un projet complet.",
+        link: "",
+        github: "https://github.com/Bank-HHPI",
+        technologies: ["Next.js", "React Native", "TypeScript", "Express", "MongoDB", "Figma", "TailwindCSS", "Trello"],
+        noPreview: <NoPreview />
     }
 ]
