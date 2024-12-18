@@ -22,7 +22,7 @@ const ThemeButton = ({
 
     return (
         <button
-            className={`w-9 h-9 rounded-full flex justify-center items-center ${theme === themeToSet ? 'bg-backgroundinverted text-colorinverted' : 'bg-background text-text'}`}
+            className={`w-8 h-8 rounded-full flex justify-center items-center ${theme === themeToSet ? 'bg-backgroundinverted text-colorinverted' : 'bg-background text-text'}`}
             onClick={() => setTheme(themeToSet)}
         >
             {icon}
