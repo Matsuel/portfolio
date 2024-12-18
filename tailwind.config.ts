@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,11 +8,30 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
+      },
+      borderWidth: {
+        1: "1px",
+      },
+      borderColor: {
+        "custom": "var(--border)",
+        "cursor": "var(--border-cursor)",
+      },
+      borderRadius: {
+        "custom": "var(--radius)",
+      },
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        backgroundinverted: "var(--background-invert)",
+        text: "var(--color)",
+        colorinverted: "var(--color-invert)",
+        secondary: "var(--secondary)",
+        input: "var(--input-background)",
+        border: "var(--border)",
+        "tech": "var(--tech)",
       },
     },
   },
-  plugins: [],
-} satisfies Config;
+};
+export default config;
