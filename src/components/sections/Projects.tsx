@@ -10,7 +10,7 @@ const Projects = () => {
         Projets
       </SectionTitle>
 
-      <div className='w-full h-auto flex flex-row flex-wrap justify-around gap-10'>
+      <div className='w-full h-auto flex flex-row flex-wrap justify-center gap-12'>
 
         {projects.map((project) => (
           <Project

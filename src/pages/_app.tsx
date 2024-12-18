@@ -6,19 +6,22 @@ import { Analytics } from "@vercel/analytics/react"
 import SectionProvider from "@/providers/SectionProvider";
 import MouseProvider from "@/providers/MouseProvider";
 import LoadingProvider from "@/providers/LoadingProvider";
+import KeysProvider from "@/providers/KeysProvider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider>
-      <LoadingProvider>
-        <SectionProvider>
-          <MouseProvider>
-            <Toaster />
-            <Analytics />
-            <Component {...pageProps} />
-          </MouseProvider>
-        </SectionProvider>
-      </LoadingProvider>
+      <KeysProvider>
+        <LoadingProvider>
+          <SectionProvider>
+            <MouseProvider>
+              <Toaster />
+              <Analytics />
+              <Component {...pageProps} />
+            </MouseProvider>
+          </SectionProvider>
+        </LoadingProvider>
+      </KeysProvider>
     </ThemeProvider>
   );
 }

@@ -19,7 +19,7 @@ const Paragraph = ({
     return (
         <p
             ref={container}
-            className="flex text-[80px] leading-none text-text font-bold w-full flex-wrap"
+            className="flex text-[80px] leading-none text-text font-bold w-full flex-wrap mt-[5%]"
         >
             {
                 words.map((word, i) => {
