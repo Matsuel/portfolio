@@ -1,3 +1,0 @@
-export const aboutParagraph = "Actuellement etudiant en développement web et alternant chez Informatique CDC, j'entreprends un grand nombre de projets afin d'acquérir un maximum d'expérience dans la création d'un projet web de sa réflexion jusqu'à sa livraison finale. Mon objectif est de développer une expertise complète pour répondre au mieux aux exigences de chaque projet."
-
-export const siteName = "Matheo Lang"
