@@ -6,7 +6,7 @@ import Moon from '@/assets/Moon'
 
 const Theme = () => {
     return (
-        <div className='fixed w-auto h-auto flex flex-row gap-2 p-1 bottom-8 z-50 self-start'>
+        <div className='fixed w-auto h-auto flex flex-row gap-2 p-1 top-8 right-8 z-50 self-start'>
             <ThemeButton icon={<Desktop size={24} />} themeToSet='system' />
             <ThemeButton icon={<Sun size={24} />} themeToSet='light' />
             <ThemeButton icon={<Moon size={24} />} themeToSet='dark' />
