@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { cn } from "@/utils/cn";
 
 interface PartTitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
     title: string;
@@ -9,10 +9,8 @@ const PartTitle = ({
     className
 }: PartTitleProps) => {
 
-    const [isHovered, setIsHovered] = useState(false)
-
     return (
-        <h1 className={`text-[170px] font-bold text-center rounded-full tracking-wide uppercase transition-all duration-500 ease-in-out ${isHovered ? "text-black bg-white bg-opacity-20" : "text-black bg-white"} ${className}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <h1 className={cn(`text-[170px] font-bold text-center rounded-full tracking-wide uppercase transition-all duration-500 ease-in-out text-black bg-white hover:bg-opacity-20`, className)}>
             {title}
         </h1>
     )
