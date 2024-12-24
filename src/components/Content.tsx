@@ -4,6 +4,7 @@ import React from 'react'
 import Theme from "@/components/Theme";
 import HeroTitle from './HeroTitle';
 import CircleProgress from './CircleProgress';
+import Hour from './Hour';
 
 const Content = () => {
 
@@ -15,6 +16,7 @@ const Content = () => {
             <HeroTitle />
             <Theme />
             <CircleProgress />
+            <Hour />
         </div>
     )
 }
