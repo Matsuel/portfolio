@@ -5,6 +5,7 @@ import Theme from "@/components/Theme";
 import CircleProgress from './CircleProgress';
 import Hour from './Hour';
 import Hero from '@/components/Hero';
+import Building from './Building';
 
 const Content = () => {
 
@@ -17,6 +18,7 @@ const Content = () => {
             <CircleProgress />
             <Hour />
             <Hero />
+            <Building />
         </div>
     )
 }
