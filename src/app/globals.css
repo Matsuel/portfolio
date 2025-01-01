@@ -27,7 +27,7 @@
 
 .light {
   --background: #fff;
-  --background-invert: #09090b;
+  --background-invert: #000;
   --color: #000;
   --color-invert: #fff;
   --secondary: #a3a3a3;
@@ -38,7 +38,7 @@
 }
 
 .dark {
-  --background: #09090b;
+  --background: #000;
   --background-invert: #fff;
   --color: #fff;
   --color-invert: #000;
