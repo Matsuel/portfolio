@@ -8,9 +8,9 @@ const Hero = () => {
             </p>
 
             <div className='w-auto h-auto flex flex-col gap-0'>
-                <h1 className='text-[200px] leading-none font-bold text-text uppercase'>Matheo</h1>
+                <h1 className='text-[200px] leading-none font-extrabold text-text uppercase'>Matheo</h1>
                 <div className='w-auto h-auto flex flex-row gap-4'>
-                    <h1 className='text-[200px] leading-none font-bold text-text uppercase'>Lang</h1>
+                    <h1 className='text-[200px] leading-none font-extrabold text-text uppercase'>Lang</h1>
                 </div>
             </div>
         </section>
