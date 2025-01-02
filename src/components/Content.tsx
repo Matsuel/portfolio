@@ -6,14 +6,15 @@ import CircleProgress from './CircleProgress';
 import Hour from './Hour';
 import Hero from '@/components/Hero';
 import Building from './Building';
+import Loader from './Loader';
 
 const Content = () => {
-
 
     return (
         <div
             className={`w-full flex flex-col items-center justify-start p-8 gap-20 transition-opacity duration-700 ease-in-out`}
         >
+            <Loader />
             <Theme />
             <CircleProgress />
             <Hour />
