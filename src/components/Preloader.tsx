@@ -36,16 +36,16 @@ const Preloader = () => {
     }
 
     return (
-        <motion.div variants={slideUp} initial="initial" exit="exit" className="w-full h-full fixed top-0 left-0 z-[99] flex justify-center items-center bg-[#141516]">
+        <motion.div variants={slideUp} initial="initial" exit="exit" className="w-full h-full fixed top-0 left-0 z-[99] flex justify-center items-center bg-background">
             {dimension.width > 0 &&
                 <>
                     <motion.p
-                        className="flex text-text text-5xl items-center absolute z-[1]"
+                        className="flex text-text text-9xl font-bold items-center absolute z-[1]"
                         variants={opacity}
                         initial="initial"
                         animate="enter"
                     >
-                        <span className='block w-3 h-3 bg-text mr-3 rounded-full'></span>
+                        <span className='block w-8 h-8 bg-text mr-3 rounded-full'></span>
                         {words[index]}
                     </motion.p>
                     <svg
@@ -53,7 +53,7 @@ const Preloader = () => {
                         style={{ height: "calc(100% + 300px)" }}
                     >
                         <motion.path
-                            fill="#141516"
+                            fill="#000"
                             variants={curve}
                             initial="initial"
                             exit="exit"
