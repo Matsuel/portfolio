@@ -1,3 +1,5 @@
+"use client"
+
 import Arrow from "@/assets/Arrow";
 import useScrollPercentage from "@/hooks/usePercentage";
 import React from "react";

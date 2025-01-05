@@ -1,3 +1,4 @@
+"use client"
 import useHour from '@/hooks/useHour'
 import React from 'react'
 import { motion } from 'framer-motion'
