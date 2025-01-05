@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Hero = () => {
@@ -15,6 +16,14 @@ const Hero = () => {
                     <h1 className='text-[200px] leading-none font-extrabold text-text uppercase'>Lang</h1>
                 </div>
             </div>
+
+            <Image
+                className='absolute right-8 top-[50%] transform translate-y-[-50%]'
+                src='/mars.png'
+                alt='Mars'
+                width={800}
+                height={800}
+            />
 
 
         </section>
