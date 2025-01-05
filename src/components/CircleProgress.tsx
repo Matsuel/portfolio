@@ -31,7 +31,7 @@ const CircleProgress = () => {
                         background: `conic-gradient(#00E46C ${percentageNumber}%, #173B2A ${percentageNumber}% 100%)`,
                     }}
                 >
-                    <div className="w-8 h-8 bg-black rounded-full flex justify-center items-center">
+                    <div className="w-8 h-8 bg-background rounded-full flex justify-center items-center">
                         <span className="text-[#00E46C] text-xs font-bold">{percentageNumber}</span>
                     </div>
                 </div>
