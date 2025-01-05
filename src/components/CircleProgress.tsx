@@ -6,11 +6,21 @@ const CircleProgress = () => {
     const { scrollPercentage } = useScrollPercentage();
     const percentageNumber = parseInt(scrollPercentage, 10);
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
 
     return (
         <div className="fixed right-8 bottom-8 flex flex-row items-center justify-center gap-2">
-            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className={`flex flex-row items-center justify-center border-none outline-none transition-all duration-500 ease-in-out ${percentageNumber < 10 ? "opacity-0" : "opacity-100"}`}>
-                <Arrow size={40} />
+            <button
+                onClick={scrollToTop}
+                className={`flex flex-row items-center justify-center border-none outline-none transition-all duration-500 ease-in-out ${percentageNumber < 10
+                    ? "opacity-0 pointer-events-none"
+                    : "opacity-100 pointer-events-auto"
+                    }`}
+            >
+                <Arrow size={45} />
             </button>
             <div className="relative flex justify-center items-center">
                 <div
