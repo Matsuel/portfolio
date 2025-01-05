@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Button from './Button'
 
 const Hero = () => {
     // TODO: Ajouter un délai de lecture pour la vidéo
@@ -12,8 +13,12 @@ const Hero = () => {
 
             <div className='w-auto h-auto flex flex-col gap-0'>
                 <h1 className='text-[200px] leading-none font-extrabold text-text uppercase'>Matheo</h1>
-                <div className='w-auto h-auto flex flex-row gap-4'>
+                <div className='w-auto h-auto flex flex-row items-center gap-4'>
                     <h1 className='text-[200px] leading-none font-extrabold text-text uppercase'>Lang</h1>
+                    <Button variant='primary' className='ml-8'>
+                        Signaler votre intérêt
+                    </Button>
+
                 </div>
             </div>
 
