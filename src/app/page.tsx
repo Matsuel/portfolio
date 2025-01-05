@@ -5,6 +5,7 @@ import Hour from '@/components/Hour';
 import Hero from '@/components/Hero';
 import Building from '@/components/Building';
 import Loader from '@/components/Loader';
+import SectionLayout from '@/components/SectionLayout';
 
 export default function Home() {
 
@@ -15,7 +16,10 @@ export default function Home() {
       <CircleProgress />
       <Hour />
       <Hero />
-      <Building />
+      <SectionLayout title="Projets" subtitle='realisations techniques'>
+        cc
+      </SectionLayout>
+      {/* <Building /> */}
     </div>
   );
 }

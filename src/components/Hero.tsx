@@ -3,10 +3,9 @@ import React from 'react'
 import Button from './Button'
 
 const Hero = () => {
-    // TODO: Ajouter un délai de lecture pour la vidéo
 
     return (
-        <section id='home' className='w-full h-auto flex flex-col gap-8 p-8 mt-8 justify-start items-start relative'>
+        <section id='home' className='w-full h-auto min-h-[90vh] flex flex-col gap-8 p-8 mt-8 justify-center items-start relative'>
             <p className='w-[30%] text-4xl font-bold text-text'>
                 Développeur web <span className='text-secondary'>spécialisé dans la création de </span> solutions simples <span className='text-secondary'>mais</span> efficaces, <span className='text-secondary'>avec une approche qui </span> redéfinit les standards du design
             </p>
