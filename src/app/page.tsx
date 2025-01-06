@@ -3,9 +3,8 @@ import Theme from "@/components/Theme";
 import CircleProgress from '@/components/CircleProgress';
 import Hour from '@/components/Hour';
 import Hero from '@/components/Hero';
-import Building from '@/components/Building';
 import Loader from '@/components/Loader';
-import SectionLayout from '@/components/SectionLayout';
+import Projets from '@/components/sections/Projets';
 
 export default function Home() {
 
@@ -16,10 +15,7 @@ export default function Home() {
       <CircleProgress />
       <Hour />
       <Hero />
-      <SectionLayout title="Projets" subtitle='realisations techniques'>
-        cc
-      </SectionLayout>
-      {/* <Building /> */}
+      <Projets />
     </div>
   );
 }

@@ -28,8 +28,6 @@ const Hero = () => {
                 width={800}
                 height={800}
             />
-
-
         </section>
     )
 }
