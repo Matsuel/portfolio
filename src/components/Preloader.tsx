@@ -40,12 +40,12 @@ const Preloader = () => {
             {dimension.width > 0 &&
                 <>
                     <motion.p
-                        className="flex text-text text-9xl font-bold items-center absolute z-[1]"
+                        className="flex text-text text-[200px] font-bold items-center absolute z-[1]"
                         variants={opacity}
                         initial="initial"
                         animate="enter"
                     >
-                        <span className='block w-8 h-8 bg-text mr-3 rounded-full'></span>
+                        <span className='block w-12 h-12 bg-text mr-3 rounded-full'></span>
                         {words[index]}
                     </motion.p>
                     <svg
@@ -53,6 +53,7 @@ const Preloader = () => {
                         style={{ height: "calc(100% + 300px)" }}
                     >
                         <motion.path
+                            // Patch ça pcq en blanc on voit plus le texte
                             fill="#000"
                             variants={curve}
                             initial="initial"
