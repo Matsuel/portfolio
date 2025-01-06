@@ -53,8 +53,7 @@ const Preloader = () => {
                         style={{ height: "calc(100% + 300px)" }}
                     >
                         <motion.path
-                            // Patch ça pcq en blanc on voit plus le texte
-                            fill="#000"
+                            className="fill-current text-background"
                             variants={curve}
                             initial="initial"
                             exit="exit"
