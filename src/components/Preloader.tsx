@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { words, opacity, slideUp } from '@/contantes/preloader';
+import { words, opacity, slideUp } from '@/constantes/preloader';
 
 const Preloader = () => {
 
