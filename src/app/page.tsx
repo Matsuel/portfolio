@@ -1,12 +1,12 @@
 import React from 'react'
 import Theme from "@/components/Theme";
-import CircleProgress from '@/components/CircleProgress';
-import Hour from '@/components/Hour';
-import Hero from '@/components/Hero';
-import Loader from '@/components/Loader';
+import CircleProgress from '@/components/Ui/CircleProgress';
+import Hour from '@/components/Ui/Hour';
+import Hero from '@/components/sections/Hero';
+import Loader from '@/components/Ui/Loader';
 import Projets from '@/components/sections/Projets';
 import Navbar from '@/components/Navbar';
-import MenuIcon from '@/components/MenuIcon';
+import MenuIcon from '@/components/Navbar/MenuIcon';
 
 export default function Home() {
 
