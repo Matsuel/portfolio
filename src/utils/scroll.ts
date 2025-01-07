@@ -9,3 +9,13 @@ export const scrollToPercentage = (percentage: number) => {
 export const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+export const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    }
+};

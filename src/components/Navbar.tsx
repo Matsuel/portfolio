@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import MenuIcon from "./MenuIcon";
 import { AnimatePresence, motion } from "framer-motion";
 import { navbarLinks } from "@/constantes/navbar";
+import { scrollToSection } from "@/utils/scroll";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,11 @@ const Navbar = () => {
     const toggleMenu = () => {
         setIsMenuOpen((prev) => !prev);
     };
+
+    const onClickButton = (sectionId: string) => {
+        toggleMenu();
+        scrollToSection(sectionId);
+    }
 
     return (
         <>
@@ -21,14 +27,18 @@ const Navbar = () => {
                         className="fixed w-full min-h-screen h-screen bg-background flex flex-col justify-center items-center gap-5 z-40 top-0 left-0"
                         initial={{ y: "100%" }}
                         animate={{ y: 0 }}
-                        exit={{ y: "100%" }}
+                        exit={{ y: "100%", transition: { duration: 0.5, delay: 0.5 } }}
                         transition={{ duration: 0.5, ease: "easeInOut" }}
                     >
                         {navbarLinks.map((link, index) => (
                             <motion.button
                                 key={link.name}
                                 className="w-full h-auto flex flex-row items-start justify-center text-text"
-                                onClick={toggleMenu}
+                                onClick={() => onClickButton(link.sectionId)}
+                                initial={{ x: index % 2 === 0 ? "-100%" : "100%" }}
+                                animate={{ x: 0 }}
+                                exit={{ x: index % 2 === 0 ? "-100%" : "100%" }}
+                                transition={{ duration: 0.5, ease: "easeInOut", delay: index * 0.1 }}
                             >
                                 <span
                                     className="mr-4 mt-3 text-4xl font-semibold leading-none"

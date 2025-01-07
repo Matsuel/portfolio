@@ -3,7 +3,7 @@ import SectionLayout from '@/components/sections/SectionLayout'
 
 const Projets = () => {
     return (
-        <SectionLayout title="Projets" subtitle='realisations techniques'>
+        <SectionLayout title="Projets" subtitle='realisations techniques' id='projets'>
 
         </SectionLayout>
     )
