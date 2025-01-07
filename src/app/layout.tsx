@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ThemeProvider from "@/providers/ThemeProvider";
+import NavbarProvider from "@/providers/NavbarProvider";
 
 export const metadata: Metadata = {
   title: "Matheo Lang",
@@ -15,9 +16,11 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        <NavbarProvider>
+          <ThemeProvider>
+            {children}
+          </ThemeProvider>
+        </NavbarProvider>
       </body>
     </html>
   );

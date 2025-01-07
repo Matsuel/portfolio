@@ -1,13 +1,17 @@
 "use client";
-import { useState } from 'react';
 
-const MenuIcon = ({ onClick, isMenuOpen }: { onClick: () => void; isMenuOpen: boolean }) => {
+import NavbarContext from "@/contexts/NavbarContext";
+import { useContext } from "react";
+
+const MenuIcon = () => {
+
+    const { toggleMenu, isMenuOpen } = useContext(NavbarContext)
 
 
     return (
         <button
             className="fixed z-50 top-8 right-8 bg-transparent border-none cursor-pointer flex p-0"
-            onClick={onClick}
+            onClick={toggleMenu}
             aria-label="Main Menu"
             aria-expanded={isMenuOpen}
         >
