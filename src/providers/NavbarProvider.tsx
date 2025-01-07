@@ -1,9 +1,12 @@
 "use client"
 import NavbarContext from '@/contexts/NavbarContext';
+import { ProviderProps } from '@/types';
 import React, { useState } from 'react'
 
 
-const NavbarProvider = ({ children }: { children: React.ReactNode }) => {
+const NavbarProvider = ({
+    children
+}: ProviderProps) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
