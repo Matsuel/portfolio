@@ -1,16 +1,11 @@
 "use client"
-
 import Arrow from "@/assets/Arrow";
 import useScrollPercentage from "@/hooks/usePercentage";
+import { scrollToTop } from "@/utils/scroll";
 import React from "react";
 
 const CircleProgress = () => {
     const { scrollPercentage } = useScrollPercentage();
-
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
 
     return (
         <div className="fixed right-8 bottom-8 flex flex-row items-center justify-center gap-2">
