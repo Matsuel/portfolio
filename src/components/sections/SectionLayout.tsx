@@ -5,7 +5,7 @@ import Subtitle from '@/components/Subtitle'
 interface SectionLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
     title: string
     subtitle: string
-    children: React.ReactNode
+    children?: React.ReactNode
 }
 
 const SectionLayout = ({
