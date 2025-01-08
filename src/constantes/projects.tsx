@@ -6,7 +6,8 @@ export const projects = [
         link: "https://cacbo-badminton.vercel.app/",
         github: "https://github.com/Matsuel/CACBO-Badminton",
         technologies: ["Next.js", "TailwindCSS", "TypeScript", "Figma"],
-        icon: "/cacbo.png"
+        icon: "/cacbo.png",
+        filter: "association"
     },
     {
         title: "ATPEscrime",
@@ -14,7 +15,8 @@ export const projects = [
         link: "https://atpescrime.com",
         github: "https://github.com/Matsuel/ATPE",
         technologies: ["Next.js", "SCSS", "TypeScript"],
-        icon: "/atpe.png"
+        icon: "/atpe.png",
+        filter: "association"
     },
     {
         title: "ONU",
@@ -22,6 +24,26 @@ export const projects = [
         link: "",
         github: "https://github.com/Matsuel/ONU",
         technologies: ["Next.js", "TypeScript", "Socket.io", "TailwindCSS"],
-        icon: "/onu.png"
+        icon: "/onu.png",
+        filter: "digital"
+    }
+]
+
+export const projectsFilters = [
+    {
+        name: "Tous",
+        filter: "all"
+    },
+    {
+        name: "Association",
+        filter: "association"
+    },
+    {
+        name: "Batiment",
+        filter: "batiment"
+    },
+    {
+        name: "Digital",
+        filter: "digital"
     }
 ]
