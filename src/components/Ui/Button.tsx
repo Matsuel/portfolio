@@ -17,14 +17,14 @@ const Button = ({
 
     const variants = {
         primary: "bg-[#0077ED] text-white",
-        secondary: "bg-secondary text-text",
+        secondary: "bg-transparent text-[#0077ED] hover:bg-[#0077ED] hover:text-white",
         white: "bg-white text-color-invert"
     }
 
     return (
         <motion.button
             whileTap={{ scale: 0.95 }}
-            className={cn(`w-auto h-auto px-5 py-[11px] rounded-full text-lg ${variants[variant]}`, className)}
+            className={cn(`w-auto h-auto px-5 py-2 rounded-full border border-[#0077ED] text-lg ${variants[variant]}`, className)}
             {...props as AnimationEventHandler<HTMLButtonElement>}
         >
             {children}

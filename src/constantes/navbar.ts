@@ -8,12 +8,12 @@ export const navbarLinks = [
         sectionId: "projets",
     },
     {
-        name: "Services",
-        sectionId: "services",
-    },
-    {
         name: "Parcours",
         sectionId: "parcours",
+    },
+    {
+        name: "Services",
+        sectionId: "services",
     },
     {
         name: "Contact",
