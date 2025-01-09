@@ -7,6 +7,7 @@ import Loader from '@/components/Ui/Loader';
 import Projets from '@/components/sections/Projets';
 import Navbar from '@/components/Navbar';
 import MenuIcon from '@/components/Navbar/MenuIcon';
+import Parcours from '@/components/sections/Parcours';
 
 export default function Home() {
 
@@ -14,12 +15,13 @@ export default function Home() {
     <div className="w-full bg-background flex flex-col h-auto p-8 pb-20 gap-20">
       <MenuIcon />
       <Navbar />
-      {/* <Loader /> */}
+      <Loader />
       <Theme />
       <CircleProgress />
       <Hour />
       <Hero />
       <Projets />
+      <Parcours />
     </div>
   );
 }

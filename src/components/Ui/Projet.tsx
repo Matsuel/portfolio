@@ -35,7 +35,7 @@ const Projet = ({
                 {description}
             </p>
 
-            <div className='flex flex-row gap-2'>
+            <div className='flex flex-row gap-4'>
                 <CustomLink href={github} variant='secondary'>
                     Github
                 </CustomLink>
