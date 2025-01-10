@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from '@/components/Ui/Title'
 import Subtitle from '@/components/Ui/Subtitle'
+import { cn } from '@/utils/cn'
 
 interface SectionLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
     title: string
@@ -9,13 +10,14 @@ interface SectionLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const SectionLayout = ({
+    className,
     title,
     subtitle,
     children,
     ...props
 }: SectionLayoutProps) => {
     return (
-        <section {...props} className='w-full flex flex-col gap-8 items-center'>
+        <section {...props} className={cn('w-full flex flex-col gap-8 items-center', className)}>
             <Title>{title}</Title>
             <Subtitle>{subtitle}</Subtitle>
             {children}
