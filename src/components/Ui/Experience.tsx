@@ -1,5 +1,6 @@
 "use client";
 import Arrow from '@/assets/Arrow'
+import RightArrow from '@/assets/RightArrow';
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -28,7 +29,7 @@ const Experience = ({
 
             <div className='flex flex-col gap-2'>
                 <h4 className='flex flex-row gap-1 text-3xl text-text font-bold'>
-                    {title} {isHovered && <Arrow size={28} />}
+                    {title} {isHovered && <RightArrow size={35} />}
                 </h4>
                 <p className='text-text text-lg'>{role}</p>
             </div>
