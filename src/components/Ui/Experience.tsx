@@ -1,12 +1,15 @@
+"use client";
+import Arrow from '@/assets/Arrow'
 import Image from 'next/image'
-import React from 'react'
+import Link from 'next/link'
+import React, { useState } from 'react'
 
 interface ExperienceProps {
     title: string
     role: string
     date: string
-    link: string
     image: string
+    link: string
 }
 
 const Experience = ({
@@ -16,15 +19,24 @@ const Experience = ({
     link,
     image
 }: ExperienceProps) => {
+
+    const [isHovered, setIsHovered] = useState(false)
+
     return (
-        <div className='w-4/5 h-auto relative text-text pl-8 flex flex-col gap-2'>
-            <div className='w-8 h-8 absolute -top-4 -left-4 bg-white rounded-full'>
-                <Image src={image} alt={title} width={100} height={100} />
+        <Link href={link} target='_blank' className='w-full h-auto flex flex-row items-center gap-4' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+            <Image src={image} alt={title} width={80} height={80} />
+
+            <div className='flex flex-col gap-2'>
+                <h4 className='flex flex-row gap-1 text-3xl text-text font-bold'>
+                    {title} {isHovered && <Arrow size={28} />}
+                </h4>
+                <p className='text-text text-lg'>{role}</p>
             </div>
-            <h3 className='text-3xl font-bold'>{title}</h3>
-            <p className='text-xl text-secondary'>{date}</p>
-            <p className='text-xl'>{role}</p>
-        </div>
+
+            <div className='w-auto h-[100%] ml-auto mr-8 flex flex-col'>
+                <p className='text-lg text-secondary'>{date}</p>
+            </div>
+        </Link>
     )
 }
 
