@@ -9,6 +9,7 @@ import Navbar from '@/components/Navbar';
 import MenuIcon from '@/components/Navbar/MenuIcon';
 import Parcours from '@/components/sections/Parcours';
 import Services from '@/components/sections/Services';
+import Contact from '@/components/sections/Contact';
 
 export default function Home() {
 
@@ -23,7 +24,8 @@ export default function Home() {
       <Hero />
       <Projets />
       <Parcours />
-      <Services />
+      {/* <Services /> */}
+      <Contact />
     </div>
   );
 }
