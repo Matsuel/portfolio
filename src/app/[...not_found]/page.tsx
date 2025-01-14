@@ -19,7 +19,11 @@ const page = () => {
                 Mais ne vous inquiétez pas, vous pouvez retourner à l'accueil
             </p>
 
-            <Button onClick={() => router.push('/')} className='mt-8'>
+            <Button
+                onClick={() => router.push('/')}
+                className='mt-8'
+                whileTap={1}
+            >
                 Retourner à l'accueil
             </Button>
         </div>
