@@ -9,16 +9,19 @@ const page = () => {
 
     return (
         <div className='w-full min-h-screen max-h-screen flex flex-col justify-center items-center bg-background'>
+            <h1 className='text-[400px] font-black text-text'>404</h1>
 
-            <Button
-                onClick={() => router.replace('/')}
-                variant='secondary'
-                whileTap={1}
-            >
-                Retour à l'accueil
+            <p className='text-text text-2xl font-semibold mt-4'>
+                Oops... Il semble que cette page n'existe pas
+            </p>
+
+            <p className='text-text text-lg font-normal mt-4'>
+                Mais ne vous inquiétez pas, vous pouvez retourner à l'accueil
+            </p>
+
+            <Button onClick={() => router.push('/')} className='mt-8'>
+                Retourner à l'accueil
             </Button>
-
-
         </div>
     )
 }
