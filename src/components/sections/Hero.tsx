@@ -1,8 +1,11 @@
+"use client";
 import Image from 'next/image'
 import React from 'react'
 import Button from '@/components/Ui/Button'
+import { scrollToSection } from '@/utils/scroll';
 
 const Hero = () => {
+
 
     return (
         <section id='hero' className='w-full h-auto min-h-[90vh] flex flex-col gap-8 p-8 mt-8 justify-center items-start relative'>
@@ -14,7 +17,7 @@ const Hero = () => {
                 <h1 className='text-[200px] leading-none font-extrabold text-text uppercase'>Matheo</h1>
                 <div className='w-auto h-auto flex flex-row items-center gap-4'>
                     <h1 className='text-[200px] leading-none font-extrabold text-text uppercase'>Lang</h1>
-                    <Button variant='primary' className='ml-8'>
+                    <Button variant='primary' className='ml-8' onClick={() => scrollToSection('contact')}>
                         Signaler votre intérêt
                     </Button>
 
