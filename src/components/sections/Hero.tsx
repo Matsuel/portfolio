@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image'
 import React from 'react'
 import Button from '@/components/Ui/Button'
 import { scrollToSection } from '@/utils/scroll';
@@ -8,29 +7,26 @@ const Hero = () => {
 
 
     return (
-        <section id='hero' className='w-full h-auto min-h-[90vh] flex flex-col gap-8 p-8 mt-8 justify-center items-start relative'>
-            <p className='w-[30%] text-4xl font-bold text-text'>
-                Développeur web <span className='text-secondary'>spécialisé dans la création de </span> solutions simples <span className='text-secondary'>mais</span> efficaces, <span className='text-secondary'>avec une approche qui </span> redéfinit les standards du design
+        <section id='hero' className="w-full max-h-screen min-h-screen flex flex-col justify-center p-8 gap-64 items-center relative overflow-hidden">
+            <video className='absolute top-0 left-0 w-full h-full object-cover' autoPlay muted loop>
+                <source src='/yacht.mp4' type='video/mp4' />
+            </video>
+
+            <p className='absolute z-10 top-32 w-[60%] text-4xl font-bold text-text text-center'>
+                Développeur web spécialisé dans la création de solutions simples mais efficaces, avec une approche qui redéfinit les standards du design
             </p>
 
-            <div className='w-auto h-auto flex flex-col gap-0'>
-                <h1 className='text-[200px] leading-none font-extrabold text-text uppercase'>Matheo</h1>
-                <div className='w-auto h-auto flex flex-row items-center gap-4'>
-                    <h1 className='text-[200px] leading-none font-extrabold text-text uppercase'>Lang</h1>
-                    <Button variant='primary' className='ml-8' onClick={() => scrollToSection('contact')}>
-                        Signaler votre intérêt
-                    </Button>
+            <p className='absolute right-8 w-[25%] text-text text-2xl'>
+                "Pour atteindre un nouveau rivage, il faut accepter de quitter le port."
+                — Christophe Colomb
+            </p>
 
-                </div>
+            <div className='absolute bottom-12 z-10 w-auto h-auto flex flex-col items-center'>
+                <h1 className='text-[160px] leading-none font-extrabold text-text uppercase'>Matheo Lang</h1>
+                <Button variant='primary' className='mt-12' onClick={() => scrollToSection('contact')}>
+                    Signaler votre intérêt
+                </Button>
             </div>
-
-            <Image
-                className='absolute right-8 top-[50%] transform translate-y-[-50%]'
-                src='/mars.png'
-                alt='Mars'
-                width={800}
-                height={800}
-            />
         </section>
     )
 }
