@@ -14,39 +14,10 @@
 
 :root {
   --radius: 12px;
-  --background: #fff;
-  --background-invert: #000;
-  --color: #000;
-  --color-invert: #fff;
-  --secondary: #a3a3a3;
-  --border: #e4e4e7;
-  --border-cursor: #000;
-  --input-background: #f9fafb;
-  --tech: #f7f7f7;
-}
-
-.light {
-  --background: #fff;
-  --background-invert: #000;
-  --color: #000;
-  --color-invert: #fff;
-  --secondary: #a3a3a3;
-  --border: #e4e4e7;
-  --border-cursor: #000;
-  --input-background: #f9fafb;
-  --tech: #f7f7f7;
-}
-
-.dark {
   --background: #000;
-  --background-invert: #fff;
+  --background-even: #fff;
   --color: #fff;
-  --color-invert: #000;
-  --secondary: #a3a3a3;
-  --border: #27272a;
-  --border-cursor: #fff;
-  --input-background: #121212;
-  --tech: #202020;
+  --color-even: #000;
 }
 
 * {
@@ -54,23 +25,11 @@
 }
 
 body {
-  color: #000;
+  color: var(--color);
   background: var(--background);
   font-family: 'Inter', sans-serif;
 }
 
-
-/* Couleur du selecteur de texte */
-::-moz-selection {
-  /* Code pour Firefox */
-  color: var(--color-invert);
-  background: var(--background-invert);
-}
-
-::selection {
-  color: var(--color-invert);
-  background: var(--background-invert);
-}
 
 /* Désactive du la barre de défilement */
 * {

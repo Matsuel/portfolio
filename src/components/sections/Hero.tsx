@@ -12,7 +12,7 @@ const Hero = () => {
             <Image className='absolute top-0 left-0 w-full h-full object-cover' src='/yacht.jpg' alt='yacht' width={1920} height={1080} />
 
             <h1 className='z-10 text-[160px] leading-none font-extrabold text-text uppercase'>Matheo Lang</h1>
-            <p className='z-10 w-[65%] text-4xl font-bold text-text text-center mb-32'>
+            <p className='z-10 w-[65%] text-4xl font-bold text-color text-center mb-32'>
                 Développeur web spécialisé dans la création de solutions simples mais efficaces, avec une approche qui redéfinit les standards du design
             </p>
 
@@ -20,7 +20,7 @@ const Hero = () => {
                 Signaler votre intérêt
             </Button>
 
-            <p className='absolute bottom-8 text-text font-medium text-2xl'>
+            <p className='absolute bottom-8 text-color font-medium text-2xl'>
                 "Pour atteindre un nouveau rivage, il faut accepter de quitter le port."
                 — Christophe Colomb
             </p>

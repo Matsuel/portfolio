@@ -18,7 +18,7 @@ const Button = ({
 }: ButtonProps) => {
 
     const variants = {
-        primary: "bg-[#0077ED] text-white",
+        primary: "bg-[#0077ED] text-color",
         secondary: "bg-transparent text-[#0077ED] hover:bg-[#0077ED] hover:text-white",
         white: "bg-white text-color-invert",
         transparent: "bg-transparent text-[#A3A3A3] hover:text-text border-transparent"

@@ -1,5 +1,4 @@
 import React from 'react'
-import Theme from "@/components/Theme";
 import CircleProgress from '@/components/Ui/CircleProgress';
 import Hour from '@/components/Ui/Hour';
 import Hero from '@/components/sections/Hero';
@@ -17,15 +16,14 @@ export default function Home() {
     <div className="w-full bg-background flex flex-col h-auto pb-20 gap-20">
       <MenuIcon />
       <Navbar />
-      {/* <Loader /> */}
-      <Theme />
       <CircleProgress />
       <Hour />
       <Hero />
+      {/* <Loader />
       <Projets />
       <Parcours />
-      {/* <Services /> */}
-      <Contact />
+      <Services />
+      <Contact /> */}
     </div>
   );
 }

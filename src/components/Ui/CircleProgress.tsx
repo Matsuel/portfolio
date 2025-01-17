@@ -8,7 +8,7 @@ const CircleProgress = () => {
     const { scrollPercentage } = useScrollPercentage();
 
     return (
-        <div className="fixed right-8 bottom-8 flex flex-row items-center justify-center gap-2">
+        <div className="fixed z-20 right-8 bottom-8 flex flex-row items-center justify-center gap-2">
             <button
                 onClick={scrollToTop}
                 className={`flex flex-row items-center justify-center border-none outline-none transition-all duration-500 ease-in-out ${scrollPercentage < 10
