@@ -14,7 +14,7 @@ import Contact from '@/components/sections/Contact';
 export default function Home() {
 
   return (
-    <div className="w-full bg-background flex flex-col h-auto p-8 pb-20 gap-20">
+    <div className="w-full bg-background flex flex-col h-auto pb-20 gap-20">
       <MenuIcon />
       <Navbar />
       {/* <Loader /> */}
