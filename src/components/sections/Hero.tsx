@@ -7,8 +7,14 @@ import Image from 'next/image';
 const Hero = () => {
 
     return (
-        <section id='hero' className="w-full max-h-screen min-h-screen flex flex-col justify-center p-8 gap-12 items-center relative overflow-hidden" >
-            <Image className='absolute top-0 left-0 w-full h-full object-center' src='/nyc.jpg' alt='yacht' width={1920} height={1080} />
+        <section id='hero' className="w-full max-h-screen h-screen flex flex-col justify-center p-8 gap-12 items-center relative overflow-hidden" ><Image
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src="/nyc.jpg"
+            alt="yacht"
+            width={1920}
+            height={1080}
+            priority
+        />
 
             <h1 className='z-10 text-[160px] leading-none font-extrabold text-text uppercase'>Matheo Lang</h1>
             <p className='z-10 w-[65%] text-4xl font-bold text-color text-center mb-32'>
