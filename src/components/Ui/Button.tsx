@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { cn } from '@/utils/cn';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: 'primary' | 'secondary' | 'white' | 'transparent';
+    variant?: 'transparent' | 'primary' | 'secondary';
     whileTap?: number;
 }
 
@@ -18,16 +18,15 @@ const Button = ({
 }: ButtonProps) => {
 
     const variants = {
-        primary: "bg-[#0077ED] text-color",
-        secondary: "bg-transparent text-[#0077ED] hover:bg-[#0077ED] hover:text-white",
-        white: "bg-white text-color-invert",
-        transparent: "bg-transparent text-[#A3A3A3] hover:text-text border-transparent"
+        primary: "bg-backgroundeven text-coloreven",
+        secondary: "bg-background text-color",
+        transparent: "bg-transparent text-color hover:text-text border-transparent"
     }
 
     return (
         <motion.button
             whileTap={{ scale: whileTap }}
-            className={cn(`w-auto h-auto px-5 py-2 rounded-full border border-[#0077ED] text-lg ${variants[variant]}`, className)}
+            className={cn(`w-auto h-auto px-5 py-2 rounded-xl text-lg font-semibold ${variants[variant]}`, className)}
             {...props as AnimationEventHandler<HTMLButtonElement>}
         >
             {children}
