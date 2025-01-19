@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionLayout from './SectionLayout'
-import Title from '../Ui/Title'
+import Title from '../Ui/SectionTitle'
 import { jobs } from '@/constantes/jobs'
 import Experience from '../Ui/Experience'
 import { schools } from '@/constantes/school'

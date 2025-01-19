@@ -16,7 +16,7 @@ export default function Home() {
     <div className="w-full bg-background flex flex-col h-auto gap-20">
       <MenuIcon />
       <Navbar />
-      <CircleProgress />
+      {/* <CircleProgress /> */}
       <Hour />
       <Hero />
       {/* <Loader />

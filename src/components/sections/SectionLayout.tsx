@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '@/components/Ui/Title'
+import Title from '@/components/Ui/SectionTitle'
 import Subtitle from '@/components/Ui/Subtitle'
 import { cn } from '@/utils/cn'
 

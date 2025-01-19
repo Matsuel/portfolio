@@ -3,6 +3,7 @@ import React from 'react'
 import Button from '@/components/Ui/Button'
 import { scrollToSection } from '@/utils/scroll';
 import Image from 'next/image';
+import Title from '../Ui/Title';
 
 const Hero = () => {
 
@@ -17,12 +18,15 @@ const Hero = () => {
                 priority
             />
 
-            <h1 className='z-10 text-[160px] leading-none font-extrabold text-text uppercase'>Matheo Lang</h1>
+            <Title className='z-10 absolute top-24'>
+                Matheo Lang
+            </Title>
+
             <p className='z-10 w-[65%] text-4xl font-bold text-color text-center'>
                 Développeur web spécialisé dans la création de solutions simples mais efficaces, avec une approche qui redéfinit les standards du design
             </p>
 
-            <Button variant='primary' className='mt-0 z-10' onClick={() => scrollToSection('contact')}>
+            <Button variant='primary' className='z-10' onClick={() => scrollToSection('contact')}>
                 Signaler votre intérêt
             </Button>
 
