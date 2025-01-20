@@ -26,7 +26,7 @@ const Hero = () => {
 
                 <p className='z-10 w-[47%] text-4xl font-bold text-color'>
                     Développeur web spécialisé dans la création de solutions simples mais efficaces, avec une approche qui redéfinit les standards du design
-                    <Button variant='transparent' className='text-3xl font-bold' whileTap={1}>
+                    <Button variant='transparent' className='text-3xl font-bold'>
                         En savoir plus <SimpleArrow />
                     </Button>
                 </p>
