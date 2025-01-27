@@ -25,13 +25,24 @@ const Hero = () => {
 
                 <p className='w-[30%] text-2xl font-bold text-color'>
                     Votre projet mérite une vitrine exceptionnelle.
-                    Mon objectif est de concevoir une solution à la hauteur de vos ambitions - En savoir plus
+                    Mon objectif est de concevoir une solution à la hauteur de vos ambitions -
+                    <Button
+                        className='p-0 ml-3 font-bold text-2xl'
+                        variant='transparent'
+                    >
+                        En savoir plus
+                    </Button>
                 </p>
 
             </div>
 
-            <Button variant='primary' className='absolute z-10 bottom-40' onClick={() => scrollToSection('contact')}>
-                Signaler votre intérêt
+            <Button
+                className='absolute z-10 flex flex-row items-center justify-center bottom-32'
+                onClick={() => scrollToSection('contact')}
+                whileTap={1}
+                variant='primary'
+            >
+                Construisons ensemble votre succès <Image src='/rightArrow.svg' alt='right arrow' width={24} height={24} />
             </Button>
         </section>
     )

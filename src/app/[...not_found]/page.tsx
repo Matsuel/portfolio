@@ -1,5 +1,4 @@
 "use client";
-import Theme from '@/components/Theme';
 import Button from '@/components/Ui/Button'
 import { useRouter } from 'next/navigation'
 import React from 'react'
@@ -10,7 +9,6 @@ const page = () => {
 
     return (
         <div className='w-full min-h-screen max-h-screen flex flex-col justify-center items-center bg-background relative'>
-            <Theme />
 
             <h1 className='text-[400px] font-black text-text'>404</h1>
 
