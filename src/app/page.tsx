@@ -4,15 +4,17 @@ import Loader from '@/components/Ui/Loader';
 import Navbar from '@/components/Navbar';
 import MenuIcon from '@/components/Navbar/MenuIcon';
 import HomeButton from '@/components/HomeButton';
+import Projets from '@/components/sections/Projets';
 
 export default function Home() {
 
   return (
-    <div className="w-full bg-background flex flex-col h-auto gap-20">
+    <div className="w-full bg-background flex flex-col h-auto">
       <HomeButton />
       <MenuIcon />
       <Navbar />
       <Hero />
+      <Projets />
       {/* <Loader /> */}
     </div>
   );

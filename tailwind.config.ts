@@ -26,6 +26,7 @@ const config: Config = {
         backgroundeven: "var(--background-even)",
         color: "var(--color)",
         coloreven: "var(--color-even)",
+        secondary: "var(--secondary)",
       },
     },
   },
