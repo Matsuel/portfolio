@@ -10,7 +10,7 @@ const MenuIcon = () => {
 
     return (
         <button
-            className="fixed z-50 top-8 right-8 bg-transparent border-none cursor-pointer flex p-0"
+            className="fixed z-50 top-8 right-24 bg-transparent border-none cursor-pointer flex p-0"
             onClick={toggleMenu}
             aria-label="Main Menu"
             aria-expanded={isMenuOpen}

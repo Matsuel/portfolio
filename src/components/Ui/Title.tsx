@@ -18,7 +18,7 @@ const Title = ({
     };
 
     return (
-        <motion.h1 className={cn('text-[180px] leading-none font-extrabold text-text uppercase', className)} {...props}
+        <motion.h1 className={cn('text-9xl leading-none font-extrabold text-text uppercase', className)} {...props}
             variants={defaultVariants}
             initial='hidden'
             animate='visible'

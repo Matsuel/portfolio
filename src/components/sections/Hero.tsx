@@ -4,12 +4,11 @@ import Button from '@/components/Ui/Button'
 import { scrollToSection } from '@/utils/scroll';
 import Image from 'next/image';
 import Title from '../Ui/Title';
-import SimpleArrow from '@/assets/SimpleArrow';
 
 const Hero = () => {
 
     return (
-        <section id='hero' className="w-full max-h-screen h-screen flex flex-col justify-start p-8 gap-12 items-center relative overflow-hidden" >
+        <section id='hero' className="w-full max-h-screen h-screen flex flex-col justify-start p-24 pt-32 items-center relative overflow-hidden" >
             <Image
                 className="absolute top-0 left-0 w-full h-full object-cover"
                 src="/Paris.jpg"
@@ -18,17 +17,15 @@ const Hero = () => {
                 height={1745}
             />
 
-            <div className='w-auto z-10 flex flex-col items-start gap-16'>
+            <div className='w-full z-10 flex flex-col items-start gap-12'>
 
-                <Title className='w-1/3 z-10'>
+                <Title className='w-1/3'>
                     Matheo Lang
                 </Title>
 
-                <p className='z-10 w-[47%] text-4xl font-bold text-color'>
-                    Développeur web spécialisé dans la création de solutions simples mais efficaces, avec une approche qui redéfinit les standards du design
-                    <Button variant='transparent' className='text-3xl font-bold'>
-                        En savoir plus <SimpleArrow />
-                    </Button>
+                <p className='w-[30%] text-2xl font-bold text-color'>
+                    Votre projet mérite une vitrine exceptionnelle.
+                    Mon objectif est de concevoir une solution à la hauteur de vos ambitions - En savoir plus
                 </p>
 
             </div>
