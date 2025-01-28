@@ -1,11 +1,19 @@
 import React from 'react'
 import SectionLayout from './SectionLayout'
+import Accordion from '../Ui/Accordion'
+import { schools } from '@/constantes/school'
 
 const Parcours = () => {
     return (
-        <SectionLayout dark title="Parcours" subtitle='Une carrière en construction'>
+        <SectionLayout
+            title="Parcours"
+            subtitle='Une carrière en construction'
+            dark
+        >
+            <Accordion title='Expériences scolaires' data={schools} />
 
-        </SectionLayout>
+
+        </SectionLayout >
     )
 }
 
