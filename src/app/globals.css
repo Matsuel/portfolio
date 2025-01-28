@@ -19,6 +19,9 @@
   --color: #fff;
   --color-even: #000;
   --secondary: #717173;
+  --carousel-active: #8D969E;
+  --carousel-inactive: #AFB5BB;
+  --carousel: #F7F7F7;
 }
 
 * {
