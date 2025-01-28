@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import MenuIcon from '@/components/Navbar/MenuIcon';
 import HomeButton from '@/components/HomeButton';
 import Projets from '@/components/sections/Projets';
+import Parcours from '@/components/sections/Parcours';
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Projets />
+      <Parcours />
       {/* <Loader /> */}
     </div>
   );
