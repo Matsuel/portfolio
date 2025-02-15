@@ -1,7 +1,7 @@
 "use client";
+import React from 'react'
 import Button from '@/components/Ui/Button'
 import { useRouter } from 'next/navigation'
-import React from 'react'
 
 const page = () => {
 
@@ -13,11 +13,11 @@ const page = () => {
             <h1 className='text-[400px] font-black text-text'>404</h1>
 
             <p className='text-text text-2xl font-semibold mt-4'>
-                Oops... Il semble que cette page n'existe pas
+                Oops... Il semble que cette page n&apos;existe pas
             </p>
 
             <p className='text-text text-lg font-normal mt-4'>
-                Mais ne vous inquiétez pas, vous toujours pouvez retourner à l'accueil
+                Mais ne vous inquiétez pas, vous toujours pouvez retourner à l&apos;accueil
             </p>
 
             <Button
@@ -25,7 +25,7 @@ const page = () => {
                 className='mt-8'
                 whileTap={1}
             >
-                Retourner à l'accueil
+                Retourner à l&apos;accueil
             </Button>
         </div>
     )

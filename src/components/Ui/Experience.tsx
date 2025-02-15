@@ -6,7 +6,6 @@ const Experience = ({
     title,
     date,
     image,
-    link,
     role
 }: ExperienceType) => {
     return (

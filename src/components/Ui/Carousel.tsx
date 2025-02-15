@@ -31,7 +31,6 @@ const Carousel = () => {
                             description={project.description}
                             github={project.github}
                             link={project.link}
-                            technologies={project.technologies}
                             icon={project.icon}
                             key={project.title}
                         />

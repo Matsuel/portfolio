@@ -11,7 +11,6 @@ interface ProjetProps {
     description: string;
     github: string;
     link: string;
-    technologies: string[];
     icon: string;
     projectsLength: number;
 }
@@ -23,7 +22,6 @@ const Projet = ({
     description,
     github,
     link,
-    technologies,
     icon,
     projectsLength
 }: ProjetProps) => {
