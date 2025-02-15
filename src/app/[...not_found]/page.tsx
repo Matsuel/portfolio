@@ -3,7 +3,7 @@ import React from 'react'
 import Button from '@/components/Ui/Button'
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const NotFound = () => {
 
     const router = useRouter()
 
@@ -31,4 +31,4 @@ const page = () => {
     )
 }
 
-export default page
+export default NotFound
