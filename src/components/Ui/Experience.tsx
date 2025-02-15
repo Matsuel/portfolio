@@ -15,8 +15,8 @@ const Experience = ({
                 <Image
                     src={image}
                     alt={title}
-                    width={100}
-                    height={100}
+                    width={80}
+                    height={80}
                 />
             </div>
 
@@ -25,7 +25,7 @@ const Experience = ({
                 <h4 className='text-lg font-semibold'>{date}</h4>
             </div>
 
-            <div className='w-1/3 h-auto flex flex-col gap-3'>
+            <div className='w-1/2 h-auto flex flex-col gap-3'>
                 <h3 className='text-xl font-bold'>{role}</h3>
             </div>
 

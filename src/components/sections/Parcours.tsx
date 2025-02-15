@@ -7,11 +7,12 @@ import { jobs } from '@/constantes/jobs'
 const Parcours = () => {
     return (
         <SectionLayout
+            className='pb-10'
             title="Parcours"
             subtitle='Une carrière en construction'
             dark
         >
-            <Accordion active title='Expériences scolaires' data={schools} />
+            <Accordion title='Expériences scolaires' data={schools} />
             <Accordion title='Expériences professionnelles' data={jobs} />
 
 

@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Projets />
       <Parcours />
-      {/* <Loader /> */}
+      <Loader />
     </div>
   );
 }
