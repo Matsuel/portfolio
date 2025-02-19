@@ -1,6 +1,6 @@
 export const navbarLinks = [
     {
-        name: "Mathéo Lang",
+        name: "Matheo Lang",
         sectionId: "hero",
     },
     {

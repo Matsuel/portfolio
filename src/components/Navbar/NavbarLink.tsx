@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
 import { scrollToSection } from '@/utils/scroll'
 import NavbarContext from '@/contexts/NavbarContext'
+import FlipText from '../Ui/FlipText'
 
 interface NavbarLinkProps {
     name: string
@@ -39,9 +40,9 @@ const NavbarLink = ({
             >
                 {(index + 1).toString().padStart(2, "0")}
             </span>
-            <span className="text-[128px] font-bold uppercase leading-none">
+            <FlipText>
                 {name}
-            </span>
+            </FlipText>
         </motion.button>
     )
 }
