@@ -26,7 +26,7 @@ const Button = ({
     return (
         <motion.button
             whileTap={{ scale: whileTap }}
-            className={cn(`w-auto h-auto px-5 py-2 rounded-xl text-lg font-semibold ${variants[variant]}`, className)}
+            className={cn(`w-auto h-auto px-5 py-2 rounded-xl text-lg font-semibold cursor-pointer ${variants[variant]}`, className)}
             {...props as AnimationEventHandler<HTMLButtonElement>}
         >
             {children}
