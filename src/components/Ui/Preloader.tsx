@@ -36,11 +36,11 @@ const Preloader = () => {
     }
 
     return (
-        <motion.div variants={slideUp} initial="initial" exit="exit" className="w-full h-full fixed top-0 left-0 z-[99] flex justify-center items-center bg-background">
+        <motion.div variants={slideUp} initial="initial" exit="exit" className="w-full h-full fixed top-0 left-0 z-99 flex justify-center items-center bg-background">
             {dimension.width > 0 &&
                 <>
                     <motion.p
-                        className="flex text-text text-[200px] font-bold items-center absolute z-[1]"
+                        className="flex text-text text-[200px] font-bold items-center absolute z-1"
                         variants={opacity}
                         initial="initial"
                         animate="enter"

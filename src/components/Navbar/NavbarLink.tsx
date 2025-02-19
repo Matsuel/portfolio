@@ -27,7 +27,7 @@ const NavbarLink = ({
     return (
         <motion.button
             key={name}
-            className="w-full h-auto flex flex-row items-start justify-center text-text"
+            className="w-full h-auto flex flex-row items-start justify-center text-text cursor-pointer"
             onClick={() => onClickLink(sectionId)}
             initial={{ x: isEven ? "-100%" : "100%" }}
             animate={{ x: 0 }}
