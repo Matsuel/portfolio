@@ -3,21 +3,25 @@
 import NavbarContext from "@/contexts/NavbarContext";
 import { useContext } from "react";
 
-const MenuIcon = () => {
+interface NavbarIconProps {
+    size?: number;
+}
 
-    const { toggleMenu, isMenuOpen } = useContext(NavbarContext)
+const NavbarIcon = ({
+    size = 50
+}: NavbarIconProps) => {
+
+    const { isMenuOpen } = useContext(NavbarContext)
 
 
     return (
         <button
-            className="fixed z-50 top-8 right-24 bg-transparent border-none cursor-pointer flex p-0"
-            onClick={toggleMenu}
+            className="bg-transparent border-none cursor-pointer flex p-0"
             aria-label="Main Menu"
-            aria-expanded={isMenuOpen}
         >
-            <svg width="50" height="50" viewBox="0 0 100 100">
+            <svg width={size} height={size} viewBox="0 0 100 100">
                 <path
-                    className="fill-none stroke-color stroke-[6px]"
+                    className="fill-none stroke-color stroke-8"
                     style={{
                         strokeDasharray: isMenuOpen ? "90 207" : "60 207",
                         strokeDashoffset: isMenuOpen ? -134 : 0,
@@ -26,7 +30,7 @@ const MenuIcon = () => {
                     d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
                 />
                 <path
-                    className="fill-none stroke-color stroke-[6px]"
+                    className="fill-none stroke-color stroke-8"
                     style={{
                         strokeDasharray: isMenuOpen ? "1 60" : "60 60",
                         strokeDashoffset: isMenuOpen ? -30 : 0,
@@ -35,7 +39,7 @@ const MenuIcon = () => {
                     d="M 20,50 H 80"
                 />
                 <path
-                    className="fill-none stroke-color stroke-[6px]"
+                    className="fill-none stroke-color stroke-8"
                     style={{
                         strokeDasharray: isMenuOpen ? "90 207" : "60 207",
                         strokeDashoffset: isMenuOpen ? -134 : 0,
@@ -48,4 +52,4 @@ const MenuIcon = () => {
     );
 };
 
-export default MenuIcon;
+export default NavbarIcon;
