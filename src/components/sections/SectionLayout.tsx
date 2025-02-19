@@ -19,10 +19,8 @@ const SectionLayout = ({
     ...props
 }: SectionLayoutProps) => {
 
-    const darkMode = dark ? 'bg-background text-color' : 'bg-backgroundeven text-coloreven'
-
     return (
-        <section {...props} className={cn(`w-full min-h-screen flex flex-col gap-8 items-start pl-24 pt-36 ${darkMode}`, className)}>
+        <section {...props} className={cn(`w-full min-h-screen flex flex-col gap-8 items-start pl-24 pt-36 bg-background`, className)}>
             <Title>{title}</Title>
             <Subtitle>{subtitle}</Subtitle>
             {children}
