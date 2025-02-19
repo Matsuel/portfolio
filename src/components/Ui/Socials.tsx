@@ -4,7 +4,7 @@ import Social from './Social'
 
 const Socials = () => {
     return (
-        <div className='h-8 fixed z-50 bottom-8 left-24 flex flex-row justify-center items-center gap-2 bg-background rounded-full px-2'>
+        <div className='h-8 fixed z-20 bottom-8 left-24 flex flex-row justify-center items-center gap-2 bg-background rounded-full px-2'>
             {socials.map((social, index) => (
                 <Social
                     key={index}
