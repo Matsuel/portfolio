@@ -7,6 +7,7 @@ import LangSelector from '@/components/Ui/LangSelector';
 import Socials from '@/components/Ui/Socials';
 import ProgressScroll from '@/components/Ui/ProgressScroll';
 import Services from '@/components/sections/Services';
+import Contact from '@/components/sections/Contact';
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
       <ProgressScroll />
       <Hero />
       <Services />
+      <Contact />
       <Loader />
     </div>
   );
