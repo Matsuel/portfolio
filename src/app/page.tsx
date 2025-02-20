@@ -6,7 +6,7 @@ import NavbarMenu from '@/components/Navbar/NavbarMenu';
 import LangSelector from '@/components/Ui/LangSelector';
 import Socials from '@/components/Ui/Socials';
 import ProgressScroll from '@/components/Ui/ProgressScroll';
-import Projets from '@/components/sections/Projets';
+import Services from '@/components/sections/Services';
 
 export default function Home() {
 
@@ -18,7 +18,7 @@ export default function Home() {
       <Navbar />
       <ProgressScroll />
       <Hero />
-      <Projets />
+      <Services />
       <Loader />
     </div>
   );

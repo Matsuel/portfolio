@@ -4,16 +4,16 @@ export const navbarLinks = [
         sectionId: "hero",
     },
     {
+        name: "Services",
+        sectionId: "services",
+    },
+    {
         name: "Projets",
         sectionId: "projets",
     },
     {
         name: "Parcours",
         sectionId: "parcours",
-    },
-    {
-        name: "Services",
-        sectionId: "services",
     },
     {
         name: "Contact",
