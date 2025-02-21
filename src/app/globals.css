@@ -65,6 +65,11 @@
   --tertiary: #F7F7F7;
 }
 
+html,
+body {
+  scroll-snap-type: y mandatory;
+}
+
 * {
   scroll-behavior: smooth;
 }

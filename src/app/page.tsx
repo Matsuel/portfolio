@@ -12,7 +12,7 @@ import Contact from '@/components/sections/Contact';
 export default function Home() {
 
   return (
-    <div className="w-full bg-background flex flex-col h-auto">
+    <div className="w-full h-full bg-background flex flex-col">
       <LangSelector />
       <Socials />
       <NavbarMenu />
