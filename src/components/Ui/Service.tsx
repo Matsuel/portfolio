@@ -1,5 +1,4 @@
 import Arrow from '@/assets/Arrow'
-import Image from 'next/image'
 import React from 'react'
 
 interface ServiceProps {
@@ -17,7 +16,7 @@ const Service = ({
     const expandedClass = expanded ? 'w-[49%]' : 'w-[32%]'
 
     return (
-        <div className={`${expandedClass} h-96 relative bg-[#F7F7F7] text-black p-8 rounded-xl flex flex-col gap-6`}>
+        <div className={`${expandedClass} h-96 relative bg-tertiary text-black p-8 rounded-xl flex flex-col gap-6`}>
             <h4 className='text-3xl font-semibold'>{title}</h4>
 
             <p className='text-xl text-[#505A63]'>

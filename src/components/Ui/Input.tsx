@@ -8,7 +8,7 @@ interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
 const Input = ({ ...props }: InputProps) => {
     return (
         <input
-            className='outline-none transition-all duration-300 text-3xl font-bold w-4/5 bg-[#0f0f0f] p-8 rounded-xl'
+            className='outline-none transition-all duration-300 text-4xl font-semibold w-full bg-[#0f0f0f] p-8 rounded-xl'
             {...props}
         />
     )

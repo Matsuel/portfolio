@@ -32,7 +32,7 @@ const Projet = ({
     return (
         <motion.div
             key={title}
-            className="absolute flex flex-col items-start justify-start gap-6 rounded-lg bg-carousel p-8"
+            className="absolute flex flex-col items-start justify-start gap-6 rounded-lg bg-tertiary p-8"
             initial={{ opacity: 0, scale: 0.8, x: "100%" }}
             animate={{
                 zIndex: isActive ? 2 : 1,
