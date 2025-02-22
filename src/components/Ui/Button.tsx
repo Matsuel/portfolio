@@ -18,7 +18,7 @@ const Button = ({
 }: ButtonProps) => {
 
     const variants = {
-        primary: "bg-backgroundeven text-coloreven",
+        primary: "bg-color text-background",
         secondary: "bg-background text-color",
         transparent: "bg-transparent text-color hover:text-text border-transparent"
     }

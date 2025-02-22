@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import MouseIcon from '../Ui/MouseIcon';
 import AnimatedTitle from '../Ui/AnimatedTitle';
-import Button from '../Ui/Button';
+import HeroButton1 from '../Ui/HeroButton1';
 
 const Hero = () => {
 
@@ -22,7 +22,7 @@ const Hero = () => {
                 <p className="text-2xl text-white font-semibold">
                     Votre projet mérite une vitrine exceptionnelle.
                     Mon objectif est de concevoir une solution à la hauteur de vos ambitions -
-                    <Button whileTap={0.95} variant="transparent" className='text-2xl px-2'>En savoir plus</Button>
+                    <HeroButton1 />
                 </p>
             </div>
 

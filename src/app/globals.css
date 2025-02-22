@@ -13,9 +13,7 @@
   --radius-custom: var(--radius);
 
   --color-background: var(--background);
-  --color-backgroundeven: var(--background-even);
   --color-color: var(--color);
-  --color-coloreven: var(--color-even);
   --color-secondary: var(--secondary);
   --color-carouselactive: var(--carousel-active);
   --color-carouselinactive: var(--carousel-inactive);
@@ -55,9 +53,29 @@
 :root {
   --radius: 12px;
   --background: #000;
-  --background-even: #fff;
   --color: #fff;
-  --color-even: #000;
+  --secondary: #717173;
+  --carousel-active: #8D969E;
+  --carousel-inactive: #AFB5BB;
+  --carousel: #F7F7F7;
+  --tertiary: #F7F7F7;
+}
+
+.dark {
+  --radius: 12px;
+  --background: #000;
+  --color: #fff;
+  --secondary: #717173;
+  --carousel-active: #8D969E;
+  --carousel-inactive: #AFB5BB;
+  --carousel: #F7F7F7;
+  --tertiary: #F7F7F7;
+}
+
+.light {
+  --radius: 12px;
+  --background: #fff;
+  --color: #000;
   --secondary: #717173;
   --carousel-active: #8D969E;
   --carousel-inactive: #AFB5BB;

@@ -8,10 +8,13 @@ const Contact = () => {
     return (
         <SectionLayout title='Contact' subtitle='Prêt à démarrer ?' id='contact'>
             <div className='w-full flex flex-col gap-8 items-center'>
-                <Input type='text' placeholder='Nom' />
+                <div className='w-full h-auto flex flex-row gap-4 items-center'>
+                    <Input type='text' placeholder='Nom' />
+                    <Input type='text' placeholder='Prénom' />
+                </div>
                 <Input type='email' placeholder='Email' />
                 <textarea className='outline-none transition-all duration-300 text-4xl font-semibold w-full bg-[#0f0f0f] p-8 rounded-xl h-52' placeholder='Message'></textarea>
-                <Button>Envoyer</Button>
+                <Button variant='primary'>Envoyer</Button>
             </div>
         </SectionLayout>
     )
