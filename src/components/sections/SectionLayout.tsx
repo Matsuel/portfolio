@@ -4,14 +4,12 @@ import Subtitle from '@/components/Ui/Subtitle'
 import { cn } from '@/utils/cn'
 
 interface SectionLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
-    dark?: boolean
     title: string
     subtitle: string
     children?: React.ReactNode
 }
 
 const SectionLayout = ({
-    dark = false,
     className,
     title,
     subtitle,
