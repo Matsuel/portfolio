@@ -8,6 +8,7 @@ import Socials from '@/components/Ui/Socials';
 import ProgressScroll from '@/components/Ui/ProgressScroll';
 import Services from '@/components/sections/Services';
 import Contact from '@/components/sections/Contact';
+import Projets from '@/components/sections/Projets';
 
 export default function Home() {
 
@@ -20,6 +21,7 @@ export default function Home() {
       <ProgressScroll />
       <Hero />
       <Services />
+      <Projets />
       <Contact />
       <Loader />
     </div>
