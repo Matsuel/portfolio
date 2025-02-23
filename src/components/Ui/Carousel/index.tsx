@@ -1,21 +1,9 @@
 import { useEffect, useState, useRef, JSX } from "react";
-import { motion, PanInfo, useMotionValue, useTransform } from "framer-motion";
-// replace icons with your own if needed
-import {
-    FiCircle,
-    FiCode,
-    FiFileText,
-    FiLayers,
-    FiLayout,
-} from "react-icons/fi";
+import { motion, PanInfo, useMotionValue } from "framer-motion";
 import Dot from "./Dot";
 import Item from "./Item";
-
-export interface CarouselItem {
-    title: string;
-    description: string;
-    icon: JSX.Element;
-}
+import { projects } from "@/constantes/projects";
+import { CarouselItem } from "@/types";
 
 export interface CarouselProps {
     items?: CarouselItem[];
@@ -27,41 +15,13 @@ export interface CarouselProps {
     round?: boolean;
 }
 
-const DEFAULT_ITEMS: CarouselItem[] = [
-    {
-        title: "Text Animations",
-        description: "Cool text animations for your projects.",
-        icon: <FiFileText className="h-[16px] w-[16px] text-white" />,
-    },
-    {
-        title: "Animations",
-        description: "Smooth animations for your projects.",
-        icon: <FiCircle className="h-[16px] w-[16px] text-white" />,
-    },
-    {
-        title: "Components",
-        description: "Reusable components for your projects.",
-        icon: <FiLayers className="h-[16px] w-[16px] text-white" />,
-    },
-    {
-        title: "Backgrounds",
-        description: "Beautiful backgrounds and patterns for your projects.",
-        icon: <FiLayout className="h-[16px] w-[16px] text-white" />,
-    },
-    {
-        title: "Common UI",
-        description: "Common UI components are coming soon!",
-        icon: <FiCode className="h-[16px] w-[16px] text-white" />,
-    },
-];
-
 const DRAG_BUFFER = 0;
 const VELOCITY_THRESHOLD = 500;
 const GAP = 16;
 const SPRING_OPTIONS = { type: "spring", stiffness: 300, damping: 30 };
 
 export default function Carousel({
-    items = DEFAULT_ITEMS,
+    items = projects,
     baseWidth = 300,
     autoplay = false,
     autoplayDelay = 3000,

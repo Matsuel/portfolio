@@ -1,10 +1,12 @@
 import React from 'react'
 import { motion, useTransform } from 'framer-motion'
+import Button from '../Button'
+import { CarouselItem } from '@/types'
 
 interface ItemProps {
     index: number
     x: any
-    item: any
+    item: CarouselItem
     trackItemOffset: number
     itemWidth: number
     effectiveTransition: any
@@ -51,6 +53,9 @@ const Item = ({
                     {item.title}
                 </div>
                 <p className="text-sm text-white">{item.description}</p>
+                <Button>
+                    Voir le projet
+                </Button>
             </div>
         </motion.div>
     );

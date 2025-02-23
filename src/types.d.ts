@@ -18,3 +18,11 @@ export type Experience = {
     link: string;
     image: string;
 };
+
+export interface CarouselItem {
+    title: string;
+    description: string;
+    icon: JSX.Element;
+    link: string;
+    github: string;
+}

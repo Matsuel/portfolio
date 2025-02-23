@@ -1,3 +1,9 @@
+import {
+    FiCircle,
+    FiCode,
+    FiFileText
+} from "react-icons/fi";
+
 
 export const projects = [
     {
@@ -6,7 +12,7 @@ export const projects = [
         link: "https://cacbobad.fr/",
         github: "https://github.com/Matsuel/CACBO-Badminton",
         technologies: ["Next.js", "TailwindCSS", "TypeScript", "Figma"],
-        icon: "/cacbo.png",
+        icon: <FiCircle size={16} />,
     },
     {
         title: "ATPEscrime",
@@ -14,7 +20,7 @@ export const projects = [
         link: "https://atpescrime.com",
         github: "https://github.com/Matsuel/ATPE",
         technologies: ["Next.js", "SCSS", "TypeScript"],
-        icon: "/atpe.png",
+        icon: <FiCode size={16} />,
     },
     {
         title: "ONU",
@@ -22,6 +28,6 @@ export const projects = [
         link: "https://onu.alexandrebel.me/",
         github: "https://github.com/Matsuel/ONU",
         technologies: ["Next.js", "TypeScript", "Socket.io", "TailwindCSS"],
-        icon: "/onu.png",
+        icon: <FiFileText size={16} />,
     }
 ]
