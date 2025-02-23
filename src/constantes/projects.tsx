@@ -25,7 +25,7 @@ export const projects = [
     {
         title: "ONU",
         description: "Projet Next.js réalisé en 3ème année chez Ynov Bordeaux, avec une équipe de 3 personnes. Ce jeu est un clone du jeu UNO, mais en version en ligne.",
-        link: "https://onu.alexandrebel.me/",
+        link: null,
         github: "https://github.com/Matsuel/ONU",
         technologies: ["Next.js", "TypeScript", "Socket.io", "TailwindCSS"],
         icon: <FiFileText size={16} />,

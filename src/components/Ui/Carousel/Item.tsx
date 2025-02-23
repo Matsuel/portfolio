@@ -2,6 +2,7 @@ import React from 'react'
 import { motion, useTransform } from 'framer-motion'
 import Button from '../Button'
 import { CarouselItem } from '@/types'
+import Link from 'next/link'
 
 interface ItemProps {
     index: number
@@ -53,9 +54,11 @@ const Item = ({
                     {item.title}
                 </div>
                 <p className="text-sm text-white">{item.description}</p>
-                <Button>
-                    Voir le projet
-                </Button>
+                {item.link && <Button>
+                    <Link target='_blank' href={item.link}>
+                        Voir le projet
+                    </Link>
+                </Button>}
             </div>
         </motion.div>
     );

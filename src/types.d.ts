@@ -23,6 +23,6 @@ export interface CarouselItem {
     title: string;
     description: string;
     icon: JSX.Element;
-    link: string;
+    link: string | null;
     github: string;
 }
