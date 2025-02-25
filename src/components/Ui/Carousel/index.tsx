@@ -12,7 +12,6 @@ export interface CarouselProps {
     autoplayDelay?: number;
     pauseOnHover?: boolean;
     loop?: boolean;
-    round?: boolean;
 }
 
 const DRAG_BUFFER = 0;
@@ -27,7 +26,6 @@ export default function Carousel({
     autoplayDelay = 3000,
     pauseOnHover = false,
     loop = false,
-    round = false,
 }: CarouselProps): JSX.Element {
     const containerPadding = 16;
     const itemWidth = baseWidth - containerPadding * 2;
@@ -123,13 +121,9 @@ export default function Carousel({
     return (
         <div
             ref={containerRef}
-            className={`relative overflow-hidden p-4 ml-80 ${round
-                ? "rounded-full border border-white"
-                : "rounded-[24px] border border-[#222]"
-                }`}
+            className={`relative overflow-hidden p-4 ml-80 rounded-[24px] border border-[#222]`}
             style={{
                 width: `${baseWidth}px`,
-                ...(round && { height: `${baseWidth}px` }),
             }}
         >
             <motion.div
@@ -158,13 +152,12 @@ export default function Carousel({
                             trackItemOffset={trackItemOffset}
                             itemWidth={itemWidth}
                             effectiveTransition={effectiveTransition}
-                            round={round}
                         />
                     )
                 })}
             </motion.div>
             <div
-                className={`flex w-full justify-center ${round ? "absolute z-20 bottom-12 left-1/2 -translate-x-1/2" : ""
+                className={`flex w-full justify-center
                     }`}
             >
                 <div className="mt-4 flex w-[150px] justify-between px-8">
@@ -175,7 +168,6 @@ export default function Carousel({
                             currentIndex={currentIndex}
                             setCurrentIndex={setCurrentIndex}
                             itemsLength={items.length}
-                            round={round}
                         />
                     ))}
                 </div>

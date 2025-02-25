@@ -11,7 +11,6 @@ interface ItemProps {
     trackItemOffset: number
     itemWidth: number
     effectiveTransition: any
-    round: boolean
 }
 
 const Item = ({
@@ -21,7 +20,6 @@ const Item = ({
     trackItemOffset,
     itemWidth,
     effectiveTransition,
-    round
 }: ItemProps) => {
     const range = [
         -(index + 1) * trackItemOffset,
@@ -33,32 +31,30 @@ const Item = ({
     return (
         <motion.div
             key={index}
-            className={`relative shrink-0 flex flex-col h-96 ${round
-                ? "items-center justify-center text-center bg-[#060606] border-0"
-                : "items-start justify-between bg-[#0f0f0f] border border-[#222] rounded-[12px]"
-                } overflow-hidden cursor-grab active:cursor-grabbing`}
+            className={`relative shrink-0 flex flex-col h-96 items-start justify-between bg-[#0f0f0f] border border-[#222] rounded-[12px] overflow-hidden cursor-grab active:cursor-grabbing`}
             style={{
                 width: itemWidth,
                 rotateY: rotateY,
-                ...(round && { borderRadius: "50%" }),
             }}
             transition={effectiveTransition}
         >
-            <div className={`${round ? "p-0 m-0" : "mb-4 p-5"}`}>
+            <div className={`mb-4 p-5`}>
                 <span className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#060606]">
                     {item.icon}
                 </span>
             </div>
             <div className="p-5">
-                <div className="mb-1 font-black text-lg text-white">
-                    {item.title}
+                <div className='flex flex-row gap-4 items-center'>
+                    <h4 className="mb-1 font-black text-4xl text-white">
+                        {item.title}
+                    </h4>
+                    {item.link && <Button>
+                        <Link target='_blank' href={item.link}>
+                            Voir le projet
+                        </Link>
+                    </Button>}
                 </div>
-                <p className="text-sm text-white">{item.description}</p>
-                {item.link && <Button>
-                    <Link target='_blank' href={item.link}>
-                        Voir le projet
-                    </Link>
-                </Button>}
+                <p className="text-base text-white">{item.description}</p>
             </div>
         </motion.div>
     );

@@ -13,7 +13,7 @@ const Contact = () => {
                     <Input type='text' placeholder='Prénom' />
                 </div>
                 <Input type='email' placeholder='Email' />
-                <textarea className='outline-none transition-all duration-300 text-4xl font-semibold w-full bg-[#0f0f0f] p-8 rounded-xl h-52' placeholder='Message'></textarea>
+                <textarea className='outline-none transition-all duration-300 text-2xl font-semibold w-full bg-[#0f0f0f] p-8 rounded-xl h-52' placeholder='Message'></textarea>
                 <Button variant='primary'>Envoyer</Button>
             </div>
         </SectionLayout>
