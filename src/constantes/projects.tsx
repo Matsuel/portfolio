@@ -13,6 +13,7 @@ export const projects = [
         github: "https://github.com/Matsuel/CACBO-Badminton",
         technologies: ["Next.js", "TailwindCSS", "TypeScript", "Figma"],
         icon: <FiCircle size={16} />,
+        preview: "/cacbo.png"
     },
     {
         title: "ATPEscrime",
@@ -21,6 +22,7 @@ export const projects = [
         github: "https://github.com/Matsuel/ATPE",
         technologies: ["Next.js", "SCSS", "TypeScript"],
         icon: <FiCode size={16} />,
+        preview: "/atpe.png"
     },
     {
         title: "ONU",

@@ -3,6 +3,7 @@ import { motion, useTransform } from 'framer-motion'
 import Button from '../Button'
 import { CarouselItem } from '@/types'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface ItemProps {
     index: number
@@ -31,19 +32,17 @@ const Item = ({
     return (
         <motion.div
             key={index}
-            className={`relative shrink-0 flex flex-col h-96 items-start justify-between bg-[#0f0f0f] border border-[#222] rounded-[12px] overflow-hidden cursor-grab active:cursor-grabbing`}
+            className={`relative shrink-0 flex flex-col h-96 items-start bg-[#0f0f0f] border border-[#222] rounded-[12px] overflow-hidden cursor-grab active:cursor-grabbing`}
             style={{
                 width: itemWidth,
                 rotateY: rotateY,
             }}
             transition={effectiveTransition}
         >
-            <div className={`mb-4 p-5`}>
-                <span className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#060606]">
-                    {item.icon}
-                </span>
-            </div>
-            <div className="p-5">
+            <span className="flex h-[32px] w-[32px] items-center justify-center rounded-full bg-[#060606] mt-4 ml-4">
+                {item.icon}
+            </span>
+            <div className="p-4">
                 <div className='flex flex-row gap-4 items-center'>
                     <h4 className="mb-1 font-black text-4xl text-white">
                         {item.title}
@@ -56,6 +55,15 @@ const Item = ({
                 </div>
                 <p className="text-base text-white">{item.description}</p>
             </div>
+            {item.preview &&
+                <Image
+                    src={item.preview}
+                    alt={item.title}
+                    width={itemWidth}
+                    height={itemWidth * 0.2}
+                    layout='responsive'
+                />
+            }
         </motion.div>
     );
 }

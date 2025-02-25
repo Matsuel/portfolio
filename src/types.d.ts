@@ -25,4 +25,5 @@ export interface CarouselItem {
     icon: JSX.Element;
     link: string | null;
     github: string;
+    preview?: string;
 }
