@@ -31,5 +31,6 @@ export const projects = [
         github: "https://github.com/Matsuel/ONU",
         technologies: ["Next.js", "TypeScript", "Socket.io", "TailwindCSS"],
         icon: <FiFileText size={16} />,
+        preview: "/onu.png"
     }
 ]

@@ -121,7 +121,7 @@ export default function Carousel({
     return (
         <div
             ref={containerRef}
-            className={`relative overflow-hidden p-4 ml-80 rounded-[24px] border border-[#222]`}
+            className="relative overflow-hidden p-4 ml-80 rounded-[24px] border border-[#222]"
             style={{
                 width: `${baseWidth}px`,
             }}
@@ -157,8 +157,7 @@ export default function Carousel({
                 })}
             </motion.div>
             <div
-                className={`flex w-full justify-center
-                    }`}
+                className="flex w-full justify-center}"
             >
                 <div className="mt-4 flex w-[150px] justify-between px-8">
                     {items.map((_, index) => (

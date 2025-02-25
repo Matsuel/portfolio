@@ -32,7 +32,7 @@ const Item = ({
     return (
         <motion.div
             key={index}
-            className={`relative shrink-0 flex flex-col h-96 items-start bg-[#0f0f0f] border border-[#222] rounded-[12px] overflow-hidden cursor-grab active:cursor-grabbing`}
+            className="relative shrink-0 flex flex-col h-96 items-start bg-[#0f0f0f] border border-[#222] rounded-[12px] overflow-hidden cursor-grab active:cursor-grabbing"
             style={{
                 width: itemWidth,
                 rotateY: rotateY,
