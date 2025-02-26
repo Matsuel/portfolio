@@ -42,12 +42,12 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  src: url('../../fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter-Italic';
-  src: url('../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+  src: url('../../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
 }
 
 :root {

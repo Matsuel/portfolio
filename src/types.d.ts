@@ -27,3 +27,5 @@ export interface CarouselItem {
     github: string;
     preview?: string;
 }
+
+export type Languages = 'fr' | 'en' | 'eus';
