@@ -1,1 +1,60 @@
-{}
+{
+    "hero": {
+        "title": "Matheo LANG",
+        "subtitle": "Your project deserves an outstanding showcase. My goal is to design a solution that matches your ambitions -",
+        "cta": "Learn more"
+    },
+    "services": {
+        "title": "Services",
+        "subtitle": "What I can do for you",
+        "items": {
+            "0": {
+                "title": "Showcase Website",
+                "description": "Create a strong online presence with a modern and responsive showcase website. Ideal for highlighting your products, services, or activities with smooth navigation and an attractive design. (WordPress or other CMS)"
+            },
+            "1": {
+                "title": "Backend Development",
+                "description": "Build a robust and scalable backend using the latest technologies (Node.js, Python, Go). Perfect for managing your data, security, and information flows."
+            },
+            "2": {
+                "title": "Full-Stack Web App",
+                "description": "I develop high-performance interactive web applications using modern technologies. My goal is to create robust and scalable solutions that perfectly meet your specific needs. I handle every stage of development, from design to production, with a focus on code quality and application scalability."
+            },
+            "3": {
+                "title": "Maintenance and Technical Support",
+                "description": "I offer regular maintenance services for your websites and web applications to ensure they remain up-to-date, functional, and secure. Whether it's content updates, bug fixes, or technical adjustments, I make sure your project continues to operate optimally. This allows you to focus on your goals without worrying about technical aspects."
+            },
+            "4": {
+                "title": "Third-Party Service Integration",
+                "description": "I integrate external APIs and third-party services into your applications to enhance their functionality. Whether you need a payment solution, a geolocation system, or another external feature, I ensure a smooth, fast, and secure integration. This helps maximize your tools' efficiency and provide an enhanced user experience."
+            }
+        }
+    },
+    "projets": {
+        "title": "Projects",
+        "subtitle": "Technical achievements",
+        "title2": "The power of creativity",
+        "subtitle2": "From showcase websites to interactive platforms, my projects reflect a user-focused and innovative approach. Every detail matters: intuitive navigation, striking designs, and optimized performance. Discover how my solutions transform ideas into unique digital experiences."
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Ready to get started?",
+        "form": {
+            "name": "Name",
+            "firstname": "First name",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Send"
+        }
+    },
+    "navbar": {
+        "button": "Menu",
+        "items": {
+            "0": "Matheo LANG",
+            "1": "Services",
+            "2": "Projects",
+            "3": "Journey",
+            "4": "Contact"
+        }
+    }
+}
