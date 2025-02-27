@@ -61,7 +61,6 @@ const Item = ({
                     alt={item.title}
                     width={itemWidth}
                     height={itemWidth * 0.2}
-                    layout='responsive'
                 />
             }
         </motion.div>
