@@ -1,10 +1,10 @@
 {
-    "hero": {
+    "Hero": {
         "title": "Matheo LANG",
         "subtitle": "Zure proiektuak aparteko erakusleiho bat merezi du. Nire helburua zure asmoekin bat datorren irtenbide bat diseinatzea da -",
         "cta": "Informazio gehiago"
     },
-    "services": {
+    "Services": {
         "title": "Zerbitzuak",
         "subtitle": "Zugatik egin dezakedana.",
         "items": {
@@ -30,13 +30,13 @@
             }
         }
     },
-    "projets": {
+    "Projets": {
         "title": "Proiektuak",
         "subtitle": "Lorpen teknikoak",
         "title2": "Sormenaren boterea",
         "subtitle2": "Erakusleiho gunetik plataforma interaktiboetara, erabiltzailearengana eta berrikuntzara bideratutako ikuspegia islatzen dute nire proiektuek. Xehetasun bakoitzak balio du: nabigazio intuitiboa, diseinu talkariak eta errendimendu optimizatua. Ikusi nola nire soluzioek ideiak esperimentu digital bakar bihurtzen dituzten."
     },
-    "contact": {
+    "Contact": {
         "title": "Harremana",
         "subtitle": "Prest zaude hasteko?",
         "form": {
@@ -47,7 +47,7 @@
             "submit": "Bidali"
         }
     },
-    "navbar": {
+    "Navbar": {
         "button": "Menua",
         "items": {
             "0": "Matheo LANG",

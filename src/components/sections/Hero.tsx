@@ -3,8 +3,11 @@ import Image from 'next/image';
 import MouseIcon from '../Ui/MouseIcon';
 import AnimatedTitle from '../Ui/AnimatedTitle';
 import HeroButton1 from '../Ui/HeroButton1';
+import { useTranslations } from 'next-intl';
 
 const Hero = () => {
+
+    const t = useTranslations('Hero');
 
     return (
         <section id='hero' className="w-full max-h-screen h-screen flex flex-col justify-start p-24 items-start relative overflow-hidden snap-start" >
@@ -17,11 +20,10 @@ const Hero = () => {
             />
 
             <div className='w-1/3 z-30 h-auto flex flex-col items-start gap-12'>
-                <AnimatedTitle title="Matheo LANG" />
+                <AnimatedTitle title={t("title")} />
 
                 <p className="text-2xl text-white font-semibold">
-                    Votre projet mérite une vitrine exceptionnelle.
-                    Mon objectif est de concevoir une solution à la hauteur de vos ambitions -
+                    {t("subtitle")}
                     <HeroButton1 />
                 </p>
             </div>

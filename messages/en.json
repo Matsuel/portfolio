@@ -1,10 +1,10 @@
 {
-    "hero": {
+    "Hero": {
         "title": "Matheo LANG",
         "subtitle": "Your project deserves an outstanding showcase. My goal is to design a solution that matches your ambitions -",
         "cta": "Learn more"
     },
-    "services": {
+    "Services": {
         "title": "Services",
         "subtitle": "What I can do for you",
         "items": {
@@ -30,13 +30,13 @@
             }
         }
     },
-    "projets": {
+    "Projets": {
         "title": "Projects",
         "subtitle": "Technical achievements",
         "title2": "The power of creativity",
         "subtitle2": "From showcase websites to interactive platforms, my projects reflect a user-focused and innovative approach. Every detail matters: intuitive navigation, striking designs, and optimized performance. Discover how my solutions transform ideas into unique digital experiences."
     },
-    "contact": {
+    "Contact": {
         "title": "Contact",
         "subtitle": "Ready to get started?",
         "form": {
@@ -47,7 +47,7 @@
             "submit": "Send"
         }
     },
-    "navbar": {
+    "Navbar": {
         "button": "Menu",
         "items": {
             "0": "Matheo LANG",

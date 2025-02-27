@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavbarProvider from "@/providers/NavbarProvider";
 import { routing } from "@/i18n/routing";
-import { notFound } from "next/navigation";
 import { Languages } from "@/types";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
