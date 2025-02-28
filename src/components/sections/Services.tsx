@@ -2,16 +2,22 @@ import React from 'react'
 import SectionLayout from './SectionLayout'
 import { services } from '@/constantes/services'
 import Service from '../Ui/Service'
+import { useTranslations } from 'next-intl'
 
 const Services = () => {
+
+    const t = useTranslations('Services')
+
     return (
-        <SectionLayout title='Services' subtitle='Ce que je peux faire pour vous' id='services'>
+        <SectionLayout
+            title={t('title')}
+            subtitle={t('subtitle')}
+            id='services'>
             <div className='w-[100%] flex flex-row flex-wrap gap-8'>
-                {services.map((service, index) => (
+                {services.map((_, index) => (
                     <Service
-                        title={service.title}
-                        description={service.description}
                         expanded={index > 2}
+                        index={index}
                         key={index}
                     />
                 ))}
