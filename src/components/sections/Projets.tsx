@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import SectionLayout from './SectionLayout'
+import SectionLayout from './layout'
 import Carousel from '../Ui/Carousel';
 import { useTranslations } from 'next-intl';
 

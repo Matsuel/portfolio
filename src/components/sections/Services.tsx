@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionLayout from './SectionLayout'
+import SectionLayout from './layout'
 import { services } from '@/constantes/services'
 import Service from '../Ui/Service'
 import { useTranslations } from 'next-intl'

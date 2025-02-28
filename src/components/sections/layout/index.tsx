@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from '@/components/Ui/SectionTitle'
-import Subtitle from '@/components/Ui/Subtitle'
+import Title from '@/components/sections/layout/SectionTitle'
+import Subtitle from '@/components/sections/layout/Subtitle'
 import { cn } from '@/utils/cn'
 
 interface SectionLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
