@@ -5,10 +5,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import { navbarLinks } from "@/constantes/navbar";
 import NavbarLink from "./NavbarLink";
 import NavbarContext from "@/contexts/NavbarContext";
+import { useTranslations } from "next-intl";
 
 const Navbar = () => {
 
     const { isMenuOpen } = useContext(NavbarContext);
+    const t = useTranslations("Navbar");
 
     return (
         <AnimatePresence>
@@ -22,8 +24,8 @@ const Navbar = () => {
                 >
                     {navbarLinks.map((link, index) => (
                         <NavbarLink
-                            key={link.name}
-                            name={link.name}
+                            key={link.sectionId}
+                            name={t(`items.${index}`)}
                             sectionId={link.sectionId}
                             isEven={index % 2 === 0}
                             index={index}
