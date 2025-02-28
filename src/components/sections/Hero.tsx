@@ -24,7 +24,9 @@ const Hero = () => {
 
                 <p className="text-2xl text-white font-semibold">
                     {t("subtitle")}
-                    <HeroButton1 />
+                    <HeroButton1>
+                        {t("cta")}
+                    </HeroButton1>
                 </p>
             </div>
 
