@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionLayout from './layout'
+import SectionLayout from './Layout'
 import Input from '../Ui/Input'
 import Button from '../Ui/Button'
 import { useTranslations } from 'next-intl'

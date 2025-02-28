@@ -1,6 +1,6 @@
 import { socials } from '@/constantes/socials'
 import React from 'react'
-import Social from './Social'
+import Social from '@/components/Socials/Social'
 
 const Socials = () => {
     return (

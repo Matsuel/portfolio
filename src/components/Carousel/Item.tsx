@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion, useTransform } from 'framer-motion'
-import Button from '../Button'
+import Button from '../Ui/Button'
 import { CarouselItem } from '@/types'
 import Link from 'next/link'
 import Image from 'next/image'

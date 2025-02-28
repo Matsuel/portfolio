@@ -1,5 +1,5 @@
 import React from 'react'
-import Lang from './Lang'
+import Lang from '@/components/Lang/Lang'
 
 const LangSelector = () => {
     return (

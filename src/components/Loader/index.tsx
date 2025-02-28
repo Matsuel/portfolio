@@ -2,7 +2,7 @@
 
 import { AnimatePresence } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
-import Preloader from './Preloader'
+import Preloader from '@/components/Loader/Preloader'
 
 const Loader = () => {
     const [loading, setLoading] = useState(true)
