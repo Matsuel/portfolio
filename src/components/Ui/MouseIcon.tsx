@@ -13,7 +13,7 @@ const MouseIcon = () => {
                 repeatType: 'reverse',
                 duration: 1.5,
             }}
-            src="/magicMouse.svg"
+            src="/Icons/magicMouse.svg"
             alt="scroll down"
             width={50}
             height={50}

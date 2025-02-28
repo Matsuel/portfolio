@@ -13,7 +13,7 @@ const Hero = () => {
         <section id='hero' className="w-full max-h-screen h-screen flex flex-col justify-start p-24 items-start relative overflow-hidden snap-start" >
             <Image
                 className="absolute top-0 left-0 w-full h-full object-cover opacity-70"
-                src="/bordeaux.jpg"
+                src="/Hero/bordeaux.jpg"
                 alt="yacht"
                 width={5235}
                 height={1745}
