@@ -38,7 +38,7 @@
     },
     "Contact": {
         "title": "Contact",
-        "subtitle": "Ready to get started?",
+        "subtitle": "Ready to get started ?",
         "form": {
             "name": "Name",
             "firstname": "First name",
