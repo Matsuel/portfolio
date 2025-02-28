@@ -157,7 +157,7 @@ export default function Carousel({
                 })}
             </motion.div>
             <div
-                className="flex w-full justify-center}"
+                className="flex w-full justify-center"
             >
                 <div className="mt-4 flex w-[150px] justify-between px-8">
                     {items.map((_, index) => (
