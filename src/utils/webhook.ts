@@ -24,6 +24,11 @@ class Webhook {
                     inline: true,
                 },
                 {
+                    name: 'Prénom',
+                    value: firstname,
+                    inline: true,
+                },
+                {
                     name: 'Email',
                     value: email,
                     inline: true,
@@ -37,8 +42,6 @@ class Webhook {
             .setTimestamp()
             .setAuthor({
                 name: 'Portfolio',
-                url: 'https://nathan.bonnell.fr',
-                iconURL: 'https://nathan.bonnell.fr/img/picture/pp.png',
             })
             .setColor('Aqua');
     }
