@@ -6,6 +6,7 @@ import { Languages } from "@/types";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import NotFound from "@/components/sections/NotFound";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Matheo Lang",
@@ -41,6 +42,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages} locale={locale}>
           <NavbarProvider>
             {children}
+            <Toaster />
           </NavbarProvider>
         </NextIntlClientProvider>
       </body>

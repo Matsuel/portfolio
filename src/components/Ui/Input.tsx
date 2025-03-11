@@ -3,6 +3,7 @@ import React from 'react'
 interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
     type: string
     placeholder: string
+    value?: string
 }
 
 const Input = ({ ...props }: InputProps) => {
