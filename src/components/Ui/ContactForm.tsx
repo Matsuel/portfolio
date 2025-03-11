@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import React, { useState } from 'react'
 import Input from './Input';
 import Button from './Button';
+import { toast } from 'sonner';
 
 const ContactForm = () => {
 
@@ -29,10 +30,24 @@ const ContactForm = () => {
         })
 
         const response = await res.json()
-        if (response.sent) {
-            console.log('Message sent')
+        if (response.message === 'Message sent') {
+            toast.success('Votre message a bien été envoyé !', {
+                style: {
+                    borderRadius: '12px',
+                    backgroundColor: '#0f0f0f',
+                    color: '#fff',
+                    borderColor: '#0f0f0f'
+                }
+            })
         } else {
-            console.log('Message not sent')
+            toast.error('Une erreur est survenue lors de l\'envoi du message', {
+                style: {
+                    borderRadius: '12px',
+                    backgroundColor: '#0f0f0f',
+                    color: '#fff',
+                    borderColor: '#0f0f0f'
+                }
+            })
         }
 
     }
