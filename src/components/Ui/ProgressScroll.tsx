@@ -8,11 +8,13 @@ const ProgressScroll = () => {
     const { scrollPercentage } = useScrollPercentage()
 
     return (
-        <div className='z-20 w-72 h-auto fixed bottom-8 right-24 bg-transparent flex flex-col items-start justify-center'>
-            <div className='w-72 h-1 bg-secondary rounded-full' />
+        <div
+            className='z-20 2xl:w-72 xl:w-64 w-40 sm:flex hidden h-auto fixed bottom-8 right-24 bg-transparent flex-col items-start justify-center'
+        >
+            <div className='w-full h-1 bg-secondary rounded-full' />
             <motion.div
                 className='absolute w-auto h-[6px] bg-white rounded-full'
-                animate={{ width: `${288 * scrollPercentage / 100}px` }}
+                style={{ width: `${288 * scrollPercentage / 100}px` }}
                 transition={{ duration: 0.3 }}
                 initial={{ width: 0 }}
             />

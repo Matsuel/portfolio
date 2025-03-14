@@ -20,10 +20,10 @@ export default function Home() {
       <Navbar />
       <ProgressScroll />
       <Hero />
-      <Services />
+      {/* <Services />
       <Projets />
       <Contact />
-      <Loader />
+      <Loader /> */}
     </div>
   );
 }
