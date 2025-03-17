@@ -12,7 +12,7 @@ const Title = ({
     ...props
 }: TitleProps) => {
     return (
-        <h1 className={cn('text-7xl font-bold text-secondary', className)} {...props}>
+        <h1 className={cn('xl:text-7xl sm:text-6xl text-4xl font-bold text-secondary', className)} {...props}>
             {children}
         </h1>
     )
