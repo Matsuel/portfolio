@@ -9,7 +9,7 @@ const Subtitle = ({
     ...props
 }: SubtitleProps) => {
     return (
-        <h2 className='w-[82%] text-[140px] font-extrabold leading-none text-text uppercase mb-32' {...props}>
+        <h2 className='sm:w-[82%] w-full 2xl:text-[140px] xl:text-[120px] lg:text-8xl md:text-7xl text-6xl font-extrabold leading-none text-text uppercase 2xl:mb-32 xl:mb-28 lg:mb-24 mb-20' {...props}>
             {children}
         </h2>
     )

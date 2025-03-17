@@ -20,6 +20,7 @@ export default function Home() {
       <Navbar />
       <ProgressScroll />
       <Hero />
+      <Services />
       {/* <Services />
       <Projets />
       <Contact />
