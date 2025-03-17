@@ -7,8 +7,6 @@ const ProgressScroll = () => {
 
     const { scrollPercentage } = useScrollPercentage()
 
-    console.log(scrollPercentage)
-
     return (
         <div
             className='z-20 w-72 flex h-auto fixed bottom-8 right-24 bg-transparent flex-col items-start justify-center'
