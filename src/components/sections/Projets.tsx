@@ -16,7 +16,7 @@ const Projets = () => {
             id='projets'
         >
             <div className="w-full items-center flex flex-row">
-                <div className="w-1/3 flex flex-col gap-8">
+                <div className="w-[640px] flex flex-col gap-8">
                     <h3 className="text-6xl font-extrabold text-coloreven uppercase">
                         {t('title2')}
                     </h3>

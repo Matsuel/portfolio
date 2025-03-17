@@ -21,10 +21,9 @@ export default function Home() {
       <ProgressScroll />
       <Hero />
       <Services />
-      {/* <Services />
       <Projets />
       <Contact />
-      <Loader /> */}
+      <Loader />
     </div>
   );
 }
