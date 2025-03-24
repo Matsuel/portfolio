@@ -1,14 +1,14 @@
 import React from 'react'
-import Hero from '@/components/Sections/Hero';
 import Loader from '@/components/Loader';
 import Navbar from '@/components/Navbar';
 import NavbarMenu from '@/components/Navbar/NavbarMenu';
 import LangSelector from '@/components/Lang';
 import Socials from '@/components/Socials';
 import ProgressScroll from '@/components/Ui/ProgressScroll';
-import Services from '@/components/Sections/Services';
-import Contact from '@/components/Sections/Contact';
-import Projets from '@/components/Sections/Projets';
+import Hero from '@/components/sections/Hero';
+import Services from '@/components/sections/Services';
+import Projets from '@/components/sections/Projets';
+import Contact from '@/components/sections/Contact';
 
 export default function Home() {
 
