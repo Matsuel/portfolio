@@ -6,7 +6,7 @@ class Webhook {
     constructor(url: string) {
         try {
             this.client = new WebhookClient({ url });
-        } catch (error) {
+        } catch (_) {
             this.client = null;
         }
     }

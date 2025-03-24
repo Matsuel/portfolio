@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion, useTransform } from 'framer-motion'
+import { motion, MotionValue, Transition, useTransform } from 'framer-motion'
 import Button from '../Ui/Button'
 import { CarouselItem } from '@/types'
 import Link from 'next/link'
@@ -7,11 +7,11 @@ import Image from 'next/image'
 
 interface ItemProps {
     index: number
-    x: any
+    x: MotionValue<number>
     item: CarouselItem
     trackItemOffset: number
     itemWidth: number
-    effectiveTransition: any
+    effectiveTransition: Transition
 }
 
 const Item = ({
