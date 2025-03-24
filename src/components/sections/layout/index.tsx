@@ -1,7 +1,7 @@
 import React from 'react'
-import Title from '@/components/sections/Layout/SectionTitle'
-import Subtitle from '@/components/sections/Layout/Subtitle'
 import { cn } from '@/utils/cn'
+import Title from './SectionTitle'
+import Subtitle from './Subtitle'
 
 interface SectionLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
     title: string
