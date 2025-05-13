@@ -11,7 +11,7 @@ const SectionLayout = ({
     ...props
 }: SectionLayoutProps) => {
     return (
-        <div className={cn("w-full h-screen flex items-start", className)} {...props}>
+        <div className={cn("w-full h-screen flex flex-col items-center", className)} {...props}>
             {children}
         </div>
     )
