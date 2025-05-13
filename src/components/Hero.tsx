@@ -4,7 +4,8 @@ import SectionLayout from './SectionLayout';
 
 const Hero = () => {
     return (
-        <SectionLayout className="relative"
+        <SectionLayout
+            className="relative"
             style={{
                 backgroundImage: "url('/background.webp')",
                 backgroundSize: "cover",
