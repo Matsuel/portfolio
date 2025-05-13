@@ -14,6 +14,15 @@ const Loading = ({
 }: LoadingProps) => {
 
     const [dimension, setDimension] = useState({ width: 0, height: 0 });
+    const word = 'Bonjour'
+
+    const delays = useMemo(
+        () =>
+            word.split('').map(() =>
+                Math.random() * 1.5
+            ),
+        [word]
+    )
 
     useEffect(() => {
         setDimension({ width: window.innerWidth, height: window.innerHeight })
@@ -43,31 +52,28 @@ const Loading = ({
         }
     }
 
-    const word = 'Bonjour'
-
-    const delays = useMemo(
-        () =>
-            word.split('').map(() =>
-                Math.random() * 1.5
-            ),
-        [word]
-    )
-
     return (
-        <motion.div variants={slideUp} initial="initial" exit="exit" className="w-full h-full fixed top-0 left-0 z-99 flex justify-center items-center">
+        <motion.div
+            initial="initial"
+            exit="exit"
+            variants={slideUp}
+            className="w-full h-full fixed top-0 left-0 z-99 flex justify-center items-center"
+        >
 
             {dimension.width > 0 && (
                 <>
                     <div className='z-10'>
-                        {word.split('').map((word, index) => (
+                        {word.split('').map((letter, index) => (
                             <BlurIn
                                 key={index}
-                                word={word}
+                                word={letter}
                                 delay={delays[index]}
                             />
                         ))}
                     </div>
-                    <SteperButton onClick={onClick} />
+                    <SteperButton
+                        onClick={onClick}
+                    />
 
                     <svg
                         className="absolute top-0 w-full"
