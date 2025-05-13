@@ -2,7 +2,7 @@ import { cn } from '@/utils/cn';
 import React from 'react'
 
 interface SectionLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 const SectionLayout = ({

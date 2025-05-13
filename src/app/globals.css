@@ -9,6 +9,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font: "Switzer", sans-serif;
+  --text-title: 88px;
 }
 
 

@@ -13,9 +13,9 @@ const Hero = () => {
                 backgroundRepeat: "no-repeat",
             }}
         >
-            <h1 className="text-8xl font-semibold w-1/4">
+            {/* <h1 className="text-title leading-none font-semibold w-1/4">
                 Matheo Lang
-            </h1>
+            </h1> */}
 
         </SectionLayout>
     )
