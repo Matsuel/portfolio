@@ -4,8 +4,14 @@ import BlurIn from './BlurIn'
 import SteperButton from './Steper'
 import { motion } from 'framer-motion'
 
+interface LoadingProps {
+    onClick?: () => void
+}
 
-const Loading = () => {
+
+const Loading = ({
+    onClick
+}: LoadingProps) => {
 
     const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
@@ -61,7 +67,7 @@ const Loading = () => {
                             />
                         ))}
                     </div>
-                        <SteperButton />
+                    <SteperButton onClick={onClick} />
 
                     <svg
                         className="absolute top-0 w-full"

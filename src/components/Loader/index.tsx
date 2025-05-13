@@ -15,7 +15,7 @@ const Loader = () => {
 
     return (
         <AnimatePresence mode='wait'>
-            {loading && <Loading />}
+            {loading && <Loading onClick={() => setLoading(false)} />}
         </AnimatePresence>
     )
 }
