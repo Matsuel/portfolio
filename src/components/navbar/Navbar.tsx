@@ -1,0 +1,49 @@
+"use client";
+import React from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useNavbar } from '../../../contexts/NavbarContext';
+
+const Navbar = () => {
+
+    const { isMenuOpen } = useNavbar()
+
+    const expandVariants = {
+        closed: {
+            width: 0,
+            height: 0,
+            borderRadius: '999px',
+            top: 4 * 5,
+            right: 4 * 5,
+            opacity: 0,
+            transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] }
+        },
+        open: {
+            width: '100vw',
+            height: '100vh',
+            borderRadius: '0px',
+            top: 0,
+            right: 0,
+            opacity: 1,
+            transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] }
+        }
+    }
+
+    return (
+        <AnimatePresence>
+            {isMenuOpen && (
+                <motion.div
+                    initial="closed"
+                    animate="open"
+                    exit="closed"
+                    variants={expandVariants}
+                    className="fixed bg-black/80 z-10"
+                    style={{ position: 'fixed' }}
+                >
+                    {/* Tu peux mettre ici le contenu de ton menu */}
+                </motion.div>
+            )}
+        </AnimatePresence>
+    )
+}
+
+export default Navbar
