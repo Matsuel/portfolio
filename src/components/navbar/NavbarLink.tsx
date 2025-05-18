@@ -21,7 +21,7 @@ const NavbarLink = ({
 
     return (
         <Link
-            href={`#${link.sectionId}`}
+            href={link.sectionId}
             className="flex flex-row justify-center p-4 hover:bg-white/20 rounded-lg 2xl:text-9xl text-8xl font-bold uppercase text-white leading-none"
             onClick={() => setIsMenuOpen(false)}
         >
