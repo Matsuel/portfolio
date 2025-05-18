@@ -2,6 +2,9 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useNavbar } from '../../../contexts/NavbarContext';
+import { navbarLinks } from '../../../constants/navbar';
+import Link from 'next/link';
+import NavbarLink from './NavbarLink';
 
 const Navbar = () => {
 
@@ -39,7 +42,14 @@ const Navbar = () => {
                     className="fixed bg-black/80 z-10"
                     style={{ position: 'fixed' }}
                 >
-                    {/* Tu peux mettre ici le contenu de ton menu */}
+                    {navbarLinks.map((link, index) => (
+                        <NavbarLink
+                            key={link.sectionId}
+                            link={link}
+                            index={index}
+                        />
+                        
+                    ))}
                 </motion.div>
             )}
         </AnimatePresence>

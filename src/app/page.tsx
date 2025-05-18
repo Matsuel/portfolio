@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen h-auto flex flex-col items-center">
       <NavbarButton />
-      <Loader />
+      {/* <Loader /> */}
       <Navbar />
       <Hero />
     </div>
