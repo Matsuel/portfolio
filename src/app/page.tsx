@@ -9,7 +9,7 @@ export default function Home() {
       <NavbarButton />
       {/* <Loader /> */}
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import Link from 'next/link';
 import { useNavbar } from '../../../contexts/NavbarContext';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 interface NavbarLinkProps {
     link: {
@@ -11,23 +11,59 @@ interface NavbarLinkProps {
     index: number;
 }
 
-
 const NavbarLink = ({
     link,
     index
 }: NavbarLinkProps) => {
 
-    const { setIsMenuOpen } = useNavbar()
+    const { isMenuOpen, setIsMenuOpen } = useNavbar();
+
+    const router = useRouter();
+
+    const handleRedirect = (sectionId: string) => {
+        setIsMenuOpen(false);
+        setTimeout(() => {
+            router.push(`/${sectionId}`);
+        }, 1000);
+    };
+
 
     return (
-        <Link
-            href={link.sectionId}
-            className="flex flex-row justify-center p-4 hover:bg-white/20 rounded-lg 2xl:text-9xl text-8xl font-bold uppercase text-white leading-none"
-            onClick={() => setIsMenuOpen(false)}
-        >
-                {link.name}
-        </Link>
-    )
-}
+        <AnimatePresence>
+            {isMenuOpen && (
+                <motion.div
+                    initial={{ opacity: 0, y: -80 }}
+                    animate={{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            delay: 0.5 + index * 0.05,
+                            duration: 0.7,
+                            type: "spring",
+                            stiffness: 60,
+                            damping: 12,
+                        },
+                    }}
+                    exit={{
+                        opacity: 0,
+                        y: -80,
+                        transition: {
+                            delay: index * 0.05,
+                            type: "spring",
+                            duration: 0.7
+                        },
+                    }}
+                >
+                    <button
+                        className="w-full flex flex-col items-start p-4 rounded-lg 2xl:text-9xl text-8xl font-bold uppercase text-gray-500 hover:text-white leading-none transition-all duration-300 ease-in-out"
+                        onClick={() => handleRedirect(link.sectionId)}
+                    >
+                        {link.name}
+                    </button>
+                </motion.div>
+            )}
+        </AnimatePresence>
+    );
+};
 
 export default NavbarLink

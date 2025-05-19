@@ -3,7 +3,6 @@ import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useNavbar } from '../../../contexts/NavbarContext';
 import { navbarLinks } from '../../../constants/navbar';
-import Link from 'next/link';
 import NavbarLink from './NavbarLink';
 
 const Navbar = () => {
@@ -18,7 +17,7 @@ const Navbar = () => {
             top: 4 * 5,
             right: 4 * 5,
             opacity: 0,
-            transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] }
+            transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1], delay: 0.7 }
         },
         open: {
             width: '100vw',
@@ -32,24 +31,25 @@ const Navbar = () => {
     }
 
     return (
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
             {isMenuOpen && (
                 <motion.div
+                    key="navbar"
                     initial="closed"
                     animate="open"
                     exit="closed"
                     variants={expandVariants}
-                    className="fixed bg-black/80 z-10"
-                    style={{ position: 'fixed' }}
+                    className="fixed bg-black z-10"
                 >
-                    {navbarLinks.map((link, index) => (
-                        <NavbarLink
-                            key={link.sectionId}
-                            link={link}
-                            index={index}
-                        />
-                        
-                    ))}
+                    <div className="flex flex-col">
+                        {navbarLinks.map((link, index) => (
+                            <NavbarLink
+                                key={link.sectionId}
+                                link={link}
+                                index={index}
+                            />
+                        ))}
+                    </div>
                 </motion.div>
             )}
         </AnimatePresence>
