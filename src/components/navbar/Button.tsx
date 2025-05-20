@@ -7,7 +7,7 @@ const NavbarButton = () => {
 
     return (
         <button
-            className='absolute cursor-pointer top-5 right-5 h-auto flex flex-row items-center gap-3 bg-black text-white rounded-full p-2 z-20'
+            className='absolute cursor-pointer top-5 right-5 h-auto flex flex-row items-center gap-3 bg-black text-white rounded-full p-2 z-30'
             onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
             <h2 className='ml-2'>Menu</h2>

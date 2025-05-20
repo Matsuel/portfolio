@@ -39,9 +39,9 @@ const Navbar = () => {
                     animate="open"
                     exit="closed"
                     variants={expandVariants}
-                    className="fixed bg-black z-10"
+                    className="h-full fixed bg-black z-20"
                 >
-                    <div className="flex flex-col">
+                    <div className="h-full flex flex-col justify-center">
                         {navbarLinks.map((link, index) => (
                             <NavbarLink
                                 key={link.sectionId}
