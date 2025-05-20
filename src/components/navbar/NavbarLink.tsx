@@ -55,7 +55,7 @@ const NavbarLink = ({
                     }}
                 >
                     <button
-                        className="w-full flex flex-col items-start p-4 rounded-lg 2xl:text-9xl text-8xl font-bold uppercase text-gray-500 hover:text-white leading-none transition-all duration-300 ease-in-out"
+                        className="w-full flex flex-col items-start p-4 2xl:text-9xl text-8xl font-bold uppercase text-secondary border-r border-l border-black hover:border-white hover:text-white cursor-pointer leading-none transition-all duration-300 ease-in-out"
                         onClick={() => handleRedirect(link.sectionId)}
                     >
                         {link.name}
