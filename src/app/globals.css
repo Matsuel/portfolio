@@ -2,13 +2,17 @@
 
 :root {
   --background: #ffffff;
+  --background-inverted: #000;
   --foreground: #000;
+  --foreground-inverted: #fff;
   --secondary: #999999;
 }
 
 @theme {
   --color-background: var(--background);
+  --color-background-inverted: var(--background-inverted);
   --color-foreground: var(--foreground);
+  --color-foreground-inverted: var(--foreground-inverted);
   --color-secondary: var(--secondary);
   --font: "Switzer", sans-serif;
   --text-title: 88px;
@@ -19,4 +23,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font);
+}
+
+::selection {
+  background: var(--background-inverted);
+  color: var(--foreground-inverted);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--background-inverted);
+  color: var(--foreground-inverted);
+  text-shadow: none;
 }
