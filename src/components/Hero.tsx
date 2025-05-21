@@ -16,6 +16,7 @@ const Hero = () => {
 
     return (
         <SectionLayout
+            id='/'
             style={{
                 backgroundImage: "url('/background.webp')",
                 backgroundSize: "cover",

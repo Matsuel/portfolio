@@ -18,6 +18,10 @@
   --text-title: 88px;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 
 body {
   background: var(--background);

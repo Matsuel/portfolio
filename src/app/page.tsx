@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Loader from "@/components/loader";
 import NavbarButton from "@/components/navbar/Button";
 import Navbar from "@/components/navbar/Navbar";
+import Parcours from "@/components/Parcours";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       {/* <Loader /> */}
       <Navbar />
       <Hero />
+      <Parcours />
     </div>
   );
 }
