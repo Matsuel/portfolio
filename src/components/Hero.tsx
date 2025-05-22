@@ -23,7 +23,7 @@ const Hero = () => {
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat"
             }}
-            className='flex flex-col items-start justify-center h-screen px-[5%] gap-4'
+            className='flex flex-col items-start justify-center h-screen gap-4'
         >
             <AnimatedTitle className='w-1/3'>
                 Matheo LANG
