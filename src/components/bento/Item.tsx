@@ -31,14 +31,13 @@ const Item = ({
 
             <div className="relative flex flex-col space-y-3">
                 <div className="flex items-center justify-between">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-black/5 group-hover:bg-gradient-to-br transition-all duration-300">
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-black/5">
                         {icon}
                     </div>
                     <span
                         className={cn(
                             "text-xs font-medium px-2 py-1 rounded-lg backdrop-blur-sm",
-                            "bg-black/5 text-gray-600",
-                            "transition-colors duration-300 group-hover:bg-black/10"
+                            "bg-black/5 text-gray-600"
                         )}
                     >
                         {status}
@@ -59,7 +58,7 @@ const Item = ({
                         {tags.map((tag, i) => (
                             <span
                                 key={i}
-                                className="px-2 py-1 rounded-md bg-black/5 backdrop-blur-sm transition-all duration-200 hover:bg-black/10"
+                                className="px-2 py-1 rounded-md bg-black/5 backdrop-blur-sm"
                             >
                                 #{tag}
                             </span>
