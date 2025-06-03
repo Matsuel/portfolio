@@ -13,7 +13,7 @@ export const services: BentoItem[] = [
         description:
             "Créez une présence en ligne impactante avec un site vitrine moderne et responsive. Idéal pour mettre en avant vos produits, services ou activités avec une navigation fluide et un design attrayant. (Wordpress ou autres CMS)",
         icon: <TrendingUp className="w-4 h-4 text-blue-500" />,
-        status: "Live",
+        status: "Active",
         tags: ["Wordpress", "CMS", "Design Web"],
         colSpan: 2
     },
@@ -21,7 +21,7 @@ export const services: BentoItem[] = [
         title: "Développement Backend",
         description: "Construisez un backend robuste et scalable avec les dernières technologies (Node.js, Python, Go). Parfait pour gérer vos données, votre sécurité, et vos flux d’informations.",
         icon: <Hammer className="w-4 h-4 text-emerald-500" />,
-        status: "Updated",
+        status: "Mis à jour",
         tags: ["Node.js", "Python", "Go", "API"],
     },
     {
