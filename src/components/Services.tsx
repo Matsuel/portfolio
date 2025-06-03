@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionLayout from './SectionLayout'
-import BentoGrid from "@/components/BentoGrid"
+import BentoGrid from "@/components/bento/BentoGrid"
 import { services } from '../../constants/services';
 
 const Services = () => {

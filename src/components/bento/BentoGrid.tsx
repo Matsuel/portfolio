@@ -1,7 +1,5 @@
-"use client";
-
 import { BentoItem } from "@/types";
-import Item from "./bento/Item";
+import Item from "@/components/bento/Item";
 
 interface BentoGridProps {
     items: BentoItem[];
