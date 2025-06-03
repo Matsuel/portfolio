@@ -4,7 +4,5 @@ export interface BentoItem {
     icon: React.ReactNode;
     status: string;
     tags: string[];
-    meta: string;
-    cta: string;
     colSpan?: number;
 }
