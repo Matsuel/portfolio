@@ -13,9 +13,9 @@ export default function Home() {
       {/* <Loader /> */}
       <Navbar />
       <Hero />
-      <Services />
-      <Projets />
-      {/* <Parcours /> */}
+      <Parcours />
+      {/* <Projets />
+      <Services /> */}
     </div>
   );
 }

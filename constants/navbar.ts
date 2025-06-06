@@ -3,15 +3,15 @@ export enum NavbarLinkSection {
     Services = "#services",
     Projects = "#projets",
     Education = "#parcours",
-    CV = "/matheolang.pdf",
+    CV = "matheolang.pdf",
 }
 
 export const navbarLinks = [
     { name: "Matheo LANG", sectionId: NavbarLinkSection.Home, },
-    { name: "Services", sectionId: NavbarLinkSection.Services, },
-    { name: "Projets", sectionId: NavbarLinkSection.Projects, },
     { name: "Parcours", sectionId: NavbarLinkSection.Education, },
-    { name: "CV", sectionId: NavbarLinkSection.CV }
+    { name: "Projets", sectionId: NavbarLinkSection.Projects, },
+    { name: "Services", sectionId: NavbarLinkSection.Services, },
+    // { name: "CV", sectionId: "/" + NavbarLinkSection.CV }
 ];
 
 export const mail = "matheolang@icloud.com"

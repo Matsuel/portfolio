@@ -6,3 +6,10 @@ export interface BentoItem {
     tags: string[];
     colSpan?: number;
 }
+
+export interface TimelineEntry {
+    title: string;
+    description: string[];
+    date: string;
+    company: string;
+}
