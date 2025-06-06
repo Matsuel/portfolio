@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
-      {/* <Projets /> */}
+      <Projets />
       {/* <Parcours /> */}
     </div>
   );

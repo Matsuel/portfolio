@@ -1,8 +1,5 @@
 import { BentoItem } from '@/types'
 import { cn } from '@/utils/cn'
-import Link from 'next/link'
-import React from 'react'
-import { NavbarLinkSection } from '../../../constants/navbar'
 
 const Item = ({
     icon,
@@ -64,13 +61,6 @@ const Item = ({
                             </span>
                         ))}
                     </div>
-                    <Link
-                        href={NavbarLinkSection.Contact}
-                    >
-                        <span className="text-xs text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity">
-                            En savoir plus →
-                        </span>
-                    </Link>
                 </div>
             </div>
 

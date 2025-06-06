@@ -1,18 +1,11 @@
 "use client";
-import React from 'react'
-import SectionLayout from './SectionLayout';
-import AnimatedTitle from './AnimatedTitle';
 import { motion } from "framer-motion";
 import AnimatedText from './AnimatedText';
-import { useRouter } from 'next/navigation';
+import AnimatedTitle from './AnimatedTitle';
+import SectionLayout from './SectionLayout';
+import { mail } from "../../constants/navbar";
 
 const Hero = () => {
-
-    const router = useRouter();
-
-    const handleContactClick = () => {
-        router.push("#contact");
-    };
 
     return (
         <SectionLayout
@@ -33,26 +26,25 @@ const Hero = () => {
                 delay={1.5}
                 className='text-2xl font-semibold'
             >
-                Développeur Web basé à Bordeaux 🇫🇷
+                Web developer based in Bordeaux 🇫🇷
             </AnimatedText>
 
             <AnimatedText
                 delay={1.8}
                 className='text-lg font-semibold'
             >
-                Votre projet mérite une vitrine exceptionnelle. Mon objectif est de concevoir une solution à la hauteur de vos ambitions et de vos besoins.
+                I'm specialized in creating high-quality, user-friendly websites. My objective is to deliver a unique and engaging digital experience that meets your needs and exceeds your expectations.
             </AnimatedText>
 
-            <motion.button
-                type="button"
+            <motion.a
+                href={`mailto:${mail}`}
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2.1, duration: 0.8, type: "spring" }}
-                onClick={handleContactClick}
                 className="self-start w-auto mt-10 px-10 py-4 bg-white/90 hover:bg-white text-black font-semibold rounded-full shadow-xl text-xl transition-all duration-200 focus:outline-none cursor-pointer"
             >
-                Discutons de votre projet
-            </motion.button>
+                Get in touch
+            </motion.a>
         </SectionLayout>
     )
 }
