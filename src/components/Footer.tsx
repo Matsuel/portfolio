@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className='w-full h-auto flex flex-col items-center justify-center bg-background text-text p-4'>
 
-            <div className='flex md:flex-col md:fixed left-8 bottom-8 flex-row items-center justify-center gap-2'>
+            <div className='flex md:flex-col md:fixed left-8 bottom-8 flex-row items-center justify-center gap-1'>
                 {socials.map((social, index) => (
                     <Link
                         key={index}
