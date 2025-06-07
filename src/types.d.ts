@@ -13,3 +13,8 @@ export interface TimelineEntry {
     date: string;
     company: string;
 }
+
+export interface IconProps {
+    size?: number;
+    color?: string;
+}

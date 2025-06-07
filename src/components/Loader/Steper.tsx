@@ -1,5 +1,5 @@
 import React from 'react'
-import Arrow from '@/assets/Arrow';
+import Arrow from '@/components/icons/Arrow';
 
 interface SteperButtonProps {
     onClick?: () => void

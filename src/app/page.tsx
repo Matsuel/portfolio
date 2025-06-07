@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Loader from "@/components/loader";
 import NavbarButton from "@/components/navbar/Button";
@@ -16,6 +17,7 @@ export default function Home() {
       <Parcours />
       {/* <Projets />
       <Services /> */}
+      <Footer />
     </div>
   );
 }

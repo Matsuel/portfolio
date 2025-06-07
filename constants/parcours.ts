@@ -3,7 +3,7 @@ export const parcours = [
         title: "Concepteur Développeur (alternance)",
         link: "https://www.caissedesdepots.fr/",
         company: "Caisse des Dépôts et Consignations",
-        date: "Sep. 2024 - Now",
+        date: "Since Sep. 2024",
         description: [
             "Développement d'une application permettant de trier les courriers entrants de la CDC en Python, afin de les classer et de les rediriger vers le bon service.",
             "Utilisation de l'IA dans les différentes étapes du tri."
