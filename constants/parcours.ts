@@ -1,6 +1,7 @@
 export const parcours = [
     {
         title: "Concepteur Développeur (alternance)",
+        link: "https://www.caissedesdepots.fr/",
         company: "Caisse des Dépôts et Consignations",
         date: "Sep. 2024 - Now",
         description: [
@@ -10,6 +11,7 @@ export const parcours = [
     },
     {
         title: "Développeur Web (stage)",
+        link: "https://www.shinken-enterprise.com/",
         company: "Shinken Solutions",
         date: "June 2024 - Aug. 2024",
         description: [
@@ -19,6 +21,7 @@ export const parcours = [
     },
     {
         title: "Développeur Web (stage)",
+        link: "https://www.esea-na.fr/",
         company: "ESEA",
         date: "June 2023 - July 2023",
         description: [
@@ -29,6 +32,7 @@ export const parcours = [
     },
     {
         title: "Master Informatique",
+        link: "https://www.ynov.com/",
         company: "Ynov Bordeaux Campus (3ème année actuellement)",
         date: "Sep. 2022 - Sep. 2027",
         description: [

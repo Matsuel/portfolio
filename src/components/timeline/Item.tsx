@@ -1,5 +1,4 @@
 import { TimelineEntry } from '@/types'
-import React from 'react'
 
 interface ItemProps {
     item: TimelineEntry
@@ -33,13 +32,15 @@ const Item = ({
                 </h3>
 
 
-                <div>
+                <div className='flex flex-col gap-2'>
                     <h3 className="text-xl md:text-2xl font-bold text-neutral-500">
                         {item.title}
                     </h3>
-                    <p className="text-neutral-800 text-xs md:text-sm font-normal mb-8">
-                        Built and launched Aceternity UI and Aceternity UI Pro from scratch
-                    </p>
+                    {item.description.map((desc) => (
+                        <p className="text-neutral-800 text-xs md:text-sm font-normal" key={desc}>
+                            {desc}
+                        </p>
+                    ))}
                 </div>
 
             </div>
