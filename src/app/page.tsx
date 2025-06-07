@@ -15,9 +15,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Parcours />
-      {/* <Projets />
-      <Services /> */}
+      <Projets />
+      {/* <Services /> */}
       <Footer />
     </div>
   );
 }
+
+// https://21st.dev/shadcnblockscom/faq-5/default
+// Arreter de décomposer les objets envoyer ...props

@@ -18,3 +18,16 @@ export interface IconProps {
     size?: number;
     color?: string;
 }
+
+export interface Projet {
+    name: string;
+    description: string;
+    image: string;
+    color: string;
+    links: {
+        web?: string;
+        android?: string;
+        ios?: string;
+        github?: string;
+    }
+}

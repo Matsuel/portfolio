@@ -7,7 +7,7 @@ const Services = () => {
     return (
         <SectionLayout
             id='services'
-            className='flex flex-col items-center justify-center'
+            className='h-auto flex flex-col items-center justify-center'
         >
             <BentoGrid items={services} />
 
