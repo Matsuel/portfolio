@@ -16,7 +16,7 @@ const Projets = () => {
     return (
         <SectionLayout
             id='projets'
-            className='h-auto gap-4'
+            className='mt-32 h-auto gap-4'
         >
             <div className='w-full h-auto flex flex-col items-center justify-center gap-4' ref={container}>
                 {projets.map((projet, index) => {
