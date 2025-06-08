@@ -2,6 +2,7 @@ import { Projet } from '@/types';
 import { motion, MotionValue, useTransform } from 'framer-motion';
 import Apple from '../icons/Apple';
 import Android from '../icons/Android';
+import Blank from '../icons/Blank';
 
 interface CardProps extends Projet {
     index: number;
@@ -29,8 +30,14 @@ const Card = ({
             <motion.div className='relative w-[90%] h-[80%] rounded-xl backdrop-blur-md'
                 style={{ backgroundColor: color, top: `calc(-10% + ${index * 25}px)`, scale: scale }}
             >
-                <Apple color={"#ee0000"} />
-                <Android color={"#ee0000"} />
+
+
+                <div className='w-full h-auto flex flex-row items-center justify-end gap-4'>
+                    <Apple color={"#ee0000"} />
+                    <Android color={"#ee0000"} />
+                    <Blank color={"#ee0000"} />
+
+                </div>
 
             </motion.div>
         </div>
