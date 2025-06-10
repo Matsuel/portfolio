@@ -24,3 +24,4 @@ export default function Home() {
 
 // https://21st.dev/shadcnblockscom/faq-5/default
 // Arreter de décomposer les objets envoyer ...props
+// Partir sur un design avec du transparent
