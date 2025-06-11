@@ -10,12 +10,6 @@ const Hero = () => {
     return (
         <SectionLayout
             id='/'
-            style={{
-                backgroundImage: "url('/background.webp')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat"
-            }}
             className='flex flex-col items-start justify-center h-screen gap-4'
         >
             <AnimatedTitle className='w-1/3'>

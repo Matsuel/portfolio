@@ -1,3 +1,4 @@
+import Background from "@/components/Background";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Loader from "@/components/loader";
@@ -10,6 +11,7 @@ import Services from "@/components/Services";
 export default function Home() {
   return (
     <div className="w-full min-h-screen h-auto flex flex-col items-center">
+      <Background />
       <NavbarButton />
       {/* <Loader /> */}
       <Navbar />
