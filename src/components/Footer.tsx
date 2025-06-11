@@ -11,7 +11,9 @@ const Footer = () => {
                         key={index}
                         href={social.link}
                         target='_blank'
-                        className='flex items-center justify-center p-3 rounded-full transition-colors duration-300 text-neutral-500 hover:text-foreground'
+                        className='flex items-center justify-center p-3 rounded-glassmorphism transition-colors duration-300 text-neutral-500 hover:text-foreground border-2 border-glassmorphism-border backdrop-blur-glassmorphism   bg-[linear-gradient(145deg,_rgba(255,255,255,0.4)_0%,_rgba(255,255,255,0.1)_100%)]  '
+                        
+
                     >
                         {social.icon}
                     </Link>
