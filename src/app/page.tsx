@@ -27,3 +27,4 @@ export default function Home() {
 // https://21st.dev/shadcnblockscom/faq-5/default
 // Arreter de décomposer les objets envoyer ...props
 // Partir sur un design avec du transparent neomorphism et glassmorphism
+// Trouver un glassmorphism plus clair et garder celui là pour le hover
