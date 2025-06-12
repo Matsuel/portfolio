@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { useNavbar } from "../../../contexts/NavbarContext";
 
 const NavbarButton = () => {
@@ -7,11 +6,11 @@ const NavbarButton = () => {
 
     return (
         <button
-            className='fixed cursor-pointer top-5 right-5 h-auto flex flex-row items-center gap-3 bg-black text-white rounded-full p-2 z-30'
+            className='fixed cursor-pointer top-5 right-5 h-auto flex flex-row items-center gap-3 transition-colors duration-300 text-neutral-500 hover:text-black rounded-full shadow-xl p-2 z-30 border-2 border-glassmorphism-border backdrop-blur-glassmorphism bg-[linear-gradient(145deg,_rgba(255,255,255,0.4)_0%,_rgba(255,255,255,0.1)_100%)]'
             onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
             <h2 className='ml-2'>Menu</h2>
-            <div className='w-9 h-9 bg-white rounded-full flex items-center justify-center'>
+            <div className='w-9 h-9 rounded-full flex items-center justify-center'>
                 <NavbarIcon
                     isMenuOpen={isMenuOpen}
                     size={25}
@@ -24,11 +23,13 @@ const NavbarButton = () => {
 interface NavbarIconProps {
     size?: number;
     isMenuOpen: boolean;
+    color?: string;
 }
 
 const NavbarIcon = ({
     size = 50,
-    isMenuOpen
+    isMenuOpen,
+    color = "currentColor"
 }: NavbarIconProps) => {
 
 
@@ -39,7 +40,8 @@ const NavbarIcon = ({
         >
             <svg width={size} height={size} viewBox="0 0 100 100">
                 <path
-                    className="fill-none stroke-black stroke-8"
+                    stroke={color}
+                    className="fill-none stroke-8"
                     style={{
                         strokeDasharray: isMenuOpen ? "90 207" : "60 207",
                         strokeDashoffset: isMenuOpen ? -134 : 0,
@@ -48,7 +50,8 @@ const NavbarIcon = ({
                     d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
                 />
                 <path
-                    className="fill-none stroke-black stroke-8"
+                    stroke={color}
+                    className="fill-none stroke-8"
                     style={{
                         strokeDasharray: isMenuOpen ? "1 60" : "60 60",
                         strokeDashoffset: isMenuOpen ? -30 : 0,
@@ -57,7 +60,8 @@ const NavbarIcon = ({
                     d="M 20,50 H 80"
                 />
                 <path
-                    className="fill-none stroke-black stroke-8"
+                    stroke={color}
+                    className="fill-none stroke-8"
                     style={{
                         strokeDasharray: isMenuOpen ? "90 207" : "60 207",
                         strokeDashoffset: isMenuOpen ? -134 : 0,
