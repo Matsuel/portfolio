@@ -15,8 +15,8 @@ const Item = ({
             className="flex justify-start pt-10 md:pt-40 md:gap-2"
         >
             <div className="sticky flex flex-col md:flex-row z-10 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-                <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white flex items-center justify-center">
-                    <div className="h-4 w-4 rounded-full bg-neutral-200 border border-neutral-300 p-2" />
+                <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full border-2 border-glassmorphism-border backdrop-blur-glassmorphism bg-[linear-gradient(145deg,_rgba(255,255,255,0.4)_0%,_rgba(255,255,255,0.1)_100%)] shadow-xl flex items-center justify-center">
+                    <div className="h-3 w-3 rounded-full bg-white " />
                 </div>
 
                 <div className="hidden md:flex w-auto h-auto flex-col items-start justify-center md:pl-20">
