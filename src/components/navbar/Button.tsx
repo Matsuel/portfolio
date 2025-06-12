@@ -6,7 +6,7 @@ const NavbarButton = () => {
 
     return (
         <button
-            className='fixed cursor-pointer top-5 right-5 h-auto flex flex-row items-center gap-3 transition-colors duration-300 text-neutral-500 hover:text-black rounded-full shadow-xl p-2 z-30 border-2 border-glassmorphism-border backdrop-blur-glassmorphism bg-[linear-gradient(145deg,_rgba(255,255,255,0.4)_0%,_rgba(255,255,255,0.1)_100%)]'
+            className='fixed cursor-pointer top-5 right-5 h-auto flex flex-row items-center gap-3 transition-colors duration-300 text-black rounded-full shadow-xl p-2 z-30 border-2 border-glassmorphism-border backdrop-blur-glassmorphism bg-[linear-gradient(145deg,_rgba(255,255,255,0.4)_0%,_rgba(255,255,255,0.1)_100%)]'
             onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
             <h2 className='ml-2'>Menu</h2>

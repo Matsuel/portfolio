@@ -35,7 +35,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2.1, duration: 0.8, type: "spring" }}
-                className="self-start w-auto mt-10 px-10 py-4  font-semibold rounded-full shadow-xl text-xl focus:outline-none cursor-pointer "
+                className="self-start w-auto mt-10 px-10 py-4  font-semibold rounded-full shadow-xl text-xl focus:outline-none cursor-pointer border-2 border-glassmorphism-border text-black backdrop-blur-glassmorphism bg-[linear-gradient(145deg,_rgba(255,255,255,0.4)_0%,_rgba(255,255,255,0.1)_100%)]"
             >
                 Get in touch
             </motion.a>
