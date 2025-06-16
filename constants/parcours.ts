@@ -33,7 +33,7 @@ export const parcours = [
     {
         title: "Master Informatique",
         link: "https://www.ynov.com/",
-        company: "Ynov Bordeaux Campus (3ème année actuellement)",
+        company: "Ynov Bordeaux Campus",
         date: "Sep. 2022 - Sep. 2027",
         description: [
             "Master Informatique à Ynov Bordeaux Campus (3ème année actuellement).",
