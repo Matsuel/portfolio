@@ -12,6 +12,7 @@ export interface TimelineEntry {
     description: string[];
     date: string;
     company: string;
+    link: string;
 }
 
 export interface IconProps {
