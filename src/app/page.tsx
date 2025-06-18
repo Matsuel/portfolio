@@ -15,7 +15,7 @@ export default function Home() {
       {/* <Loader /> */}
       <Hero />
       <Parcours />
-      <Projets />
+      {/* <Projets /> */}
       <Services />
       <Footer />
     </div>
