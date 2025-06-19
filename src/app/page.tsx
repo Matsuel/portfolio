@@ -5,13 +5,11 @@ import Loader from "@/components/loader";
 import Navbar from "@/components/Navbar";
 import Parcours from "@/components/Parcours";
 import Projets from "@/components/Projets";
-import ReturnButton from "@/components/ReturnButton";
 import Services from "@/components/Services";
 
 export default function Home() {
   return (
     <div className="w-full min-h-screen h-auto flex flex-col items-center">
-      <ReturnButton />
       <Background />
       <Navbar />
       {/* <Loader /> */}
