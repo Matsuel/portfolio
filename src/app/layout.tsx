@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { NavbarProvider } from "../../contexts/NavbarContext";
+import { SectionProvider } from "@/contexts/SectionProvider";
 
 const switzer = localFont({
   src: "../fonts/Switzer.ttf",
@@ -22,9 +22,9 @@ export default function RootLayout({
       <body
         className={`${switzer.className} antialiased font-normal`}
       >
-        <NavbarProvider>
+        <SectionProvider>
           {children}
-        </NavbarProvider>
+        </SectionProvider>
       </body>
     </html>
   );
