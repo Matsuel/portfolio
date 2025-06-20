@@ -1,17 +1,13 @@
 import { Projet } from '@/types';
 import { motion } from 'framer-motion';
 
-interface CardProps extends Projet {
-
-}
-
 const Card = ({
     name,
     description,
     image,
     links,
     color,
-}: CardProps) => {
+}: Projet) => {
 
 
     return (
