@@ -13,7 +13,7 @@ export const services: BentoItem[] = [
         description:
             "Créez une présence en ligne impactante avec un site vitrine moderne et responsive. Idéal pour mettre en avant vos produits, services ou activités avec une navigation fluide et un design attrayant. (Wordpress ou autres CMS)",
         icon: <TrendingUp className="w-4 h-4 text-blue-500" />,
-        status: "Active",
+        status: "Actif",
         tags: ["Wordpress", "CMS", "Design Web"],
         colSpan: 2
     },
@@ -28,7 +28,7 @@ export const services: BentoItem[] = [
         title: "Web App Full-Stack",
         description: "Je développe des applications web interactives et performantes en utilisant des technologies modernes. Mon objectif est de créer des solutions robustes et évolutives qui répondent parfaitement à vos besoins spécifiques. Je prends en charge toutes les étapes du développement, de la conception à la mise en production, en mettant l’accent sur la qualité du code et la scalabilité des applications.",
         icon: <Globe className="w-4 h-4 text-purple-500" />,
-        status: "Active",
+        status: "Actif",
         tags: ["React", "Node.js", "Full-Stack", "Web App"],
     },
     {

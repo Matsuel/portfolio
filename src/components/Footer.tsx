@@ -19,12 +19,11 @@ const Footer = () => {
                     </Link>
                 ))}
 
-                {/* <div className='w-[2px] h-16 bg-gradient-to-t from-purple-500 to-blue-500 md:block hidden rounded-full'></div> */}
             </div>
 
-            <span>Designed & Developed by <Link href={SOCIALS.GITHUB} target='_blank' className='underline'>Matheo Lang</Link></span>
+            <span>Pensé & développé par <Link href={SOCIALS.GITHUB} target='_blank' className='underline'>Matheo Lang</Link></span>
             <div className='text-sm mt-2'>
-                © {new Date().getFullYear()} All rights reserved.
+                © {new Date().getFullYear()} Tous droits réservés.
             </div>
         </footer>
     )
