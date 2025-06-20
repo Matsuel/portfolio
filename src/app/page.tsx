@@ -13,8 +13,8 @@ export default function Home() {
       <Navbar />
       <Loader />
       <Hero />
-      <Parcours />
       <Services />
+      <Parcours />
       <Footer />
     </div>
   );
