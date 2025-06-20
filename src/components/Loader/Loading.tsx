@@ -1,8 +1,8 @@
 "use client"
 import React, { useEffect, useMemo, useState } from 'react'
+import { motion } from 'framer-motion'
 import BlurIn from './BlurIn'
 import SteperButton from './Steper'
-import { motion } from 'framer-motion'
 
 interface LoadingProps {
     onClick?: () => void

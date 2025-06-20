@@ -27,7 +27,7 @@ const Hero = () => {
                 delay={1.8}
                 className='text-lg font-semibold'
             >
-                I'm specialized in creating high-quality, user-friendly websites. My objective is to deliver a unique and engaging digital experience that meets your needs and exceeds your expectations.
+                I&apos;m specialized in creating high-quality, user-friendly websites. My objective is to deliver a unique and engaging digital experience that meets your needs and exceeds your expectations.
             </AnimatedText>
 
             <motion.a
