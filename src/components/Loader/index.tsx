@@ -2,7 +2,7 @@
 
 import { AnimatePresence } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
-import Preloader from '@/components/Loader/Preloader'
+import Loading from '@/components/loader/Loading'
 
 const Loader = () => {
     const [loading, setLoading] = useState(true)
@@ -15,7 +15,7 @@ const Loader = () => {
 
     return (
         <AnimatePresence mode='wait'>
-            {loading && <Preloader />}
+            {loading && <Loading onClick={() => setLoading(false)} />}
         </AnimatePresence>
     )
 }

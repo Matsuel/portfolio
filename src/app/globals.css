@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f2f2f7;
+  --background-inverted: #000;
+  --foreground: #000;
+  --foreground-inverted: #fff;
+  --secondary: #999999;
+
+  /* Glassmorphism effect */
+  --glassmorphism-border-size: 2px;
+  --glassmorphism-border-color: rgba(255,255,255,0.3);
+  --glassmorphism-blur: 20px;
+  --glassmorphism-radius: 28%;
+  /* --glassmorphism-shadow: to define a shadow effect; */
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-background-inverted: var(--background-inverted);
+  --color-foreground: var(--foreground);
+  --color-foreground-inverted: var(--foreground-inverted);
+  --color-secondary: var(--secondary);
+  --font: "Switzer", sans-serif;
+  --text-title: 88px;
+  --color-glassmorphism-border: var(--glassmorphism-border-color);
+  --radius-glassmorphism: var(--glassmorphism-radius);
+  --blur-glassmorphism: var(--glassmorphism-blur);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font);
+}
+
+::selection {
+  background: var(--background-inverted);
+  color: var(--foreground-inverted);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--background-inverted);
+  color: var(--foreground-inverted);
+  text-shadow: none;
+}

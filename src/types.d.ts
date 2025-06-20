@@ -1,31 +1,34 @@
-export interface IconProps {
-    size?: number;
-}
-
-export type ProviderProps = {
-    children: React.ReactNode;
-};
-
-export type NavbarContextType = {
-    isMenuOpen: boolean;
-    toggleMenu: () => void;
-};
-
-export type Experience = {
-    title: string;
-    role: string;
-    date: string;
-    link: string;
-    image: string;
-};
-
-export interface CarouselItem {
+export interface BentoItem {
     title: string;
     description: string;
-    icon: JSX.Element;
-    link: string | null;
-    github: string;
-    preview?: string;
+    icon: React.ReactNode;
+    status: string;
+    tags: string[];
+    colSpan?: number;
 }
 
-export type Languages = 'fr' | 'en' | 'eus';
+export interface TimelineEntry {
+    title: string;
+    description: string[];
+    date: string;
+    company: string;
+    link: string;
+}
+
+export interface IconProps {
+    size?: number;
+    color?: string;
+}
+
+export interface Projet {
+    name: string;
+    description: string;
+    image: string;
+    color: string;
+    links: {
+        web?: string;
+        android?: string;
+        ios?: string;
+        github?: string;
+    }
+}
