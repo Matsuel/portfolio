@@ -1,9 +1,5 @@
 import { Projet } from '@/types';
-import { motion, MotionValue, useTransform } from 'framer-motion';
-import Apple from '../icons/Apple';
-import Android from '../icons/Android';
-import Blank from '../icons/Blank';
-import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 interface CardProps extends Projet {
     
