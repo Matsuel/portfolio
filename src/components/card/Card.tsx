@@ -3,12 +3,10 @@ import { motion, MotionValue, useTransform } from 'framer-motion';
 import Apple from '../icons/Apple';
 import Android from '../icons/Android';
 import Blank from '../icons/Blank';
+import Image from 'next/image';
 
 interface CardProps extends Projet {
-    index: number;
-    range: [number, number];
-    targetScale: number;
-    scrollYProgress: MotionValue<number>;
+    
 }
 
 const Card = ({
@@ -17,30 +15,31 @@ const Card = ({
     image,
     links,
     color,
-    index,
-    range,
-    targetScale,
-    scrollYProgress
 }: CardProps) => {
 
-    const scale = useTransform(scrollYProgress, range, [1, targetScale]);
 
     return (
-        <div className='w-full h-screen flex items-center justify-center sticky top-0'>
-            <motion.div className='relative w-[90%] h-[80%] rounded-xl backdrop-blur-md'
-                style={{ backgroundColor: color, top: `calc(-10% + ${index * 25}px)`, scale: scale }}
-            >
-
-
-                <div className='w-full h-auto flex flex-row items-center justify-end gap-4'>
-                    <Apple color={"#ee0000"} />
-                    <Android color={"#ee0000"} />
-                    <Blank color={"#ee0000"} />
-
+        <motion.div
+            className="col-span-1 bg-white rounded-xl"
+        >
+            <div className="p-4">
+                <div className='flex flex-row gap-4 items-center'>
+                    <h4 className="text-4xl">
+                        {name}
+                    </h4>
                 </div>
-
-            </motion.div>
-        </div>
+                <p className="text-base">{description}</p>
+            </div>
+            {/* {image &&
+                <Image
+                className='w-full'
+                    src={image}
+                    alt={name}
+                    width={300}
+                    height={200}
+                />
+            } */}
+        </motion.div>
     )
 }
 

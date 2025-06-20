@@ -6,7 +6,7 @@ const Parcours = () => {
     return (
         <SectionLayout
             id='parcours'
-            title='01 - Parcours'
+            // title='01 - Parcours'
             className='h-auto'
         >
             <Timeline items={parcours} />
