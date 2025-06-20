@@ -3,7 +3,7 @@ export const parcours = [
         title: "Concepteur Développeur (alternance)",
         link: "https://www.caissedesdepots.fr/",
         company: "Caisse des Dépôts et Consignations",
-        date: "Since Sep. 2024",
+        date: "Depuis Sep. 2024",
         description: [
             "Développement d'une application permettant de trier les courriers entrants de la CDC en Python, afin de les classer et de les rediriger vers le bon service.",
             "Utilisation de l'IA dans les différentes étapes du tri."
@@ -13,7 +13,7 @@ export const parcours = [
         title: "Développeur Web (stage)",
         link: "https://www.shinken-enterprise.com/",
         company: "Shinken Solutions",
-        date: "June 2024 - Aug. 2024",
+        date: "Juin 2024 - Août 2024",
         description: [
             "Développement d'une application web de type monitoring en Python, et Angular, afin de surveiller les serveurs et les applications.",
             "Envoi d'alertes par mail et SMS en cas de problème."
@@ -23,7 +23,7 @@ export const parcours = [
         title: "Développeur Web (stage)",
         link: "https://www.esea-na.fr/",
         company: "ESEA",
-        date: "June 2023 - July 2023",
+        date: "Juin 2023 - Juillet 2023",
         description: [
             "Développement d'un tableau de bord pour le suivi des versions des différents modules de chaque application PHP (Drupal).",
             "Utilisation de l'API de GitLab pour récupérer les informations sur les versions des modules.",
