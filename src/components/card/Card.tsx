@@ -1,17 +1,13 @@
 import { Projet } from '@/types';
 import { motion } from 'framer-motion';
 
-interface CardProps extends Projet {
-    
-}
-
 const Card = ({
     name,
     description,
     image,
     links,
     color,
-}: CardProps) => {
+}: Projet) => {
 
 
     return (
@@ -26,6 +22,12 @@ const Card = ({
                 </div>
                 <p className="text-base">{description}</p>
             </div>
+            {links.android}
+            {links.ios}
+            {links.web}
+            {links.github}
+            {image}
+            {color}
             {/* {image &&
                 <Image
                 className='w-full'
