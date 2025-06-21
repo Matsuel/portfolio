@@ -13,8 +13,8 @@ const NotFound = () => {
                 className="mb-8"
             />
             <h1 className='text-4xl font-bold text-center mb-4'>404 - Page non trouvée</h1>
-            <p className='text-lg text-center mb-8'>Désolé, la page que vous cherchez n'existe pas.</p>
-            <Link href="/" className='text-blue-500 hover:underline'>Retour à la page d'accueil</Link>
+            <p className='text-lg text-center mb-8'>Désolé, la page que vous cherchez n&apos;existe pas.</p>
+            <Link href="/" className='text-blue-500 hover:underline'>Retour à la page d&apos;accueil</Link>
         </div>
     )
 }
