@@ -24,5 +24,6 @@ export default function Home() {
 // TODO: https://21st.dev/shadcnblockscom/faq-5/default (mentions légales)
 // TODO: https://vercel.com/legal/support-terms Mentions légales
 // TODO: Ajout Contact
-// TODO: Ajouter mentions légales dans le footer
 // TODO: Animations Not found et mentions légales
+// TODO: Ajout titre et description dans le sectionLayout
+// TODO: Ajout Projets
