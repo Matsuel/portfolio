@@ -20,3 +20,5 @@ const NotFound = () => {
 }
 
 export default NotFound
+
+// TODO: Ajouter animations sur le texte et le logo fadeDown et slide up

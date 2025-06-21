@@ -21,4 +21,4 @@ export default function Home() {
   );
 }
 
-// https://21st.dev/shadcnblockscom/faq-5/default
+// https://21st.dev/shadcnblockscom/faq-5/default (mentions légales)
