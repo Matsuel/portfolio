@@ -21,7 +21,15 @@ const Footer = () => {
 
             <span>Pensé & développé par <Link href={SOCIALS.GITHUB} target='_blank' className='underline'>Matheo Lang</Link></span>
             <div className='text-sm mt-2'>
-                © {new Date().getFullYear()} Tous droits réservés.
+                © &nbsp;
+                <Link href={`https://fr.wikipedia.org/wiki/${new Date().getFullYear()}`} target='_blank' className='underline'>
+                    {new Date().getFullYear()}
+                </Link>
+                &nbsp;Tous droits réservés.
+            </div>
+
+            <div className='text-sm mt-2'>
+                <Link href="/mentions-legales" className='underline'>Mentions légales</Link>
             </div>
         </footer>
     )
