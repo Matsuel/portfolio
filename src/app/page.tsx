@@ -21,4 +21,8 @@ export default function Home() {
   );
 }
 
-// https://21st.dev/shadcnblockscom/faq-5/default (mentions légales)
+// TODO: https://21st.dev/shadcnblockscom/faq-5/default (mentions légales)
+// TODO: https://vercel.com/legal/support-terms Mentions légales
+// TODO: Ajout Contact
+// TODO: Ajouter mentions légales dans le footer
+// TODO: Animations Not found et mentions légales

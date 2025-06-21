@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { mail } from '../../../constants/navbar';
+import Footer from '@/components/Footer';
 
 const MentionsLegalesPage = () => {
     return (
@@ -31,6 +32,7 @@ const MentionsLegalesPage = () => {
                     </p>
                 </section>
             </div>
+            <Footer />
         </div>
     );
 };
