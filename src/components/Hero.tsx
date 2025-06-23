@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <SectionLayout
             id='/'
-            className='flex flex-col items-start justify-center gap-4'
+            className='flex flex-col items-start justify-center gap-4 lg:h-screen h-auto'
         >
             <AnimatedTitle className='lg:w-1/3 w-1/2'>
                 Matheo LANG
