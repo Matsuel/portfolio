@@ -12,12 +12,17 @@ export enum NavbarLinkSection {
     Contact = "#contact",
 }
 
+export const homeSection = { name: "Matheo LANG", sectionId: NavbarLinkSection.Home, icon: <Person /> };
+export const servicesSection = { name: "Services", sectionId: NavbarLinkSection.Services, icon: <Briefcase /> };
+export const projectsSection = { name: "Projets", sectionId: NavbarLinkSection.Projects, icon: <ExternaleDrive /> };
+export const educationSection = { name: "Parcours", sectionId: NavbarLinkSection.Education, icon: <School /> };
+export const contactSection = { name: "Contact", sectionId: NavbarLinkSection.Contact, icon: <Write /> };
+
 export const navbarLinks = [
-    { name: "Matheo LANG", sectionId: NavbarLinkSection.Home, icon: <Person /> },
-    { name: "Parcours", sectionId: NavbarLinkSection.Education, icon: <School /> },
-    { name: "Projets", sectionId: NavbarLinkSection.Projects, icon: <ExternaleDrive /> },
-    { name: "Services", sectionId: NavbarLinkSection.Services, icon: <Briefcase /> },
-    { name: "Contact", sectionId: NavbarLinkSection.Contact, icon: <Write /> },
+    homeSection,
+    servicesSection,
+    projectsSection,
+    educationSection
 ];
 
 export const mail = "matheolang@icloud.com"
