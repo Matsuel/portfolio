@@ -13,7 +13,7 @@ const SectionLayout = ({
     ...props
 }: SectionLayoutProps) => {
     return (
-        <section className={cn("w-full h-screen flex flex-col items-center px-[7%]", className)} {...props}>
+        <section className={cn("w-full h-screen flex flex-col items-center px-28", className)} {...props}>
             <h2 className="xl:text-7xl sm:text-6xl text-4xl font-bold self-start mt-7">
                 {title}
             </h2>
