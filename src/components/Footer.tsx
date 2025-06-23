@@ -8,7 +8,7 @@ const Footer = () => {
 
             <div className='flex flex-col items-center gap-2'>
                 <h2 className='text-4xl font-bold'>Contactez moi</h2>
-                <p className='text-center text-lg mt-2'>Vous avez un projet en tête ? N'hésitez pas à me contacter pour en discuter !</p>
+                <p className='text-center text-lg mt-2'>Vous avez un projet en tête ? N&apos;hésitez pas à me contacter pour en discuter !</p>
                 <Link href={`mailto:${mail}`}>
                     {mail}
                 </Link>
