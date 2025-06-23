@@ -17,7 +17,7 @@ const MentionsLegalesPage = () => {
                 className='text-4xl font-bold mb-8'>
                 Mentions Légales
             </motion.h1>
-            <div className='max-w-2xl w-full flex flex-col gap-6 text-base'>
+            <div className='max-w-2xl w-full flex flex-col gap-6 text-base mb-8'>
                 <motion.section
                     custom={1}
                     initial="hidden"
