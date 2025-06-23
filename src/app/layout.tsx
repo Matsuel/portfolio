@@ -18,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="WTHCIE4nxxDGFC4n0qKV7xWd6bz5OMbZTBI_1X9AN_U" />
+      </head>
       <body
         className={`${switzer.className} antialiased font-normal`}
       >
