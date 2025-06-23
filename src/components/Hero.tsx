@@ -10,22 +10,22 @@ const Hero = () => {
     return (
         <SectionLayout
             id='/'
-            className='flex flex-col items-start justify-center h-screen gap-4'
+            className='flex flex-col items-start justify-center gap-4'
         >
-            <AnimatedTitle className='w-1/3'>
+            <AnimatedTitle className='lg:w-1/3 w-1/2'>
                 Matheo LANG
             </AnimatedTitle>
 
             <AnimatedText
                 delay={1.5}
-                className='text-2xl font-semibold'
+                className='md:text-2xl text-base font-semibold'
             >
                 Développeur web basé à Bordeaux 🇫🇷
             </AnimatedText>
 
             <AnimatedText
                 delay={1.8}
-                className='text-lg font-semibold'
+                className='md:text-lg text-base font-semibold'
             >
                 Je suis spécialisé dans la création de sites web de haute qualité et conviviaux. Mon objectif est de fournir une expérience numérique unique et engageante qui répond à vos besoins et dépasse vos attentes.
             </AnimatedText>
