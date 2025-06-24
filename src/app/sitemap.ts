@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://matsuel.vercel.app';
+export const BASE_URL = 'https://matheolang.fr';
 
 export default async function sitemap() {
     const paths = [
