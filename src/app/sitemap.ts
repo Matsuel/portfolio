@@ -10,7 +10,7 @@ export default async function sitemap() {
         const path = paths.find(path => url.endsWith(path)) as string;
         return {
             url,
-            lastmod: new Date().toISOString(),
+            lastModified: new Date().toISOString(),
             priority: getPriority(path)
         };
     });
