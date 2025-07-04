@@ -13,7 +13,7 @@ const AnimatedTitle = ({
     ...props
 }: AnimatedTitleProps) => {
     return (
-        <motion.h1 className={cn("xl:text-9xl sm:text-8xl text-6xl text-black font-extrabold uppercase", className)}
+        <motion.h1 className={cn("xl:text-9xl sm:text-8xl text-6xl text-foreground font-extrabold uppercase", className)}
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2.7 }}
