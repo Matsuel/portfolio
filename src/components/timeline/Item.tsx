@@ -21,28 +21,28 @@ const Item = ({
                 </div>
 
                 <div className="hidden md:flex w-auto h-auto flex-col items-start justify-center md:pl-20">
-                    <p className="text-xl md:text-2xl font-bold text-neutral-700">
+                    <p className="text-xl md:text-2xl font-bold text-foreground">
                         {item.date}
                     </p>
                 </div>
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-                <h3 className="md:hidden block text-3xl mb-4 text-left font-bold text-neutral-700">
+                <h3 className="md:hidden block text-3xl mb-4 text-left font-bold text-foreground">
                     {item.title}
                 </h3>
 
-                <Link className="text-lg md:text-xl font-semibold text-neutral-700 mb-2 hover:underline" href={item.link} target="_blank">
+                <Link className="text-lg md:text-xl font-semibold text-foreground mb-2 hover:underline" href={item.link} target="_blank">
                     @{item.company}
                 </Link>
 
 
                 <div className='flex flex-col gap-2'>
-                    <h3 className="text-xl md:text-3xl font-bold text-neutral-700">
+                    <h3 className="text-xl md:text-3xl font-bold text-foreground">
                         {item.title}
                     </h3>
                     {item.description.map((desc) => (
-                        <p className="text-neutral-800 text-xs md:text-base font-normal" key={desc}>
+                        <p className="text-foreground text-xs md:text-base font-normal" key={desc}>
                             {desc}
                         </p>
                     ))}
