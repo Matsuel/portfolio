@@ -6,10 +6,10 @@ const Background = () => {
             className="fixed top-0 left-0 w-full h-screen z-[-1]"
         >
             <div
+                className='xl:bg-center bg-left'
                 style={{
                     backgroundImage: "url('/wallpaper.webp')",
                     backgroundSize: "cover",
-                    backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                     width: "100%",
                     height: "100%",
