@@ -23,7 +23,7 @@ export const ContactButton = () => {
     return (
         <Link
             href={`mailto:${mail}`}
-            className='fixed bottom-8 right-[7%] z-50 w-auto h-auto p-3 rounded-full bg-white shadow-xl flex items-center justify-center'
+            className='fixed bottom-8 right-[7%] z-50 w-auto h-auto p-3 rounded-full bg-white text-foreground-inverted shadow-xl flex items-center justify-center'
         >
             {contactSection.icon}
         </Link>

@@ -3,8 +3,8 @@
 :root {
   --background: #f2f2f7;
   --background-inverted: #000;
-  --foreground: #000;
-  --foreground-inverted: #fff;
+  --foreground: #fff;
+  --foreground-inverted: #000;
   --secondary: #999999;
 
   /* Glassmorphism effect */
@@ -40,13 +40,13 @@ body {
 }
 
 ::selection {
-  background: var(--background-inverted);
+  background: var(--background);
   color: var(--foreground-inverted);
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: var(--background-inverted);
+  background: var(--background);
   color: var(--foreground-inverted);
   text-shadow: none;
 }

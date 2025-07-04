@@ -18,7 +18,7 @@ const AnimatedText = ({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: delay, duration: 0.8, type: "spring" }}
-            className={cn("lg:w-1/2 text-black/80", className)}
+            className={cn("lg:w-1/2 text-foreground", className)}
             {...props}
         >
             {children}
