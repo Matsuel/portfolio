@@ -18,13 +18,14 @@ const Navbar = () => {
 
 export default Navbar;
 
-
 export const ContactButton = () => {
     return (
         <Link
             href={`mailto:${mail}`}
-            className='fixed bottom-8 right-[7%] z-50 w-auto h-auto p-3 rounded-full bg-white text-foreground-inverted shadow-xl flex items-center justify-center'
+            className='fixed bottom-8 right-[7%] z-50 w-auto h-auto p-3 rounded-full bg-white text-foreground-inverted shadow-xl flex items-center justify-center overflow-visible tooltip'
         >
+            <span className="wave absolute inset-0 rounded-full border-2 border-blue-400 animate-wave pointer-events-none" />
+            <span className="wave absolute inset-0 rounded-full border-2 border-blue-400 animate-wave2 pointer-events-none" />
             {contactSection.icon}
         </Link>
     )
