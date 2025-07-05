@@ -4,14 +4,13 @@ import { contactSection, mail, navbarLinks } from "../../constants/navbar"
 
 const Navbar = () => {
     return (
-        <nav className='fixed bottom-8 left-[7%] z-50 w-auto h-auto p-3 px-4 rounded-full bg-white shadow-xl flex flex-row gap-4'>
+        <nav className='fixed bottom-8 left-[7%] z-50 w-auto h-auto p-3 px-4 rounded-full bg-white shadow-2xl flex flex-row gap-4'>
             {navbarLinks.map((link) => (
                 <NavbarLink
                     key={link.sectionId}
                     {...link}
                 />
             ))}
-
         </nav>
     )
 }
