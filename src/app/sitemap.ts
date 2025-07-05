@@ -4,7 +4,7 @@ export const BASE_URL = 'https://matheolang.fr';
 
 export const paths = [
     '/',
-    '/cv.pdf',
+    '/matheolang.pdf',
     '/mentions-legales',
 ];
 
