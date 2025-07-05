@@ -26,3 +26,5 @@ export default function Home() {
 // TODO: Ajout Contact
 // TODO: Ajout titre et description dans le sectionLayout
 // TODO: Ajout Projets
+// TODO: Navbar
+// TODO: Footer

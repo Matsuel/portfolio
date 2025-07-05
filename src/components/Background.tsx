@@ -9,8 +9,8 @@ const Background = () => {
                 style={{
                     backgroundImage: "url('/wallpaper.webp')",
                     backgroundSize: "cover",
-                    backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
+                    backgroundPosition: "left",
                     width: "100%",
                     height: "100%",
                     position: "absolute",

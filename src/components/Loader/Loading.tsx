@@ -1,7 +1,7 @@
 "use client"
-import React, { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
-import BlurIn from './BlurIn'
+import { useEffect, useState } from 'react'
+import { opacity, slideUp, words } from '../../../constants/preloader'
 import SteperButton from './Steper'
 
 interface LoadingProps {
@@ -13,30 +13,20 @@ const Loading = ({
     onClick
 }: LoadingProps) => {
 
+    const [index, setIndex] = useState(0);
     const [dimension, setDimension] = useState({ width: 0, height: 0 });
-    const word = 'Bonjour'
-
-    const delays = useMemo(
-        () =>
-            word.split('').map(() =>
-                Math.random() * 1.5
-            ),
-        [word]
-    )
 
     useEffect(() => {
         setDimension({ width: window.innerWidth, height: window.innerHeight })
     }, [])
 
-    const slideUp = {
-        initial: {
-            top: 0
-        },
-        exit: {
-            top: "-100vh",
-            transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 }
-        }
-    }
+    useEffect(() => {
+        if (index == words.length - 1) return;
+        setTimeout(() => {
+            setIndex(index + 1)
+        }, index == 0 ? 1000 : 150)
+    }, [index])
+
 
     const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height + 300} 0 ${dimension.height}  L0 0`
     const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height}  L0 0`
@@ -53,28 +43,21 @@ const Loading = ({
     }
 
     return (
-        <motion.div
-            initial="initial"
-            exit="exit"
-            variants={slideUp}
-            className="w-full h-full fixed top-0 left-0 z-99 flex justify-center items-center"
-        >
-
-            {dimension.width > 0 && (
+        <motion.div variants={slideUp} initial="initial" exit="exit" className="w-full h-full fixed top-0 left-0 z-99 flex justify-center items-center bg-background text-foreground-inverted">
+            {dimension.width > 0 &&
                 <>
-                    <div className='z-10'>
-                        {word.split('').map((letter, index) => (
-                            <BlurIn
-                                key={index}
-                                word={letter}
-                                delay={delays[index]}
-                            />
-                        ))}
-                    </div>
+                    <motion.p
+                        className="flex text-text md:text-[200px] text-4xl font-bold items-center absolute z-1"
+                        variants={opacity}
+                        initial="initial"
+                        animate="enter"
+                    >
+                        <span className='block w-12 h-12 bg-text mr-3 rounded-full'></span>
+                        {words[index]}
+                    </motion.p>
                     <SteperButton
                         onClick={onClick}
                     />
-
                     <svg
                         className="absolute top-0 w-full"
                         style={{ height: "calc(100% + 300px)" }}
@@ -87,9 +70,10 @@ const Loading = ({
                         ></motion.path>
                     </svg>
                 </>
-            )}
-        </motion.div>
+            }
+        </motion.div >
     )
+
 }
 
 export default Loading
