@@ -4,10 +4,12 @@ import Link from 'next/link'
 import React from 'react'
 import { motion } from 'framer-motion'
 import { fadeUp } from '../../constants/animation'
+import Background from '@/components/Background'
 
 const NotFound = () => {
     return (
-        <div className='w-full min-h-screen max-h-screen flex flex-col items-center justify-center bg-background'>
+        <div className='w-full min-h-screen max-h-screen flex flex-col items-center justify-center'>
+            <Background />
             <motion.div
                 custom={0}
                 initial="hidden"

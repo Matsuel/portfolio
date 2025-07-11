@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { BASE_URL } from "./sitemap";
 
-const switzer = localFont({
+export const switzer = localFont({
   src: "../fonts/Switzer.ttf",
 });
 
