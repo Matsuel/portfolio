@@ -5,10 +5,12 @@ import { mail } from '../../../constants/navbar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
 import { fadeUp } from '../../../constants/animation';
+import Background from '@/components/Background';
 
 const MentionsLegalesPage = () => {
     return (
-        <div className='w-full min-h-screen bg-background flex flex-col items-center py-12 px-4'>
+        <div className='w-full min-h-screen flex flex-col items-center py-12 px-4'>
+            <Background />
             <motion.h1
                 custom={0}
                 initial="hidden"
