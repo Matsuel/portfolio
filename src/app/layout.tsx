@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { BASE_URL } from "./sitemap";
-
-export const switzer = localFont({
-  src: "../fonts/Switzer.ttf",
-});
+import { switzer } from "@/fonts/switzer";
 
 export const metadata: Metadata = {
   title: "Mathéo Lang",

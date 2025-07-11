@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import { BASE_URL } from "../sitemap";
-import { switzer } from "../layout";
 import {metadata as globalMetadata} from "../layout";
-
+import { switzer } from "@/fonts/switzer";
 
 export const metadata: Metadata = {
     ...globalMetadata,
