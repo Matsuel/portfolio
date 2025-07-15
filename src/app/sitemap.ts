@@ -6,6 +6,7 @@ export const paths = [
     '/',
     '/matheolang.pdf',
     '/mentions-legales',
+    '/favicon.ico',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
