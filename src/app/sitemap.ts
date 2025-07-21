@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-export const BASE_URL = 'https://matheolang.fr';
+export const BASE_URL = 'https://www.matheolang.fr';
 
 export const paths = [
     '/',
