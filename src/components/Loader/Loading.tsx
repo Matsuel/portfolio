@@ -43,7 +43,7 @@ const Loading = ({
     }
 
     return (
-        <motion.div variants={slideUp} initial="initial" exit="exit" className="w-full h-full fixed top-0 left-0 z-99 flex justify-center items-center bg-background text-foreground-inverted">
+        <motion.div variants={slideUp} initial="initial" exit="exit" className="w-full h-screen fixed top-0 left-0 z-99 flex justify-center items-center bg-background text-foreground-inverted">
             {dimension.width > 0 &&
                 <>
                     <motion.p
