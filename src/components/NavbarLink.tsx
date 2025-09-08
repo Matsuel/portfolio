@@ -20,7 +20,7 @@ const NavbarLink = ({
         <Link href={sectionId} className='flex items-center gap-2 text-foreground-inverted' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             {icon}
             <span
-                className={`text-sm font-semibold ${isHovered ? "block" : "hidden"} md:block transition-all duration-300 ease-in-out`}
+                className={`text-sm font-semibold ${isHovered ? "block" : "hidden"} lg:block transition-all duration-300 ease-in-out`}
             >
                 {name}
             </span>
