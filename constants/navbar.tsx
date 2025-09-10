@@ -1,6 +1,6 @@
 import Briefcase from "@/components/icons/Briefcase";
 import ExternaleDrive from "@/components/icons/ExternaleDrive";
-import Person from "@/components/icons/Person";
+import House from "@/components/icons/House";
 import School from "@/components/icons/School";
 import Write from "@/components/icons/Write";
 
@@ -12,7 +12,7 @@ export enum NavbarLinkSection {
     Contact = "#contact",
 }
 
-export const homeSection = { name: "Matheo LANG", sectionId: NavbarLinkSection.Home, icon: <Person /> };
+export const homeSection = { name: "Matheo LANG", sectionId: NavbarLinkSection.Home, icon: <House /> };
 export const servicesSection = { name: "Services", sectionId: NavbarLinkSection.Services, icon: <Briefcase /> };
 export const projectsSection = { name: "Projets", sectionId: NavbarLinkSection.Projects, icon: <ExternaleDrive /> };
 export const educationSection = { name: "Parcours", sectionId: NavbarLinkSection.Education, icon: <School /> };
