@@ -1,20 +1,26 @@
-import NavbarLink from "@/components/NavbarLink"
+"use client"
+import useCurrentSection from "@/hooks/useCurrentSection"
 import Link from "next/link"
-import { contactSection, mail, navbarLinks } from "../../constants/navbar"
+import { contact, mail, navbarLinksObj } from "../../constants/navbar"
+import NavbarLink from "./NavbarLink"
 
 const Navbar = () => {
+    const sectionIds = Object.values(navbarLinksObj).map(link => link.sectionId.replace("#", ""));
+
+    const { activeId } = useCurrentSection(sectionIds)
+
+    type NavbarLinkKey = keyof typeof navbarLinksObj;
+    const key: NavbarLinkKey = (activeId as NavbarLinkKey) || "services";
+    const icon = navbarLinksObj[key]?.icon;
+
     return (
-        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-auto h-auto flex flex-row gap-4">
-            <nav className='z-50 w-auto h-auto p-3 px-4 rounded-full bg-white shadow-2xl flex flex-row gap-4'>
-                {navbarLinks.map((link) => (
-                    <NavbarLink
-                        key={link.sectionId}
-                        {...link}
-                    />
-                ))}
-            </nav>
-            <ContactButton />
-        </div>
+        <nav className='fixed top-8 left-1/6 z-50 w-auto h-auto p-3 px-4 rounded-full bg-white shadow-2xl flex flex-row gap-4'>
+            <NavbarLink
+                sectionId={activeId as string}
+                name={activeId as string}
+                icon={icon}
+            />
+        </nav>
     )
 }
 
@@ -28,7 +34,7 @@ export const ContactButton = () => {
         >
             <span className="wave absolute inset-0 rounded-full border-2 border-blue-400 animate-wave pointer-events-none" />
             <span className="wave absolute inset-0 rounded-full border-2 border-blue-400 animate-wave2 pointer-events-none" />
-            {contactSection.icon}
+            {contact.icon}
         </Link>
     )
 }

@@ -5,24 +5,32 @@ import School from "@/components/icons/School";
 import Write from "@/components/icons/Write";
 
 export enum NavbarLinkSection {
-    Home = "/",
+    Home = "#home",
     Services = "#services",
     Projects = "#projets",
     Education = "#parcours",
     Contact = "#contact",
 }
 
-export const homeSection = { name: "Matheo LANG", sectionId: NavbarLinkSection.Home, icon: <House /> };
-export const servicesSection = { name: "Services", sectionId: NavbarLinkSection.Services, icon: <Briefcase /> };
-export const projectsSection = { name: "Projets", sectionId: NavbarLinkSection.Projects, icon: <ExternaleDrive /> };
-export const educationSection = { name: "Parcours", sectionId: NavbarLinkSection.Education, icon: <School /> };
-export const contactSection = { name: "Contact", sectionId: NavbarLinkSection.Contact, icon: <Write /> };
+export const home = { name: "Matheo LANG", sectionId: NavbarLinkSection.Home, icon: <House /> };
+export const services = { name: "Services", sectionId: NavbarLinkSection.Services, icon: <Briefcase /> };
+export const projects = { name: "Projets", sectionId: NavbarLinkSection.Projects, icon: <ExternaleDrive /> };
+export const parcours = { name: "Parcours", sectionId: NavbarLinkSection.Education, icon: <School /> };
+export const contact = { name: "Contact", sectionId: NavbarLinkSection.Contact, icon: <Write /> };
 
 export const navbarLinks = [
-    homeSection,
-    servicesSection,
-    projectsSection,
-    educationSection
+    home,
+    services,
+    projects,
+    parcours
 ];
+
+export const navbarLinksObj = {
+    home,
+    services,
+    projects,
+    parcours,
+    contact
+};
 
 export const mail = "matheolang@icloud.com"
