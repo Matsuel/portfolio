@@ -12,7 +12,7 @@ export enum NavbarLinkSection {
     Contact = "#contact",
 }
 
-export const home = { name: "Matheo LANG", sectionId: NavbarLinkSection.Home, icon: <House /> };
+export const home = { name: "Bienvenue", sectionId: NavbarLinkSection.Home, icon: <House /> };
 export const services = { name: "Services", sectionId: NavbarLinkSection.Services, icon: <Briefcase /> };
 export const projects = { name: "Projets", sectionId: NavbarLinkSection.Projects, icon: <ExternaleDrive /> };
 export const parcours = { name: "Parcours", sectionId: NavbarLinkSection.Education, icon: <School /> };

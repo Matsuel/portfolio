@@ -5,20 +5,19 @@ import { contact, mail, navbarLinksObj } from "../../constants/navbar"
 import NavbarLink from "./NavbarLink"
 
 const Navbar = () => {
+
     const sectionIds = Object.values(navbarLinksObj).map(link => link.sectionId.replace("#", ""));
 
     const { activeId } = useCurrentSection(sectionIds)
 
-    type NavbarLinkKey = keyof typeof navbarLinksObj;
-    const key: NavbarLinkKey = (activeId as NavbarLinkKey) || "services";
-    const icon = navbarLinksObj[key]?.icon;
+    const currentSection = navbarLinksObj[activeId as keyof typeof navbarLinksObj];
 
     return (
         <nav className='fixed top-8 left-1/6 z-50 w-auto h-auto p-3 px-4 rounded-full bg-white shadow-2xl flex flex-row gap-4'>
             <NavbarLink
-                sectionId={activeId as string}
-                name={activeId as string}
-                icon={icon}
+                sectionId={currentSection?.sectionId}
+                name={currentSection?.name}
+                icon={currentSection?.icon}
             />
         </nav>
     )
