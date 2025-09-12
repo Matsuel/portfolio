@@ -1,9 +1,9 @@
 "use client"
 import useCurrentSection from "@/hooks/useCurrentSection"
-import Link from "next/link"
-import { contact, mail, navbarLinksObj } from "../../constants/navbar"
-import NavbarIcons from "./NavbarIcons"
+import { navbarLinksObj } from "../../constants/navbar"
 import NavbarCurrentSection from "./NavbarCurrentSection"
+import NavbarIcons from "./NavbarIcons"
+import NavbarContactButton from "./NavbarContactButton"
 
 const Navbar = () => {
 
@@ -14,29 +14,20 @@ const Navbar = () => {
     const currentSection = navbarLinksObj[activeId as keyof typeof navbarLinksObj];
 
     return (
-        <nav className='fixed z-50 top-8 left-1/6 flex flex-col w-auto h-auto'>
+        <nav className='fixed z-50 bottom-8 left-1/6 flex flex-col w-auto h-auto'>
             <NavbarCurrentSection
                 currentSection={currentSection.name}
             />
-            <NavbarIcons
-                currentSection={currentSection}
-                activeId={activeId}
-            />
+            <div className='flex'>
+
+                <NavbarIcons
+                    currentSection={currentSection}
+                    activeId={activeId}
+                />
+                <NavbarContactButton />
+            </div>
         </nav>
     )
 }
 
 export default Navbar;
-
-export const ContactButton = () => {
-    return (
-        <Link
-            href={`mailto:${mail}`}
-            className='relative z-50 w-auto h-auto p-3 rounded-full bg-white text-foreground-inverted shadow-xl flex items-center justify-center overflow-visible tooltip'
-        >
-            <span className="wave absolute inset-0 rounded-full border-2 border-blue-400 animate-wave pointer-events-none" />
-            <span className="wave absolute inset-0 rounded-full border-2 border-blue-400 animate-wave2 pointer-events-none" />
-            {contact.icon}
-        </Link>
-    )
-}
