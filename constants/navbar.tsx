@@ -2,7 +2,7 @@ import Briefcase from "@/components/icons/Briefcase";
 import ExternaleDrive from "@/components/icons/ExternaleDrive";
 import House from "@/components/icons/House";
 import School from "@/components/icons/School";
-import Write from "@/components/icons/Write";
+import Tray from "@/components/icons/Tray";
 
 export enum NavbarLinkSection {
     Home = "#home",
@@ -16,7 +16,7 @@ export const home = { name: "Bienvenue", sectionId: NavbarLinkSection.Home, icon
 export const services = { name: "Services", sectionId: NavbarLinkSection.Services, icon: <Briefcase /> };
 export const projects = { name: "Projets", sectionId: NavbarLinkSection.Projects, icon: <ExternaleDrive /> };
 export const parcours = { name: "Parcours", sectionId: NavbarLinkSection.Education, icon: <School /> };
-export const contact = { name: "Contact", sectionId: NavbarLinkSection.Contact, icon: <Write /> };
+export const contact = { name: "Contact", sectionId: NavbarLinkSection.Contact, icon: <Tray /> };
 
 export const navbarLinks = [
     home,

@@ -3,6 +3,7 @@ import useCurrentSection from "@/hooks/useCurrentSection"
 import Link from "next/link"
 import { contact, mail, navbarLinksObj } from "../../constants/navbar"
 import NavbarIcons from "./NavbarIcons"
+import NavbarCurrentSection from "./NavbarCurrentSection"
 
 const Navbar = () => {
 
@@ -13,9 +14,10 @@ const Navbar = () => {
     const currentSection = navbarLinksObj[activeId as keyof typeof navbarLinksObj];
 
     return (
-        <nav
-            className='fixed top-8 left-1/6 '
-        >
+        <nav className='fixed z-50 top-8 left-1/6 flex flex-col w-auto h-auto'>
+            <NavbarCurrentSection
+                currentSection={currentSection.name}
+            />
             <NavbarIcons
                 currentSection={currentSection}
                 activeId={activeId}
