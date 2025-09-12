@@ -4,6 +4,7 @@ import Link from "next/link"
 import { contact, mail, navbarLinksObj } from "../../constants/navbar"
 import NavbarLink from "./NavbarLink"
 import { useState } from "react"
+import NavbarIcon from "./NavbarIcon"
 
 const Navbar = () => {
 
@@ -17,15 +18,13 @@ const Navbar = () => {
 
     return (
         <nav
-            className='fixed top-8 left-1/6 z-50 w-auto h-auto p-2 px-3 rounded-full shadow-2xl flex flex-row gap-4 border border-glassmorphism-border'
+            className='fixed top-8 left-1/6 z-50 w-auto h-auto px-1 rounded-full shadow-2xl flex flex-row gap-2 border border-glassmorphism-border'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            {!isHovered && <NavbarLink
-                sectionId={currentSection?.sectionId}
-                name={currentSection?.name}
+            {!isHovered && <NavbarIcon
                 icon={currentSection?.icon}
-                isActive={true}
+                link={currentSection?.sectionId}
             />}
             {isHovered && Object.values(navbarLinksObj).map((link) => (
                 <NavbarLink
