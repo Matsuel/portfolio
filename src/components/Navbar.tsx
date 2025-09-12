@@ -18,6 +18,8 @@ const Navbar = () => {
             <NavbarCurrentSection
                 currentSection={currentSection.name}
             />
+            {/* Faire ça mais sans flex pour pouvoir faire glisser et mettre à droite le bouton */}
+            {/* Assombrir le fond pcq là on voit plus rien après */}
             <div className='flex'>
 
                 <NavbarIcons
