@@ -2,13 +2,9 @@
 import useCurrentSection from "@/hooks/useCurrentSection"
 import Link from "next/link"
 import { contact, mail, navbarLinksObj } from "../../constants/navbar"
-import NavbarLink from "./NavbarLink"
-import { useState } from "react"
-import NavbarIcon from "./NavbarIcon"
+import NavbarIcons from "./NavbarIcons"
 
 const Navbar = () => {
-
-    const [isHovered, setIsHovered] = useState<boolean>(false);
 
     const sectionIds = Object.values(navbarLinksObj).map(link => link.sectionId.replace("#", ""));
 
@@ -18,23 +14,12 @@ const Navbar = () => {
 
     return (
         <nav
-            className='fixed top-8 left-1/6 z-50 w-auto h-auto px-1 rounded-full shadow-2xl flex flex-row gap-2 border border-glassmorphism-border'
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            className='fixed top-8 left-1/6 '
         >
-            {!isHovered && <NavbarIcon
-                icon={currentSection?.icon}
-                link={currentSection?.sectionId}
-            />}
-            {isHovered && Object.values(navbarLinksObj).map((link) => (
-                <NavbarLink
-                    key={link.sectionId}
-                    sectionId={link.sectionId}
-                    name={link.name}
-                    icon={link.icon}
-                    isActive={activeId === link.sectionId.replace("#", "")}
-                />
-            ))}
+            <NavbarIcons
+                currentSection={currentSection}
+                activeId={activeId}
+            />
         </nav>
     )
 }
