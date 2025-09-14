@@ -10,7 +10,6 @@ const Navbar = () => {
 
     const { activeId } = useCurrentSection(sectionIds)
 
-    const currentSection = navbarLinksObj[activeId as keyof typeof navbarLinksObj];
 
     return (
         <nav className='fixed z-50 bottom-8 flex flex-col w-auto h-auto left-1/2 -translate-x-1/2'>
@@ -19,7 +18,6 @@ const Navbar = () => {
             <div className='flex'>
 
                 <NavbarIcons
-                    currentSection={currentSection}
                     activeId={activeId}
                 />
                 <NavbarContactButton />
