@@ -24,12 +24,16 @@ const NavbarIcons = ({
             className='w-auto h-auto px-1 rounded-full shadow-2xl flex flex-row gap-2 border border-glassmorphism-border'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            style={{
+                background: 'rgba(136, 136, 136, 0.25)',
+                backdropFilter: 'blur(2.5px)',
+            }}
         >
-            {!isHovered && <NavbarIcon
+            {/* {!isHovered && <NavbarIcon
                 icon={currentSection?.icon}
                 link={currentSection?.sectionId}
-            />}
-            {isHovered && Object.values(navbarLinksObj).map((link) => (
+            />} */}
+            {Object.values(navbarLinksObj).map((link) => (
                 <NavbarLink
                     key={link.sectionId}
                     sectionId={link.sectionId}

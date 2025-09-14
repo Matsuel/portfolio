@@ -1,9 +1,8 @@
 "use client"
 import useCurrentSection from "@/hooks/useCurrentSection"
 import { navbarLinksObj } from "../../constants/navbar"
-import NavbarCurrentSection from "./NavbarCurrentSection"
-import NavbarIcons from "./NavbarIcons"
 import NavbarContactButton from "./NavbarContactButton"
+import NavbarIcons from "./NavbarIcons"
 
 const Navbar = () => {
 
@@ -14,10 +13,7 @@ const Navbar = () => {
     const currentSection = navbarLinksObj[activeId as keyof typeof navbarLinksObj];
 
     return (
-        <nav className='fixed z-50 bottom-8 left-1/6 flex flex-col w-auto h-auto'>
-            <NavbarCurrentSection
-                currentSection={currentSection.name}
-            />
+        <nav className='fixed z-50 bottom-8 flex flex-col w-auto h-auto left-1/2 -translate-x-1/2'>
             {/* Faire ça mais sans flex pour pouvoir faire glisser et mettre à droite le bouton */}
             {/* Assombrir le fond pcq là on voit plus rien après */}
             <div className='flex'>

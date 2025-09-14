@@ -19,10 +19,29 @@ const NavbarLink = ({
     return (
         <Link
             href={sectionId}
-            className={`w-[50px] h-[50px] flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300 border border-glassmorphism-border backdrop-blur-glassmorphism bg-[linear-gradient(145deg,_rgba(255,255,255,0.1)_0%,_rgba(255,255,255,0)_100%)] hover:bg-[linear-gradient(145deg,_rgba(255,255,255,0.4)_0%,_rgba(255,255,255,0.1)_100%)] shadow-xl`} >
+            className={`w-[50px] h-[50px] flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300 border border-glassmorphism-border shadow-xl`} 
+            >
             {icon}
         </Link>
     )
 }
 
 export default NavbarLink;
+
+/* bg */
+
+// position: absolute;
+// width: 152px;
+// height: 151px;
+// left: calc(50% - 152px/2);
+// top: calc(50% - 151px/2 + 0.5px);
+
+// background: rgba(136, 136, 136, 0.15);
+// backdrop-filter: blur(2.5px);
+// /* Note: backdrop-filter has minimal browser support */
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+// z-index: 0;
