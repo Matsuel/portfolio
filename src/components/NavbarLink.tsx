@@ -20,6 +20,9 @@ const NavbarLink = ({
         <Link
             href={sectionId}
             className={`w-[50px] h-[50px] flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300 border border-glassmorphism-border shadow-xl`} 
+            style={{
+                background: 'rgba(0, 0, 0, 0.1)',
+            }}
             >
             {icon}
         </Link>
