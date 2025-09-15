@@ -13,8 +13,7 @@ const Navbar = () => {
 
     return (
         <nav className='fixed z-50 bottom-0 flex flex-col w-full h-auto items-center justify-center bg-[rgba(255,255,255,0.1)] backdrop-blur-xs py-2'>
-            {/* Faire ça mais sans flex pour pouvoir faire glisser et mettre à droite le bouton */}
-            {/* Assombrir le fond pcq là on voit plus rien après */}
+            {/* Ajouter un current section avec une barre indiquant le pourcentage de scroll de la section */}
             <div className='flex'>
 
                 <NavbarIcons
