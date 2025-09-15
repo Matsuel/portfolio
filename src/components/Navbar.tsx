@@ -12,7 +12,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className='fixed z-50 bottom-8 flex flex-col w-auto h-auto left-1/2 -translate-x-1/2'>
+        <nav className='fixed z-50 bottom-0 flex flex-col w-full h-auto items-center justify-center bg-[rgba(255,255,255,0.05)] py-2'>
             {/* Faire ça mais sans flex pour pouvoir faire glisser et mettre à droite le bouton */}
             {/* Assombrir le fond pcq là on voit plus rien après */}
             <div className='flex'>

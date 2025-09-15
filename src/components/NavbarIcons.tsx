@@ -14,16 +14,12 @@ const NavbarIcons = ({
 
     return (
         <div
-            className='w-auto h-auto px-1 rounded-full shadow-2xl flex flex-row gap-2 border border-glassmorphism-border'
+            className='w-auto h-auto px-1 rounded-full shadow-2xl flex flex-row gap-2'
             style={{
-                background: 'rgba(136, 136, 136, 0.25)',
+                background: 'rgba(247, 247, 247, 1)',
                 backdropFilter: 'blur(2.5px)',
             }}
         >
-            {/* {!isHovered && <NavbarIcon
-                icon={currentSection?.icon}
-                link={currentSection?.sectionId}
-            />} */}
             {Object.values(navbarLinksObj).map((link) => (
                 <NavbarLink
                     key={link.sectionId}
