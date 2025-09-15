@@ -1,29 +1,27 @@
 "use client"
 import Link from "next/link";
-import { useState } from "react";
 
 interface NavbarLinkProps {
     sectionId: string;
     icon: React.ReactNode;
     name: string;
+    isActive: boolean;
 }
 
 const NavbarLink = ({
     sectionId,
     icon,
-    name
+    isActive
 }: NavbarLinkProps) => {
 
-    const [isHovered, setIsHovered] = useState<boolean>(false);
+    const activeClass = isActive ? "text-[#F92C47]" : "text-[#262626]";
 
     return (
-        <Link href={sectionId} className='flex items-center gap-2 text-foreground-inverted' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-            {icon}
-            <span
-                className={`text-sm font-semibold ${isHovered ? "block" : "hidden"} md:block transition-all duration-300 ease-in-out`}
+        <Link
+            href={sectionId}
+            className={`w-[50px] h-[50px] flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300`} 
             >
-                {name}
-            </span>
+            {icon}
         </Link>
     )
 }

@@ -1,31 +1,29 @@
-import NavbarLink from "@/components/NavbarLink"
-import Link from "next/link"
-import { contactSection, mail, navbarLinks } from "../../constants/navbar"
+"use client"
+import useCurrentSection from "@/hooks/useCurrentSection"
+import { navbarLinksObj } from "../../constants/navbar"
+import NavbarContactButton from "./NavbarContactButton"
+import NavbarIcons from "./NavbarIcons"
 
 const Navbar = () => {
+
+    const sectionIds = Object.values(navbarLinksObj).map(link => link.sectionId.replace("#", ""));
+
+    const { activeId } = useCurrentSection(sectionIds)
+
+
     return (
-        <nav className='fixed bottom-8 left-[7%] z-50 w-auto h-auto p-3 px-4 rounded-full bg-white shadow-2xl flex flex-row gap-4'>
-            {navbarLinks.map((link) => (
-                <NavbarLink
-                    key={link.sectionId}
-                    {...link}
+        <nav className='fixed z-50 bottom-0 flex flex-col w-full h-auto items-center justify-center bg-[rgba(255,255,255,0.1)] backdrop-blur-xs py-2'>
+            {/* Faire ça mais sans flex pour pouvoir faire glisser et mettre à droite le bouton */}
+            {/* Assombrir le fond pcq là on voit plus rien après */}
+            <div className='flex'>
+
+                <NavbarIcons
+                    activeId={activeId}
                 />
-            ))}
+                <NavbarContactButton />
+            </div>
         </nav>
     )
 }
 
 export default Navbar;
-
-export const ContactButton = () => {
-    return (
-        <Link
-            href={`mailto:${mail}`}
-            className='fixed bottom-8 right-[7%] z-50 w-auto h-auto p-3 rounded-full bg-white text-foreground-inverted shadow-xl flex items-center justify-center overflow-visible tooltip'
-        >
-            <span className="wave absolute inset-0 rounded-full border-2 border-blue-400 animate-wave pointer-events-none" />
-            <span className="wave absolute inset-0 rounded-full border-2 border-blue-400 animate-wave2 pointer-events-none" />
-            {contactSection.icon}
-        </Link>
-    )
-}

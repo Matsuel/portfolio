@@ -4,7 +4,7 @@ import { mail } from '../../constants/navbar'
 
 const Footer = () => {
     return (
-        <footer className='w-full h-auto flex flex-col items-center justify-center text-text p-4 md:gap-2 gap-6'>
+        <footer className='w-full h-auto flex flex-col items-center justify-center text-text p-4 md:gap-2 gap-6 pb-24'>
 
             <div className='flex flex-col items-center gap-2'>
                 <h2 className='text-4xl font-bold'>Contactez moi</h2>
