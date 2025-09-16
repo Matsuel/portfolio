@@ -1,5 +1,6 @@
 "use client"
 import useCurrentSection from "@/hooks/useCurrentSection"
+import useSectionProgress from "@/hooks/useSectionProgress"
 import { navbarLinksObj } from "../../constants/navbar"
 import NavbarContactButton from "./NavbarContactButton"
 import NavbarIcons from "./NavbarIcons"
@@ -10,6 +11,9 @@ const Navbar = () => {
 
     const { activeId } = useCurrentSection(sectionIds)
 
+    const { progress } = useSectionProgress(activeId);
+
+    console.log({ progress })
 
     return (
         <nav className='fixed z-50 bottom-0 flex flex-col w-full h-auto items-center justify-center bg-[rgba(255,255,255,0.1)] backdrop-blur-xs py-2'>
