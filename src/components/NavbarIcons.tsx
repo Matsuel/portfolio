@@ -14,11 +14,7 @@ const NavbarIcons = ({
 
     return (
         <div
-            className='w-auto h-auto px-1 rounded-full shadow-2xl flex flex-row gap-2'
-            style={{
-                background: 'rgba(247, 247, 247, 1)',
-                backdropFilter: 'blur(2.5px)',
-            }}
+            className='w-auto h-auto px-1 flex flex-row gap-2'
         >
             {Object.values(navbarLinksObj).map((link) => (
                 <NavbarLink
