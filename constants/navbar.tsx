@@ -22,7 +22,8 @@ export const navbarLinks = [
     home,
     services,
     projects,
-    parcours
+    parcours,
+    contact
 ];
 
 export const navbarLinksObj = {

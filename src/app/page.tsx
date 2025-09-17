@@ -1,4 +1,5 @@
 import Background from "@/components/Background";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Loader from "@/components/Loader";
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Parcours />
+      <Contact />
       <Footer />
     </div>
   );
@@ -25,5 +27,4 @@ export default function Home() {
 // TODO: Ajout Contact
 // TODO: Ajout titre et description dans le sectionLayout
 // TODO: Ajout Projets
-// TODO: Navbar
 // TODO: Footer
