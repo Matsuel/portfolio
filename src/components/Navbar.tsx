@@ -2,7 +2,6 @@
 import useCurrentSection from "@/hooks/useCurrentSection"
 import useSectionProgress from "@/hooks/useSectionProgress"
 import { navbarLinksObj } from "../../constants/navbar"
-import NavbarContactButton from "./NavbarContactButton"
 import NavbarIcons from "./NavbarIcons"
 import NavbarProgress from "./NavbarProgress"
 
@@ -15,14 +14,8 @@ const Navbar = () => {
     const { progress } = useSectionProgress(activeId);
 
     return (
-        <nav className='fixed z-50 bottom-0 flex flex-col w-full h-auto items-center justify-center bg-[rgba(255,255,255,0.1)] backdrop-blur-xs py-2'>
-            {/* Ajouter un current section avec une barre indiquant le pourcentage de scroll de la section */}
-            {/* Voir pour ajouter des boutons pour switch de section comme sur un lecteur de musique */}
-            <div className='flex items-center gap-5 rounded-full shadow-2xl px-3'
-                style={{
-                    background: 'rgba(247, 247, 247, 1)',
-                }}>
-
+        <nav className='fixed z-50 bottom-0 w-full h-auto flex flex-col items-center justify-center bg-[rgba(255,255,255,0.1)] backdrop-blur-xs py-2'>
+            <div className='w-auto h-[50px] flex items-center gap-5 px-3 rounded-full shadow-2xl bg-[#f7f7f7]'>
                 <NavbarIcons
                     activeId={activeId}
                 />
@@ -30,7 +23,6 @@ const Navbar = () => {
                     activeId={activeId}
                     progress={progress}
                 />
-                <NavbarContactButton />
             </div>
         </nav>
     )

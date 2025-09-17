@@ -21,7 +21,7 @@ const NavbarLink = ({
     return (
         <Link
             href={sectionId}
-            className={`w-[32px] h-[32px] flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300`}
+            className={`w-8 h-8 flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300`}
         >
             <Icon size={20} />
         </Link>

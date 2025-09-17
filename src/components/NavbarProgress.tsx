@@ -14,7 +14,7 @@ const NavbarProgress = ({
     const Icon = navbarLinks.find(link => link.sectionId.replace("#", "") === activeId)?.icon;
 
     return (
-        <div className='w-auto h-auto sm:flex hidden flex-col items-start justify-center gap-1'>
+        <div className='w-auto h-auto sm:flex flex flex-col items-start justify-center gap-1 mr-2'>
 
             <div className='flex flex-row gap-2 items-center'>
                 <div className='h-7 w-7 text-[#F92C47] bg-[#f8e3e4] rounded-lg flex items-center justify-center'>
