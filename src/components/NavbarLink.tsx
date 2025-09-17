@@ -1,27 +1,29 @@
 "use client"
+import { IconProps } from "@/types";
 import Link from "next/link";
+import { FC } from "react";
 
 interface NavbarLinkProps {
     sectionId: string;
-    icon: React.ReactNode;
+    icon: FC<IconProps>;
     name: string;
     isActive: boolean;
 }
 
 const NavbarLink = ({
     sectionId,
-    icon,
+    icon: Icon,
     isActive
 }: NavbarLinkProps) => {
 
-    const activeClass = isActive ? "text-[#F92C47]" : "text-[#262626]";
+    const activeClass = isActive ? "text-[#F92C47] bg-[#f8e3e4]" : "text-[#b5b5b5] hover:text-black";
 
     return (
         <Link
             href={sectionId}
-            className={`w-[50px] h-[50px] flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300`} 
-            >
-            {icon}
+            className={`w-8 h-8 flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300`}
+        >
+            <Icon size={20} />
         </Link>
     )
 }

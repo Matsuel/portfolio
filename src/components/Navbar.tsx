@@ -1,8 +1,9 @@
 "use client"
 import useCurrentSection from "@/hooks/useCurrentSection"
+import useSectionProgress from "@/hooks/useSectionProgress"
 import { navbarLinksObj } from "../../constants/navbar"
-import NavbarContactButton from "./NavbarContactButton"
 import NavbarIcons from "./NavbarIcons"
+import NavbarProgress from "./NavbarProgress"
 
 const Navbar = () => {
 
@@ -10,17 +11,18 @@ const Navbar = () => {
 
     const { activeId } = useCurrentSection(sectionIds)
 
+    const { progress } = useSectionProgress(activeId);
 
     return (
-        <nav className='fixed z-50 bottom-0 flex flex-col w-full h-auto items-center justify-center bg-[rgba(255,255,255,0.1)] backdrop-blur-xs py-2'>
-            {/* Faire ça mais sans flex pour pouvoir faire glisser et mettre à droite le bouton */}
-            {/* Assombrir le fond pcq là on voit plus rien après */}
-            <div className='flex'>
-
+        <nav className='fixed z-50 bottom-0 w-full h-auto flex flex-col items-center justify-center bg-[rgba(255,255,255,0.1)] backdrop-blur-xs py-2'>
+            <div className='w-auto h-[50px] flex items-center gap-5 px-3 rounded-full shadow-2xl bg-[#f7f7f7]'>
                 <NavbarIcons
                     activeId={activeId}
                 />
-                <NavbarContactButton />
+                <NavbarProgress
+                    activeId={activeId}
+                    progress={progress}
+                />
             </div>
         </nav>
     )
