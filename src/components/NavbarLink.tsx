@@ -1,16 +1,18 @@
 "use client"
+import { IconProps } from "@/types";
 import Link from "next/link";
+import { FC } from "react";
 
 interface NavbarLinkProps {
     sectionId: string;
-    icon: React.ReactNode;
+    icon: FC<IconProps>;
     name: string;
     isActive: boolean;
 }
 
 const NavbarLink = ({
     sectionId,
-    icon,
+    icon: Icon,
     isActive
 }: NavbarLinkProps) => {
 
@@ -21,7 +23,7 @@ const NavbarLink = ({
             href={sectionId}
             className={`w-[50px] h-[50px] flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300`} 
             >
-            {icon}
+            <Icon size={24} />
         </Link>
     )
 }
