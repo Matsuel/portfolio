@@ -28,10 +28,6 @@
   --blur-glassmorphism: var(--glassmorphism-blur);
 }
 
-* {
-  scroll-behavior: smooth;
-}
-
 
 body {
   background: var(--background);

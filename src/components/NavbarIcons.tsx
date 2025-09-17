@@ -14,7 +14,7 @@ const NavbarIcons = ({
 
     return (
         <div
-            className='w-auto h-auto px-1 flex flex-row gap-2'
+            className='w-auto h-auto px-1 flex flex-row gap-5'
         >
             {Object.values(navbarLinksObj).map((link) => (
                 <NavbarLink

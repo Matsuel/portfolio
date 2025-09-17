@@ -18,10 +18,10 @@ const Navbar = () => {
         <nav className='fixed z-50 bottom-0 flex flex-col w-full h-auto items-center justify-center bg-[rgba(255,255,255,0.1)] backdrop-blur-xs py-2'>
             {/* Ajouter un current section avec une barre indiquant le pourcentage de scroll de la section */}
             {/* Voir pour ajouter des boutons pour switch de section comme sur un lecteur de musique */}
-            <div className='flex gap-5 rounded-full shadow-2xl'
-            style={{
-                background: 'rgba(247, 247, 247, 1)',
-            }}>
+            <div className='flex items-center gap-5 rounded-full shadow-2xl px-3'
+                style={{
+                    background: 'rgba(247, 247, 247, 1)',
+                }}>
 
                 <NavbarIcons
                     activeId={activeId}

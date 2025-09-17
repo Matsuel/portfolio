@@ -16,14 +16,14 @@ const NavbarLink = ({
     isActive
 }: NavbarLinkProps) => {
 
-    const activeClass = isActive ? "text-[#F92C47]" : "text-[#262626]";
+    const activeClass = isActive ? "text-[#F92C47] bg-[#f8e3e4]" : "text-[#b5b5b5] hover:text-black";
 
     return (
         <Link
             href={sectionId}
-            className={`w-[50px] h-[50px] flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300`} 
-            >
-            <Icon size={24} />
+            className={`w-[30px] h-[30px] flex flex-col items-center justify-center ${activeClass} rounded-full transition-all duration-300`}
+        >
+            <Icon size={18} />
         </Link>
     )
 }
