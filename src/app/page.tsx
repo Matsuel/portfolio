@@ -16,8 +16,8 @@ export default function Home() {
       <Loader />
       <Hero />
       <Services />
-      <Parcours />
       <Projects />
+      <Parcours />
       <Contact />
       <Footer />
     </div>

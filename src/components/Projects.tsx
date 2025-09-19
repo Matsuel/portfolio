@@ -6,7 +6,9 @@ import { features } from '../../constants/projets'
 const Projects = () => {
 
     return (
-        <SectionLayout>
+        <SectionLayout
+        id='projets'
+        >
             <FeatureSteps
                 features={features}
             />
