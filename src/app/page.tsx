@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
 import Parcours from "@/components/Parcours";
+import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 
 export default function Home() {
@@ -14,7 +15,9 @@ export default function Home() {
       <Loader />
       <Hero />
       <Services />
+      <Projects />
       <Parcours />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
@@ -23,7 +26,7 @@ export default function Home() {
 // TODO: https://21st.dev/shadcnblockscom/faq-5/default (mentions légales)
 // TODO: https://vercel.com/legal/support-terms Mentions légales
 // TODO: Ajout Contact
+// TODO: Ajouter Resend pour les mails
 // TODO: Ajout titre et description dans le sectionLayout
 // TODO: Ajout Projets
-// TODO: Navbar
 // TODO: Footer
