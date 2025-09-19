@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
 import Parcours from "@/components/Parcours";
+import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Parcours />
+      <Projects />
       <Contact />
       <Footer />
     </div>
