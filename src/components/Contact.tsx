@@ -1,6 +1,8 @@
 import React from 'react'
 import SectionLayout from './SectionLayout'
 import { ChevronDownIcon } from 'lucide-react'
+import Link from 'next/link'
+import { mail } from '../../constants/navbar'
 
 
 const Contact = () => {
@@ -11,7 +13,8 @@ const Contact = () => {
             <div className='w-full h-auto flex flex-col bg-[#fafafa]/90 p-3 pt-5 rounded-2xl'>
                 <div className="mx-auto max-w-2xl text-center">
                     <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Contactez-moi</h2>
-                    <p className="mt-2 text-lg/8 text-gray-600">Un projet ? Et si on construisait ça ensemble.</p>
+                    <p className="mt-2 text-base text-gray-600">Un projet ? Et si on construisait ça ensemble.</p>
+                    <p className="mt-2 text-base text-gray-600">Remplissez le formulaire ou contactez-moi directement par email <Link href={`mailto:${mail}`} className='underline'>{(mail)}</Link></p>
                 </div>
                 <form action="#" method="POST" className="mx-auto mt-12 max-w-xl">
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
