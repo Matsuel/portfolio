@@ -1,4 +1,4 @@
-export const features = [
+export const projets = [
     {
         title: 'CACBO Badminton',
         content: "Site web pour le club de badminton Carbon-Blanais, basé à Carbon-Blanc. Ce site permet de présenter le club, les horaires, les tarifs, et même de s'inscrire en ligne.",
