@@ -1,5 +1,4 @@
 import Background from "@/components/Background";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Loader from "@/components/Loader";
@@ -18,7 +17,7 @@ export default function Home() {
       <Services />
       <Projects />
       <Parcours />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
