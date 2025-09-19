@@ -39,7 +39,7 @@ export function FeatureSteps({
     }, [progress, features.length, autoPlayInterval])
 
     return (
-        <div className={cn("p-8 md:p-12", className)}>
+        <div className={cn("p-0 md:p-12", className)}>
             <div className="max-w-7xl mx-auto w-full">
 
                 <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-10">
