@@ -52,7 +52,6 @@ const Loading = ({
                         initial="initial"
                         animate="enter"
                     >
-                        <span className='block w-12 h-12 bg-text mr-3 rounded-full'></span>
                         {words[index]}
                     </motion.p>
                     <SteperButton
