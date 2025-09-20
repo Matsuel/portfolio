@@ -28,7 +28,7 @@ const Contact = () => {
                                     name="first-name"
                                     type="text"
                                     autoComplete="given-name"
-                                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-white placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 shadow-2xl"
+                                    className="block w-full rounded-xl bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-white placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 shadow-2xl"
                                 />
                             </div>
                         </div>
@@ -42,7 +42,7 @@ const Contact = () => {
                                     name="last-name"
                                     type="text"
                                     autoComplete="family-name"
-                                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-white placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 shadow-2xl"
+                                    className="block w-full rounded-xl bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-white placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 shadow-2xl"
                                 />
                             </div>
                         </div>
@@ -56,7 +56,7 @@ const Contact = () => {
                                     name="email"
                                     type="email"
                                     autoComplete="email"
-                                    className="block w-full rounded-full bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-white placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 shadow-2xl"
+                                    className="block w-full rounded-xl bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-white placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 shadow-2xl"
                                 />
                             </div>
                         </div>
@@ -65,14 +65,14 @@ const Contact = () => {
                                 Numéro de téléphone (Optionnel)
                             </label>
                             <div className="mt-2.5">
-                                <div className="flex rounded-full bg-white outline-1 -outline-offset-1 outline-white has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600 shadow-2xl">
+                                <div className="flex rounded-xl bg-white outline-1 -outline-offset-1 outline-white has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600 shadow-2xl">
                                     <div className="grid shrink-0 grid-cols-1 focus-within:relative">
                                         <select
                                             id="country"
                                             name="country"
                                             autoComplete="country"
                                             aria-label="Country"
-                                            className="col-start-1 row-start-1 w-full appearance-none rounded-full py-2 pr-7 pl-3.5 text-base text-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 "
+                                            className="col-start-1 row-start-1 w-full appearance-none rounded-xl py-2 pr-7 pl-3.5 text-base text-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 "
                                         >
                                             <option>FR</option>
                                         </select>
@@ -109,7 +109,7 @@ const Contact = () => {
                     <div className="mt-10">
                         <button
                             type="submit"
-                            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            className="block w-full rounded-xl bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
                             Envoyer ma demande
                         </button>
