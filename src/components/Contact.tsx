@@ -3,6 +3,7 @@ import SectionLayout from './SectionLayout'
 import { ChevronDownIcon } from 'lucide-react'
 import Link from 'next/link'
 import { mail } from '../../constants/navbar'
+import { liquidGlassBg, liquidGlassBorder } from '../../constants/liquidGlass'
 
 
 const Contact = () => {
@@ -10,7 +11,7 @@ const Contact = () => {
         <SectionLayout
             id='contact'
         >
-            <div className='w-full h-auto flex flex-col border border-glassmorphism-border bg-[linear-gradient(145deg,_rgba(255,255,255,0.1)_0%,_rgba(255,255,255,0)_100%)] p-3 pt-5 rounded-2xl'>
+            <div className={`w-full h-auto flex flex-col ${liquidGlassBorder} ${liquidGlassBg} p-3 pt-5 rounded-2xl`}>
                 <div className="mx-auto max-w-2xl text-center">
                     <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">Contactez-moi</h2>
                     <p className="mt-2 text-base text-white">Un projet ? Et si on construisait ça ensemble.</p>
