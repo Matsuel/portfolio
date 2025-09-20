@@ -1,9 +1,27 @@
+"use client"
 import React from 'react'
 import SectionLayout from './SectionLayout'
 import { ChevronDownIcon } from 'lucide-react'
 import Link from 'next/link'
 import { mail } from '../../constants/navbar'
 import { liquidGlassBg, liquidGlassBorder } from '../../constants/liquidGlass'
+
+const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    try {
+        const response = await fetch('/api/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+
+        console.log(response);
+
+    } catch {
+        return { success: false };
+    }
+}
 
 
 const Contact = () => {
@@ -17,7 +35,7 @@ const Contact = () => {
                     <p className="mt-2 text-base text-white">Un projet ? Et si on construisait ça ensemble.</p>
                     <p className="mt-2 text-base text-white">Remplissez le formulaire ou contactez-moi directement par email <Link href={`mailto:${mail}`} className='underline'>{(mail)}</Link></p>
                 </div>
-                <form action="#" method="POST" className="mx-auto mt-12 max-w-xl">
+                <form onSubmit={sendEmail} method="POST" className="mx-auto mt-12 max-w-xl">
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>
                             <label htmlFor="first-name" className="block text-sm/6 font-semibold text-white">
