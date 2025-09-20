@@ -10,16 +10,16 @@ const Contact = () => {
         <SectionLayout
             id='contact'
         >
-            <div className='w-full h-auto flex flex-col bg-[#fafafa]/90 p-3 pt-5 rounded-2xl'>
+            <div className='w-full h-auto flex flex-col border border-glassmorphism-border bg-[linear-gradient(145deg,_rgba(255,255,255,0.1)_0%,_rgba(255,255,255,0)_100%)] p-3 pt-5 rounded-2xl'>
                 <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Contactez-moi</h2>
-                    <p className="mt-2 text-base text-gray-600">Un projet ? Et si on construisait ça ensemble.</p>
-                    <p className="mt-2 text-base text-gray-600">Remplissez le formulaire ou contactez-moi directement par email <Link href={`mailto:${mail}`} className='underline'>{(mail)}</Link></p>
+                    <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">Contactez-moi</h2>
+                    <p className="mt-2 text-base text-white">Un projet ? Et si on construisait ça ensemble.</p>
+                    <p className="mt-2 text-base text-white">Remplissez le formulaire ou contactez-moi directement par email <Link href={`mailto:${mail}`} className='underline'>{(mail)}</Link></p>
                 </div>
                 <form action="#" method="POST" className="mx-auto mt-12 max-w-xl">
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>
-                            <label htmlFor="first-name" className="block text-sm/6 font-semibold text-gray-900">
+                            <label htmlFor="first-name" className="block text-sm/6 font-semibold text-white">
                                 Prénom
                             </label>
                             <div className="mt-2.5">
@@ -33,7 +33,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div>
-                            <label htmlFor="last-name" className="block text-sm/6 font-semibold text-gray-900">
+                            <label htmlFor="last-name" className="block text-sm/6 font-semibold text-white">
                                 Nom
                             </label>
                             <div className="mt-2.5">
@@ -47,7 +47,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="sm:col-span-2">
-                            <label htmlFor="email" className="block text-sm/6 font-semibold text-gray-900">
+                            <label htmlFor="email" className="block text-sm/6 font-semibold text-white">
                                 Email
                             </label>
                             <div className="mt-2.5">
@@ -61,7 +61,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="sm:col-span-2">
-                            <label htmlFor="phone-number" className="block text-sm/6 font-semibold text-gray-900">
+                            <label htmlFor="phone-number" className="block text-sm/6 font-semibold text-white">
                                 Numéro de téléphone (Optionnel)
                             </label>
                             <div className="mt-2.5">
@@ -92,7 +92,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="sm:col-span-2">
-                            <label htmlFor="message" className="block text-sm/6 font-semibold text-gray-900">
+                            <label htmlFor="message" className="block text-sm/6 font-semibold text-white">
                                 Votre projet
                             </label>
                             <div className="mt-2.5">
