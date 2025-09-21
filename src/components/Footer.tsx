@@ -21,7 +21,7 @@ const Footer = () => {
                     <Link
                         key={index}
                         href={social.link}
-                        target='_blank'
+                        target={social.name !== "CV" ? '_blank' : undefined}
                         className={`flex items-center justify-center p-3 ${liquidGlassRounded} transition-all duration-300 text-foreground border border-glassmorphism-border backdrop-blur-glassmorphism ${liquidGlassBg} ${liquidGlassHoverBg} ${liquidGlassShadow}`}
                     >
                         {social.icon}
