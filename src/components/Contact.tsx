@@ -5,18 +5,31 @@ import { ChevronDownIcon } from 'lucide-react'
 import Link from 'next/link'
 import { mail } from '../../constants/navbar'
 import { liquidGlassBg, liquidGlassBorder } from '../../constants/liquidGlass'
+import { SubmitHandler, useForm } from 'react-hook-form'
 
-const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+interface Inputs {
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    message: string;
+}
+
+const sendEmail = async (data: Inputs) => {
     try {
         const response = await fetch('/api/send', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
+            body: JSON.stringify(data),
         });
 
-        console.log(response);
+        if (response.ok) {
+            return { success: true };
+        } else {
+            return { success: false };
+        }
 
     } catch {
         return { success: false };
@@ -25,6 +38,20 @@ const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
 
 
 const Contact = () => {
+
+    const {
+        register,
+        handleSubmit,
+        reset
+    } = useForm<Inputs>()
+
+    const onSubmit: SubmitHandler<Inputs> = async (data) => {
+        const result = await sendEmail(data);
+        if (result.success) {
+            reset();
+        }
+    };
+
     return (
         <SectionLayout
             id='contact'
@@ -35,7 +62,7 @@ const Contact = () => {
                     <p className="mt-2 text-base text-white">Un projet ? Et si on construisait ça ensemble.</p>
                     <p className="mt-2 text-base text-white">Remplissez le formulaire ou contactez-moi directement par email <Link href={`mailto:${mail}`} className='underline'>{(mail)}</Link></p>
                 </div>
-                <form onSubmit={sendEmail} method="POST" className="mx-auto mt-12 max-w-xl">
+                <form onSubmit={handleSubmit(onSubmit)} method="POST" className="mx-auto mt-12 max-w-xl">
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>
                             <label htmlFor="first-name" className="block text-sm/6 font-semibold text-white">
@@ -44,9 +71,10 @@ const Contact = () => {
                             <div className="mt-2.5">
                                 <input
                                     id="first-name"
-                                    name="first-name"
                                     type="text"
                                     autoComplete="given-name"
+                                    required
+                                    {...register("firstName")}
                                     className="block w-full rounded-xl bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-white placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 shadow-2xl"
                                 />
                             </div>
@@ -58,9 +86,10 @@ const Contact = () => {
                             <div className="mt-2.5">
                                 <input
                                     id="last-name"
-                                    name="last-name"
+                                    {...register("lastName")}
                                     type="text"
                                     autoComplete="family-name"
+                                    required
                                     className="block w-full rounded-xl bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-white placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 shadow-2xl"
                                 />
                             </div>
@@ -72,9 +101,10 @@ const Contact = () => {
                             <div className="mt-2.5">
                                 <input
                                     id="email"
-                                    name="email"
+                                    {...register("email")}
                                     type="email"
                                     autoComplete="email"
+                                    required
                                     className="block w-full rounded-xl bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-white placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 shadow-2xl"
                                 />
                             </div>
@@ -102,7 +132,7 @@ const Contact = () => {
                                     </div>
                                     <input
                                         id="phone-number"
-                                        name="phone-number"
+                                        {...register("phone")}
                                         type="text"
                                         placeholder="06 12 34 56 78"
                                         className="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
@@ -117,10 +147,11 @@ const Contact = () => {
                             <div className="mt-2.5">
                                 <textarea
                                     id="message"
-                                    name="message"
+                                    {...register("message")}
                                     rows={4}
                                     className="block w-full rounded-xl bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-white placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 shadow-2xl"
                                     defaultValue={''}
+                                    required
                                 />
                             </div>
                         </div>
