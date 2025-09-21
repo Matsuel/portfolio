@@ -1,0 +1,5 @@
+export const liquidGlassBg = 'bg-[linear-gradient(145deg,_rgba(255,255,255,0.1)_0%,_rgba(255,255,255,0)_100%)]'
+export const liquidGlassHoverBg = 'hover:bg-[linear-gradient(145deg,_rgba(255,255,255,0.4)_0%,_rgba(255,255,255,0.1)_100%)]'
+export const liquidGlassBorder = 'border border-glassmorphism-border'
+export const liquidGlassShadow = 'shadow-2xl'
+export const liquidGlassRounded = 'rounded-glassmorphism'
