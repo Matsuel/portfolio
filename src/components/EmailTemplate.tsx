@@ -11,10 +11,11 @@ interface EmailTemplateProps {
 export function EmailTemplate({ firstName, lastName, email, phoneNumber, message }: EmailTemplateProps) {
     return (
         <div>
-            <h1>Welcome, {firstName} {lastName}!</h1>
+            <h1>Bonjour, {firstName} {lastName}!</h1>
             <p>Email: {email}</p>
             {phoneNumber && <p>Phone Number: {phoneNumber}</p>}
             <p>Message: {message}</p>
+            <p>Merci de m&apos;avoir contacté! Je vous recontacterai sous peu.</p>
         </div>
     );
 }
