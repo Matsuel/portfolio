@@ -16,4 +16,10 @@ export const projets = [
         image: '/portfolio.png',
         link: 'https://matheolang.com'
     },
+    {
+        title: 'ClimEnergy33',
+        content: "Site web pour une entreprise de climatisation et de chauffage, ClimEnergy33, basée à Bordeaux. Ce site permet de présenter les services de l'entreprise, les réalisations, et de contacter l'entreprise.",
+        image: '/climenergy33.png',
+        link: 'https://climenergy33.vercel.app/'
+    }
 ]
