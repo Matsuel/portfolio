@@ -1,3 +1,4 @@
+import { NavbarLinkSection } from '../../constants/navbar';
 import { parcours } from '../../constants/parcours';
 import SectionLayout from './SectionLayout';
 import { Timeline } from './Timeline';
@@ -5,8 +6,7 @@ import { Timeline } from './Timeline';
 const Parcours = () => {
     return (
         <SectionLayout
-            id='parcours'
-            // title='01 - Parcours'
+            id={NavbarLinkSection.Education}
             className='h-auto'
         >
             <Timeline items={parcours} />

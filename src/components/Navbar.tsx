@@ -7,7 +7,7 @@ import NavbarProgress from "./NavbarProgress"
 
 const Navbar = () => {
 
-    const sectionIds = Object.values(navbarLinksObj).map(link => link.sectionId.replace("#", ""));
+    const sectionIds = Object.values(navbarLinksObj).map(link => link.sectionId);
 
     const { activeId } = useCurrentSection(sectionIds)
 

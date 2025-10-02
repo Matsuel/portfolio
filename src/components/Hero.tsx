@@ -1,16 +1,16 @@
 "use client";
 import { motion } from "framer-motion";
-import { mail } from "../../constants/navbar";
+import { liquidGlassBg, liquidGlassHoverBg } from "../../constants/liquidGlass";
+import { mail, NavbarLinkSection } from "../../constants/navbar";
 import AnimatedText from './AnimatedText';
 import AnimatedTitle from './AnimatedTitle';
 import SectionLayout from './SectionLayout';
-import { liquidGlassBg, liquidGlassHoverBg } from "../../constants/liquidGlass";
 
 const Hero = () => {
 
     return (
         <SectionLayout
-            id='home'
+            id={NavbarLinkSection.Home}
             className='flex flex-col items-start justify-center gap-4 lg:h-screen h-auto'
         >
             <AnimatedTitle className='lg:w-1/3 w-1/2'>
