@@ -5,11 +5,11 @@ import School from "@/components/icons/School";
 import Tray from "@/components/icons/Tray";
 
 export enum NavbarLinkSection {
-    Home = "#home",
-    Services = "#services",
-    Projects = "#projets",
-    Education = "#parcours",
-    Contact = "#contact",
+    Home = "home",
+    Services = "services",
+    Projects = "projets",
+    Education = "parcours",
+    Contact = "contact",
 }
 
 export const home = { name: "Bienvenue", sectionId: NavbarLinkSection.Home, icon: Quotes };

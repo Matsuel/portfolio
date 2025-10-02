@@ -11,7 +11,6 @@ const NavbarIcons = ({
     activeId
 }: NavbarIconsProps) => {
 
-
     return (
         <div
             className='w-auto h-auto px-1 flex flex-row gap-5'
@@ -22,7 +21,7 @@ const NavbarIcons = ({
                     sectionId={link.sectionId}
                     name={link.name}
                     icon={link.icon}
-                    isActive={activeId === link.sectionId.replace("#", "")}
+                    isActive={activeId === link.sectionId}
                 />
             ))}
 

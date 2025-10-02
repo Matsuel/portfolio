@@ -11,7 +11,7 @@ const NavbarProgress = ({
     activeId
 }: NavbarProgressProps) => {
 
-    const Icon = navbarLinks.find(link => link.sectionId.replace("#", "") === activeId)?.icon;
+    const Icon = navbarLinks.find(link => link.sectionId === activeId)?.icon;
 
     return (
         <div className='w-auto h-auto sm:flex flex flex-col items-start justify-center gap-1 mr-2'>
@@ -21,7 +21,7 @@ const NavbarProgress = ({
                     {Icon && <Icon size={16} />}
                 </div>
                 <span className='font-medium text-sm text-[#262626]'>
-                    {navbarLinks.find(link => link.sectionId.replace("#", "") === activeId)?.name}
+                    {navbarLinks.find(link => link.sectionId === activeId)?.name}
                 </span>
             </div>
 
