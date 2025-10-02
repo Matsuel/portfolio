@@ -4,11 +4,13 @@ import React, { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import { cn } from "@/utils/cn"
+import Link from "next/link"
 
 interface Feature {
     title: string
     content: string
     image: string
+    link?: string
 }
 
 interface FeatureStepsProps {
@@ -103,6 +105,11 @@ export function FeatureSteps({
                                                 width={1000}
                                                 height={500}
                                             />
+                                            {feature.link && <Link
+                                                href={feature.link}
+                                                className="text-sm md:text-lg text-muted-foreground">
+                                                Voir le projet (nouvelle fenêtre)
+                                            </Link>}
                                         </motion.div>
                                     ),
                             )}
