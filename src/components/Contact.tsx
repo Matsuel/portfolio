@@ -3,7 +3,7 @@ import React from 'react'
 import SectionLayout from './SectionLayout'
 import { ChevronDownIcon } from 'lucide-react'
 import Link from 'next/link'
-import { mail } from '../../constants/navbar'
+import { mail, NavbarLinkSection } from '../../constants/navbar'
 import { liquidGlassBg, liquidGlassBorder } from '../../constants/liquidGlass'
 import { SubmitHandler, useForm } from 'react-hook-form'
 
@@ -54,7 +54,7 @@ const Contact = () => {
 
     return (
         <SectionLayout
-            id='contact'
+            id={NavbarLinkSection.Contact}
         >
             <div className={`w-full h-auto flex flex-col ${liquidGlassBorder} ${liquidGlassBg} p-3 pt-5 rounded-2xl`}>
                 <div className="mx-auto max-w-2xl text-center">
