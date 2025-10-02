@@ -1,10 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
+import { liquidGlassBg, liquidGlassHoverBg } from "../../constants/liquidGlass";
 import { mail, NavbarLinkSection } from "../../constants/navbar";
 import AnimatedText from './AnimatedText';
 import AnimatedTitle from './AnimatedTitle';
 import SectionLayout from './SectionLayout';
-import { liquidGlassBg, liquidGlassHoverBg } from "../../constants/liquidGlass";
 
 const Hero = () => {
 

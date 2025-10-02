@@ -32,3 +32,11 @@ export interface Projet {
         github?: string;
     }
 }
+
+export interface Inputs {
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    message: string;
+}

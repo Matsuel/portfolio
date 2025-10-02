@@ -1,8 +1,7 @@
-import React from 'react'
-import SectionLayout from './SectionLayout'
-import { FeatureSteps } from './Features'
-import { projets } from '../../constants/projets'
 import { NavbarLinkSection } from '../../constants/navbar'
+import { projets } from '../../constants/projets'
+import { FeatureSteps } from './Features'
+import SectionLayout from './SectionLayout'
 
 const Projects = () => {
 

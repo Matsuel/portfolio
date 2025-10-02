@@ -1,41 +1,12 @@
 "use client"
-import React from 'react'
-import SectionLayout from './SectionLayout'
+import { Inputs } from '@/types'
+import { sendEmail } from '@/utils/contact'
 import { ChevronDownIcon } from 'lucide-react'
 import Link from 'next/link'
-import { mail, NavbarLinkSection } from '../../constants/navbar'
-import { liquidGlassBg, liquidGlassBorder } from '../../constants/liquidGlass'
 import { SubmitHandler, useForm } from 'react-hook-form'
-
-interface Inputs {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    message: string;
-}
-
-const sendEmail = async (data: Inputs) => {
-    try {
-        const response = await fetch('/api/send', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
-
-        if (response.ok) {
-            return { success: true };
-        } else {
-            return { success: false };
-        }
-
-    } catch {
-        return { success: false };
-    }
-}
-
+import { liquidGlassBg, liquidGlassBorder } from '../../constants/liquidGlass'
+import { mail, NavbarLinkSection } from '../../constants/navbar'
+import SectionLayout from './SectionLayout'
 
 const Contact = () => {
 
